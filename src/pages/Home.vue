@@ -138,6 +138,18 @@
       </div>
     </section>
 
+    <!-- works -->
+    <section class="wrap award schedule works">
+      <div class="award_area schedule_area">
+        <p class="pu_t1">参赛作品</p>
+        <p class="line"></p>
+        <ul class="award_t_a">
+          <li>1. 源代码及可部署运行的目标应用系统；</li>
+          <li>2. 应用系统演示材料(PPT或Word)。</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -359,6 +371,9 @@ export default {
         color:rgba(98,119,146,1);
       }
     }
+  }
+  .works{
+    background: #fff;
   }
 }
 </style>
