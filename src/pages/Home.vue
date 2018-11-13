@@ -69,6 +69,19 @@
       </div>
     </section>
 
+    <!-- Award -->
+    <section class="wrap award">
+      <div class="award_area">
+        <p class="pu_t1">大赛奖项</p>
+        <p class="line"></p>
+        <div class="award_t_a">
+          <p>大赛设置伯乐奖和伯乐奖将给予各节点由大赛赞助商提供相关礼品的大礼包。</p>
+          <p>参赛队伍项目奖暨应用落地孵化基金：</p>
+          <p>大赛主办方会注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -163,7 +176,7 @@ export default {
   .wrap{
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 100px 0;
     .introduction_area{
       width: 80%;
       display: flex;
@@ -240,6 +253,25 @@ export default {
       font-weight:800;
       color:rgba(30,100,180,1);
       font-family:SourceHanSansSC-Heavy;
+    }
+  }
+  .award{
+    .award_area{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .award_t_a{
+        margin-top: 50px;
+        width: 100%;
+        p{
+          font-size:16px;
+          font-family:SourceHanSansSC-Heavy;
+          font-weight:800;
+          color:rgba(98,119,146,1);
+          line-height:30px;
+        }
+      }
     }
   }
 }
