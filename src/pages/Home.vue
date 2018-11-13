@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="{width:myWidth}">
     <section class='h_area'>
       <div class="_w">
         <img src="@/assets/logo.png" class="logo" alt="">
@@ -12,7 +12,7 @@
     </section>
     <!-- introduction -->
     <section class="wrap">
-      <div class="introduction_area">
+      <div class="pu_dis">
         <p class="pu_t1">大赛简介</p>
         <p class="line"></p>
         <p class="in_t">“HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院、瑞典皇家理工学院等指导并发起，由清华启迪链网与初链、布洛克科技、火聘online共同主办。大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
@@ -22,7 +22,7 @@
     </section>
     <!-- area -->
     <section class="wrap _area">
-      <div class="_area_a">
+      <div class="pu_dis _area_a">
         <p class="pu_t1">大赛区域</p>
         <p class="line"></p>
         <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区。</p>
@@ -70,8 +70,8 @@
     </section>
 
     <!-- Award -->
-    <section class="wrap award">
-      <div class="award_area">
+    <section class="wrap award" id='award'>
+      <div class="pu_dis award_area">
         <p class="pu_t1">大赛奖项</p>
         <p class="line"></p>
         <div class="award_t_a">
@@ -83,8 +83,8 @@
     </section>
 
     <!-- Schedule -->
-    <section class="wrap award schedule">
-      <div class="award_area schedule_area">
+    <section class="wrap award schedule" id='schedule'>
+      <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">时间安排</p>
         <p class="line"></p>
         <ul class="award_t_a">
@@ -100,8 +100,8 @@
     </section>
 
     <!-- rule -->
-    <section class="wrap award rule">
-      <div class="award_area rule_area">
+    <section class="wrap award rule" id='rule'>
+      <div class="pu_dis award_area rule_area">
         <p class="pu_t1">报名规则</p>
         <p class="line"></p>
         <div class="rule_t">
@@ -125,8 +125,8 @@
     </section>
 
     <!-- Claim -->
-    <section class="wrap award schedule claim">
-      <div class="award_area schedule_area">
+    <section class="wrap award schedule claim" id='claim'>
+      <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">参赛要求</p>
         <p class="line"></p>
         <ul class="award_t_a">
@@ -139,8 +139,8 @@
     </section>
 
     <!-- works -->
-    <section class="wrap award schedule works">
-      <div class="award_area schedule_area">
+    <section class="wrap award schedule works" id='works'>
+      <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">参赛作品</p>
         <p class="line"></p>
         <ul class="award_t_a">
@@ -152,7 +152,7 @@
 
     <!-- recommend -->
     <section class="wrap award schedule recommend">
-      <div class="award_area schedule_area">
+      <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">大赛官方推荐应用项目</p>
         <p class="line"></p>
         <ul class="award_t_a">
@@ -173,8 +173,8 @@
     </section>
 
     <!-- Schedule system -->
-    <section class="wrap award rule scheSystem">
-      <div class="award_area rule_area">
+    <section class="wrap award rule scheSystem" id='scheSystem'>
+      <div class="pu_dis award_area rule_area">
         <p class="pu_t1">赛程赛制</p>
         <p class="line"></p>
         <div class="rule_t scheSystem_t">
@@ -210,13 +210,17 @@
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
 import { Button } from 'iview'
 export default {
+  data () {
+    return {
+      myWidth: (window.innerWidth) + 'px'
+    }
+  },
   methods: {
   },
   components: {
@@ -247,6 +251,12 @@ export default {
   font-family:SourceHanSansSC-Heavy;
   font-weight:800;
   color:rgba(30,100,180,1);
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
 }
 
 .pu_dis{
@@ -301,30 +311,15 @@ export default {
       border: 1px solid red;
     }
   }
-  .wrap{
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
-    .introduction_area{
-      width: 80%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-        .pu_t1{
-          font-size:36px;
-          font-family:SourceHanSansSC-Heavy;
-          font-weight:800;
-          color:rgba(30,100,180,1);
-        }
-    }
+  .pu_t1{
+    font-size:36px;
+    font-family:SourceHanSansSC-Heavy;
+    font-weight:800;
+    color:rgba(30,100,180,1);
   }
   ._area{
     background:rgba(242,245,250,1);
     ._area_a{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 80%;
       ._area_t{
         width: 100%;
         margin: 22px 0;
@@ -384,10 +379,6 @@ export default {
   }
   .award{
     .award_area{
-      width: 80%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       .award_t_a{
         margin-top: 50px;
         width: 100%;

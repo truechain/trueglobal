@@ -5,36 +5,49 @@
     </router-link>
     <Menu mode="horizontal" class='menu'>
       <MenuItem name="1">
-      参赛权益
+      <a href="#rni">参赛权益</a>
       </MenuItem>
       <MenuItem name="2">
-      大赛奖项
+      <a href="#award">大赛奖项</a>
       </MenuItem>
       <MenuItem name="3">
-      时间安排
+      <a href="#schedule">时间安排</a>
       </MenuItem>
       <MenuItem name="4">
-      报名规则
+      <a href="#rule">报名规则</a>
       </MenuItem>
       <MenuItem name="5">
-      参赛要求
+      <a href="#claim">参赛要求</a>
       </MenuItem>
       <MenuItem name="6">
-      参赛作品
+      <a href="#works">参赛作品</a>
       </MenuItem>
       <MenuItem name="7">
-      赛程赛制
+      <a href="#scheSystem">赛程赛制</a>
       </MenuItem>
     </Menu>
+    <Dropdown class="language">
+      <a href="javascript:void(0)">
+        简体中文
+        <Icon type="ios-arrow-down"></Icon>
+      </a>
+      <!-- <DropdownMenu slot="list">
+        <DropdownItem>EN</DropdownItem>
+      </DropdownMenu> -->
+    </Dropdown>
   </header>
 </template>
 
 <script>
+import { Dropdown, DropdownMenu } from 'iview'
 export default {
   name: 'Header',
   props: ['isBg'],
   data () {
     return {}
+  },
+  components: {
+    Dropdown, DropdownMenu
   }
 }
 </script>
@@ -49,6 +62,10 @@ export default {
   }
   .ivu-menu-horizontal.ivu-menu-light:after{
     background: transparent
+  }
+  a{
+    text-decoration:none;
+    color: rgba(169,173,187,1);
   }
   .container {
     top:0;
@@ -67,13 +84,16 @@ export default {
       color:rgba(255,255,255,1);
     }
     .menu{
-      width:50%;
+      // max-width:50%;
       border: none;
       background: transparent;
       .ivu-menu-item{
         font-size: 12px !important;
         color:rgba(169,173,187,1);
       }
+    }
+    .language{
+      font-size: 12px;
     }
   }
 </style>
