@@ -1,40 +1,38 @@
 <template>
-  <section :class="[isWhite?'_white':null ,'container']">
-    <header class="_w">
-      <router-link tag='div' to='/' class="logo_area">
-        <img src="@/assets/logo.png" class="logo" alt="">
-      </router-link>
-      <Menu mode="horizontal" class='menu'>
-        <MenuItem name="1">
-        参赛权益
-        </MenuItem>
-        <MenuItem name="2">
-        大赛奖项
-        </MenuItem>
-        <MenuItem name="3">
-        时间安排
-        </MenuItem>
-        <MenuItem name="4">
-        报名规则
-        </MenuItem>
-        <MenuItem name="5">
-        参赛要求
-        </MenuItem>
-        <MenuItem name="6">
-        参赛作品
-        </MenuItem>
-        <MenuItem name="7">
-        赛程赛制
-        </MenuItem>
-      </Menu>
-    </header>
-  </section>
+  <header :class="[isBg?'_bg':null ,'container']">
+    <router-link tag='div' to='/' class="logo_t">
+      TrueGlobal
+    </router-link>
+    <Menu mode="horizontal" class='menu'>
+      <MenuItem name="1">
+      参赛权益
+      </MenuItem>
+      <MenuItem name="2">
+      大赛奖项
+      </MenuItem>
+      <MenuItem name="3">
+      时间安排
+      </MenuItem>
+      <MenuItem name="4">
+      报名规则
+      </MenuItem>
+      <MenuItem name="5">
+      参赛要求
+      </MenuItem>
+      <MenuItem name="6">
+      参赛作品
+      </MenuItem>
+      <MenuItem name="7">
+      赛程赛制
+      </MenuItem>
+    </Menu>
+  </header>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: ['isWhite'],
+  props: ['isBg'],
   data () {
     return {}
   }
@@ -43,8 +41,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
-  ._white{
-    background-color: #fff
+  ._bg{
+    background-color: #203260;
   }
   .ivu-menu{
     position: unset;
@@ -61,27 +59,21 @@ export default {
     position: fixed;
     align-items: center;
     justify-content: center;
-    ._w{
-      width:80%;
-      height:60px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .logo_area{
-      width:20%;
-      display: flex;
-      justify-content: center;
-      .logo{
-        width:60px;
-        height:60px
-      }
+    .logo_t{
+      width:30%;
+      font-size:24px;
+      font-family:SourceHanSansSC-Regular;
+      font-weight:400;
+      color:rgba(255,255,255,1);
     }
     .menu{
-      width:80%;
+      width:50%;
       border: none;
-      display: flex;
       background: transparent;
-      justify-content: space-around;
+      .ivu-menu-item{
+        font-size: 12px !important;
+        color:rgba(169,173,187,1);
+      }
     }
   }
 </style>

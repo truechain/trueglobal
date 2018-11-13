@@ -1,6 +1,6 @@
 <template>
-  <div id="app" @mousewheel="getIsWhite">
-    <Header :isWhite='isWhite' />
+  <div id="app" @mousewheel="getIsBg">
+    <Header :isBg='isBg' />
     <router-view />
   </div>
 </template>
@@ -11,18 +11,19 @@ export default {
   name: 'App',
   data () {
     return {
-      isWhite: false
+      isBg: false
     }
   },
   methods: {
-    getIsWhite () {
+    getIsBg () {
       let scrollTop = 0
       if (document.documentElement && document.documentElement.scrollTop) {
         scrollTop = document.documentElement.scrollTop
       } else if (document.body) {
         scrollTop = document.body.scrollTop
       }
-      this.isWhite = (scrollTop > 100)
+
+      this.isBg = (scrollTop > 90)
     }
   },
   components: {
