@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <!-- Schedule -->
+    <!-- rule -->
     <section class="wrap award rule">
       <div class="award_area rule_area">
         <p class="pu_t1">报名规则</p>
@@ -121,6 +121,20 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Claim -->
+    <section class="wrap award schedule claim">
+      <div class="award_area schedule_area">
+        <p class="pu_t1">参赛要求</p>
+        <p class="line"></p>
+        <ul class="award_t_a">
+          <li>1. 参与大赛的作品，需基于初链进行智能合约的编写。</li>
+          <li>2. 参赛对象报名需网上提交报名材料并以规定形式提交，提交材料要求在参赛通知中另行规定。</li>
+          <li>3. 报名时间：2018年11月15日至2018年12月5日。</li>
+          <li>4. 每人只能参加一支参赛队伍，并且参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
+        </ul>
       </div>
     </section>
 
