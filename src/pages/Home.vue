@@ -13,7 +13,7 @@
     <!-- introduction -->
     <section class="wrap">
       <div class="introduction_area">
-        <p class="introduction_t">大赛简介</p>
+        <p class="pu_t1">大赛简介</p>
         <p class="line"></p>
         <p class="in_t">“HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院、瑞典皇家理工学院等指导并发起，由清华启迪链网与初链、布洛克科技、火聘online共同主办。大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
           本次大赛分为初赛、决赛两个阶段，初赛为线上赛，决赛为线下赛，涉及区块链场景包含但不限于“公益、人才、教育、农产品溯源、普惠金融、征信、智慧农业”等领域。对于开发的区块链应用以及产品等，最终提交作品需有Demo或完整产品进行演示。
@@ -23,7 +23,7 @@
     <!-- area -->
     <section class="wrap _area">
       <div class="_area_a">
-        <p class="introduction_t">大赛区域</p>
+        <p class="pu_t1">大赛区域</p>
         <p class="line"></p>
         <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区。</p>
         <img src="@/assets/map.png" class="_area_bg" alt="">
@@ -31,8 +31,8 @@
     </section>
     <!-- rights and interests -->
     <section class="wrap rni" id="rni">
-      <div class="rni_area">
-        <p class="introduction_t">参赛权益</p>
+      <div class="pu_dis rni_area">
+        <p class="pu_t1">参赛权益</p>
         <p class="line"></p>
         <ul class="rni_info">
           <li>
@@ -60,6 +60,15 @@
       </div>
     </section>
 
+    <!-- member -->
+    <section class="wrap member">
+      <div class="pu_dis">
+        <p class="pu_t1">评委嘉宾团</p>
+        <p class="line"></p>
+        <p class="member_i">元道 李鸣 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -82,6 +91,7 @@ export default {
   border-radius:3px;
   background:rgba(30,100,180,1);
 }
+
 .in_t{
   font-size:16px;
   font-family:SourceHanSansSC-Regular;
@@ -90,6 +100,21 @@ export default {
   line-height:30px;
   margin-top: 70px;
 }
+
+ .pu_t1{
+  font-size:36px;
+  font-family:SourceHanSansSC-Heavy;
+  font-weight:800;
+  color:rgba(30,100,180,1);
+}
+
+.pu_dis{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container{
   .h_area{
     height:650px;
@@ -138,13 +163,13 @@ export default {
   .wrap{
     display: flex;
     justify-content: center;
+    padding: 50px 0;
     .introduction_area{
       width: 80%;
       display: flex;
-      padding: 50px 0;
       align-items: center;
       flex-direction: column;
-        .introduction_t{
+        .pu_t1{
           font-size:36px;
           font-family:SourceHanSansSC-Heavy;
           font-weight:800;
@@ -153,7 +178,6 @@ export default {
     }
   }
   ._area{
-    padding: 50px 0;
     background:rgba(242,245,250,1);
     ._area_a{
       display: flex;
@@ -175,11 +199,7 @@ export default {
     }
   }
   .rni{
-    padding: 50px 0;
     .rni_area{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       width: 80%;
       .rni_info{
         display: flex;
@@ -210,6 +230,16 @@ export default {
           }
         }
       }
+    }
+  }
+  .member{
+    background:rgba(242,245,250,1);
+    .member_i{
+      margin-top: 50px;
+      font-size:24px;
+      font-weight:800;
+      color:rgba(30,100,180,1);
+      font-family:SourceHanSansSC-Heavy;
     }
   }
 }
