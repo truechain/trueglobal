@@ -82,6 +82,23 @@
       </div>
     </section>
 
+    <!-- Schedule -->
+    <section class="wrap award schedule">
+      <div class="award_area schedule_area">
+        <p class="pu_t1">时间安排</p>
+        <p class="line"></p>
+        <ul class="award_t_a">
+          <li>1) 11月15日，大赛启动宣传，接收报名；</li>
+          <li>2) 11月15日-12月20日，大赛全球节点举办宣传活动；</li>
+          <li>3) 12月25日初赛结果公布，进入比赛下一个阶段；</li>
+          <li>4) 12月26日-2019年1月16日，参赛队伍深度开发；</li>
+          <li>5) 1月16日-21日，专家及技术评委评审，角逐进入总决赛赛队；</li>
+          <li>6) 2019年2月，总决赛和颁奖典礼。</li>
+          <li>成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -271,6 +288,18 @@ export default {
           color:rgba(98,119,146,1);
           line-height:30px;
         }
+      }
+    }
+  }
+  .schedule{
+    background:rgba(242,245,250,1);
+    .schedule_area{
+      li{
+        font-size:16px;
+        font-weight:400;
+        line-height:30px;
+        color:rgba(98,119,146,1);
+        font-family:SourceHanSansSC-Regular;
       }
     }
   }
