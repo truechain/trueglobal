@@ -172,6 +172,45 @@
       </div>
     </section>
 
+    <!-- Schedule system -->
+    <section class="wrap award rule scheSystem">
+      <div class="award_area rule_area">
+        <p class="pu_t1">赛程赛制</p>
+        <p class="line"></p>
+        <div class="rule_t scheSystem_t">
+          <div>
+            <p class="_t1">全球节点宣传：11月15日-12月20日</p>
+            <ul>
+              <li>举行大赛全球节点的宣传活动，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
+            </ul>
+          </div>
+          <div>
+            <p class="_t1">初赛（2018年11月15日至2018年12月25日）</p>
+            <ul>
+              <li>1. 报名成功后，参赛队伍根据初赛题目要求完成方案制作和代码编写。</li>
+              <li>2. 自11月20日起，选手可在线提交作业结果。每支队伍共有2次提交并参与评测的机会。参赛队伍在一天内多次提交结果，新结果版本将覆盖旧版本。</li>
+              <li>3. 初赛提交截止时间为2018年12月20日中午12:00（北京时间），逾期提交将无法参与初赛评测。初赛最终成绩将在12月25日在大赛网站公布。</li>
+            </ul>
+          </div>
+          <div>
+            <p class="_t1">12月26日-2019年1月16日，参赛队伍深度开发</p>
+          </div>
+          <div>
+            <p class="_t1">奖金池实况</p>
+            <ul>
+              <li>敬请期待</li>
+            </ul>
+          </div>
+          <div>
+            <p class="_t1">联系我们</p>
+            <ul>
+              <li>如您有任何疑问，欢迎通过大赛官方进行交流。也可以发送邮件至联系我们。大赛的最终解释权归大赛组委会所有。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -396,6 +435,11 @@ export default {
   }
   .works{
     background: #fff;
+  }
+  .scheSystem{
+    .scheSystem_t{
+      min-height: 500px;
+    }
   }
 }
 </style>
