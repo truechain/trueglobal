@@ -55,7 +55,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
   ._bg{
-    background-color: #203260;
+    background-color: #203260 !important;
   }
   .ivu-menu{
     position: unset;
@@ -76,6 +76,7 @@ export default {
     position: fixed;
     align-items: center;
     justify-content: center;
+    background-color:rgba(0,0,0,0.1);
     .logo_t{
       width:30%;
       font-size:24px;

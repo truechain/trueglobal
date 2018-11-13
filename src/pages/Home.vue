@@ -7,7 +7,7 @@
         <p class="title_tit">—2018区块链应用落地大赛</p>
         <p class="title_intr">指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院 主办方：TrueGlobal </p>
         <p class="title_intr">联合主办：启迪链网、启迪之星、初链、布洛克科技火聘online 联盟社区：ITPUB、CocoChina、ITechPlus、极部落、链习堂、GeekSight</p>
-        <Button class="sign">报名参赛</Button>
+        <Button class="sign" to='/signin'>报名参赛</Button>
       </div>
     </section>
     <!-- introduction -->
