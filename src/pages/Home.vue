@@ -27,9 +27,39 @@
         <p class="line"></p>
         <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区。</p>
         <img src="@/assets/map.png" class="_area_bg" alt="">
+      </div>
+    </section>
+    <!-- rights and interests -->
+    <section class="wrap rni" id="rni">
+      <div class="rni_area">
+        <p class="introduction_t">参赛权益</p>
+        <p class="line"></p>
+        <ul class="rni_info">
+          <li>
+            <img src="../assets/excitation.png" alt="">
+            <p class="rni_t">奖金激励</p>
+            <p class="rni_t1">优胜者可获得丰富的奖金以及各种激励</p>
+          </li>
+          <li>
+            <img src="../assets/incubation.png" alt="">
+            <p class="rni_t">项目孵化</p>
+            <p class="rni_t1">优秀项目帮助对接地方政府孵化器的创投和孵化机会</p>
+          </li>
+          <li>
+            <img src="../assets/media.png" alt="">
+            <p class="rni_t">媒体曝光</p>
+            <p class="rni_t1">全平台流量+千万媒体曝光+媒体专访</p>
+          </li>
+          <li>
+            <img src="../assets/community.png" alt="">
+            <p class="rni_t">社区入驻</p>
+            <p class="rni_t1">成为区块链开源技术社区专家，与全球开发者共享资源</p>
+          </li>
+        </ul>
 
       </div>
     </section>
+
   </div>
 </template>
 
@@ -63,8 +93,7 @@ export default {
 .container{
   .h_area{
     height:650px;
-    background-size: 100% 100%;
-    background: url('../assets/bg.png') no-repeat;
+    background: url('../assets/bg.png') no-repeat center;
     ._w{
       position: relative;
       top: 90px;
@@ -142,6 +171,44 @@ export default {
       }
       ._area_bg{
         width: 100%;
+      }
+    }
+  }
+  .rni{
+    padding: 50px 0;
+    .rni_area{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
+      .rni_info{
+        display: flex;
+        margin-top: 50px;
+        li{
+          display: flex;
+          height: 300px;
+          padding: 0 10px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          .rni_t{
+            font-size:24px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(30,100,180,1);
+            line-height:30px;
+          }
+          .rni_t1{
+            width: 223px;
+            font-size:13px;
+            font-weight:400;
+            line-height:30px;
+            text-align: center;
+            letter-spacing: 1px;
+            font-family:PingFangSC-Regular;
+            color:rgba(98,119,146,1);
+          }
+        }
       }
     }
   }
