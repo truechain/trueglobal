@@ -65,7 +65,7 @@
       <div class="pu_dis">
         <p class="pu_t1">评委嘉宾团</p>
         <p class="line"></p>
-        <p class="member_i">元道 李鸣 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
+        <p class="member_i">李鸣 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
       </div>
     </section>
 
@@ -167,7 +167,6 @@
           <li>8.基于TRUE主网一键发token/一键将token从以太坊转到TRUE主网</li>
           <li>9. GPU挖矿节点程序windows/linux版本</li>
           <li>10. 初链主网上的dapp，与正统交易所erc20对接系统之间的中间件（重要）</li>
-
         </ul>
       </div>
     </section>
@@ -210,6 +209,19 @@
         </div>
       </div>
     </section>
+
+    <!-- mechanism -->
+    <section class="wrap award mechanism">
+      <div class="pu_dis award_area">
+        <p class="pu_t1">合作机构</p>
+        <p class="line"></p>
+        <ul class="mechanism_area">
+          <li v-for="(item,index) in mechanism" :key='index' class="mechanism_item">
+            <img :src='item' alt="" class="mechanism_i">
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -218,7 +230,14 @@ import { Button } from 'iview'
 export default {
   data () {
     return {
-      myWidth: (window.innerWidth) + 'px'
+      myWidth: (window.innerWidth) + 'px',
+      mechanism: []
+    }
+  },
+  mounted () {
+    for (var i = 0; i < 13; i++) {
+      var j = i + 1
+      this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
     }
   },
   methods: {
@@ -430,6 +449,24 @@ export default {
   .scheSystem{
     .scheSystem_t{
       min-height: 500px;
+    }
+  }
+  .mechanism{
+    background:rgba(242,245,250,1);
+    .mechanism_area{
+      margin-top: 50px;
+      display: flex;
+      width: 1205px;
+      // justify-content: center;
+      flex-wrap:wrap;
+      .mechanism_item{
+        margin: 3px 10px;
+          img{
+            width: 220px;
+            height: 100px;
+          }
+
+      }
     }
   }
 }
