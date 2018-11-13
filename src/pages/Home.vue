@@ -99,6 +99,31 @@
       </div>
     </section>
 
+    <!-- Schedule -->
+    <section class="wrap award rule">
+      <div class="award_area rule_area">
+        <p class="pu_t1">报名规则</p>
+        <p class="line"></p>
+        <div class="rule_t">
+          <p>采用节点推荐或自主报名机制，各团队缴纳100个TRUE作为活动报名凭证沉淀到奖金池中锁定，融入到后续的大赛奖金（官方已经融入奖金池10000个TRUE作为初始奖金）。</p>
+          <div>
+            <p class="_t1">节点推荐：</p>
+            <ul>
+              <li>1. 节点可以由各个地区，组织，社区和机构构成。节点可以参与比赛，也可以积极的发现优质的团队，公司，个人，推荐其参赛。</li>
+            </ul>
+          </div>
+          <div>
+            <p class="_t1">自主报名：</p>
+            <ul>
+              <li>1. 大赛面向全社会开放,人数地域不限，欢迎个人、高等院校、科研单位、企业、创客团队等均欢迎报名参赛。</li>
+              <li>2. 选手可以个人或组队形式参赛，组队人数不限，考虑项目完整性建议3人及以上组队。</li>
+              <li>3. 参赛者可以选择区块链行业技术专家作为技术指导，也可以选择互联网公司技术高管作为技术顾问，参赛者初赛突围之后，给与顾问以“导师”称号。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -124,7 +149,6 @@ export default {
 
 .in_t{
   font-size:16px;
-  font-family:SourceHanSansSC-Regular;
   font-weight:400;
   color:rgba(98,119,146,1);
   line-height:30px;
@@ -221,7 +245,6 @@ export default {
         font-weight:400;
         line-height:30px;
         color:rgba(98,119,146,1);
-        font-family:SourceHanSansSC-Regular;
       }
       ._area_bg{
         width: 100%;
@@ -299,7 +322,27 @@ export default {
         font-weight:400;
         line-height:30px;
         color:rgba(98,119,146,1);
-        font-family:SourceHanSansSC-Regular;
+      }
+    }
+  }
+  .rule{
+    .rule_t{
+      margin-top: 50px;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      ._t1{
+        font-size:16px;
+        font-weight:bold;
+        color:#627792;
+        line-height:30px;
+      }
+      p,li{
+        font-size:16px;
+        font-weight:400;
+        line-height:30px;
+        color:rgba(98,119,146,1);
       }
     }
   }
