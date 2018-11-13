@@ -150,6 +150,28 @@
       </div>
     </section>
 
+    <!-- recommend -->
+    <section class="wrap award schedule recommend">
+      <div class="award_area schedule_area">
+        <p class="pu_t1">大赛官方推荐应用项目</p>
+        <p class="line"></p>
+        <ul class="award_t_a">
+          <li>大赛官方推荐应用项目，作为指引供参赛团队参考:</li>
+          <li>1. Dapp 仓库</li>
+          <li>2. TrueInfo</li>
+          <li>3. TRUE主网Token的多重签名钱包</li>
+          <li>4. TRUE主网Token的硬件钱包</li>
+          <li>5. 基于TRUE主网的去中心化用户身份验证系统</li>
+          <li>6. 能和TrueChain智能合约进行数据交互的Oracle</li>
+          <li>7.形式化验证服务和API</li>
+          <li>8.基于TRUE主网一键发token/一键将token从以太坊转到TRUE主网</li>
+          <li>9. GPU挖矿节点程序windows/linux版本</li>
+          <li>10. 初链主网上的dapp，与正统交易所erc20对接系统之间的中间件（重要）</li>
+
+        </ul>
+      </div>
+    </section>
+
   </div>
 </template>
 
