@@ -42,14 +42,14 @@
                 <p class="l_t_b must">联系手机</p>
                 <p class="l_t_s">Phone</p>
               </div>
-              <Input v-model="phone" type='number' maxlength=11 clearable />
+              <Input v-model="phone" :maxlength="11" clearable />
             </li>
             <li>
               <div class="l_t">
                 <p class="l_t_b must">邮箱</p>
                 <p class="l_t_s">Email</p>
               </div>
-              <Input v-model="email" type='email' clearable />
+              <Input v-model="email" clearable />
             </li>
             <li>
               <div class="l_t">
@@ -98,6 +98,16 @@ export default {
   },
   data () {
     return {
+      teamName: '',
+      teamLead: '',
+      referal: '',
+      city: '',
+      phone: '',
+      email: '',
+      wechat: '',
+      telegram: '',
+      facebook: '',
+      twitter: ''
     }
   },
   mounted () {
@@ -123,14 +133,15 @@ export default {
 }
 
 .container{
+  border: 1px solid green;
   .sign_area{
       min-height:390px;
       position: relative;
       background: url('../assets/bg.png') no-repeat center;
       .sign_area_t{
+        max-height: 390px;
         position: relative;
         top: 140px;
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -148,11 +159,10 @@ export default {
           }
         }
         .form{
-            // border: 1px solid #000;
-            position: relative;
-            top: 80px;
+            border: 1px solid green;
+            position: absolute;
+            top: 100px;
             width:900px;
-            padding:10px;
             display: flex;
             padding: 50px;
             border-radius:20px;
@@ -164,7 +174,6 @@ export default {
             .form_area{
               width: 60%;
               margin-top: 50px;
-              // border: 1px solid green;
               li{
                 display: flex;
                 height: 50px;
