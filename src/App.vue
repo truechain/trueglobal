@@ -2,11 +2,13 @@
   <div id="app" @mousewheel="getIsBg">
     <Header :isBg='isBg' />
     <router-view />
+    <Fotter></Fotter>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
+import Fotter from '@/components/Fotter'
 export default {
   name: 'App',
   data () {
@@ -27,7 +29,7 @@ export default {
     }
   },
   components: {
-    Header
+    Header, Fotter
   }
 }
 </script>
