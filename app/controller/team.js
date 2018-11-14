@@ -11,7 +11,7 @@ class TeamController extends Controller {
     const teamRule = {
       'name': 'string',
       'leader': 'string',
-      'phone': 'number',
+      'phone': 'string',
     };
     // debugger
     ctx.validate(teamRule, ctx.request.body);

@@ -17,8 +17,8 @@ class LoginServer extends Service {
     // const expired = 60 * 5;
     // const expiredMail = 60 * 30;
     const res = await this.find(mail);
-
-    if (password !== this.ctx.helper.cryptPwd(res.password, res.salt)) {
+    // debugger
+    if (this.ctx.helper.cryptPwd(password, res.salt) !== res.password) {
       ctx.throw(403, '账户或密码错误');
     }
 

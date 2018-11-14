@@ -21,7 +21,9 @@ class RegIsterService extends Service {
         password: this.ctx.helper.cryptPwd(item.password, salt),
         salt,
       }, {
-        mail: item.mail,
+        where: {
+          mail: item.mail,
+        }
       })
     } catch (error) {
       this.ctx.throw(400, error)
