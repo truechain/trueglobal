@@ -1,33 +1,8 @@
 # trueglobal
 
-
-
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
-```
-
-### Deploy
-
-```bash
-$ npm start
-$ npm stop
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+| 说明         | 接口     | 方式 | 参数                                              |其他|
+| ------------ | -------- | ---- | ------------------------------------------------- |--|
+| 发送邮件     | /sendMail | POST | 无                                                |--|
+| 注册         | /register | POST | mail/password/authCode/isReset(传 1 代表重置密码) |--|
+| 登录         | /login    | POST | mail/password                                     |--|
+| 添加团队信息 | /team     | POST | name/leader/phone                                 |携带token|
