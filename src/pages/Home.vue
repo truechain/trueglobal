@@ -1,23 +1,28 @@
 <template>
-  <div class="container" :style="{width:myWidth}">
+  <div class="container">
     <section class='h_area'>
       <div class="_w">
         <img src="@/assets/logo.png" class="logo" alt="">
         <p class="title_tit">“HelloWorld”</p>
         <p class="title_tit">—2018区块链应用落地大赛</p>
-        <p class="title_intr">指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院 主办方：TrueGlobal </p>
-        <p class="title_intr">联合主办：启迪链网、启迪之星、初链、布洛克科技火聘online 联盟社区：ITPUB、CocoChina、ITechPlus、极部落、链习堂、GeekSight</p>
-        <Button class="sign" to='/signin'>报名参赛</Button>
+        <p class="title_intr">指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院</p>
+        <p class="title_intr">主办方：TrueGlobal</p>
+        <p class="title_intr">联合主办：启迪链网、启迪之星、初链、布洛克科技、火聘online</p>
+        <p class="title_intr">联盟社区：ITPUB、CocoChina、ITechPlus、极部落、链习堂、GeekSight、Element</p>
+        <!-- <Button class="sign" @click="_sign">报名参赛</Button> -->
+        <Login />
       </div>
+      <!-- @click="isLogin = true" -->
     </section>
     <!-- introduction -->
     <section class="wrap">
       <div class="pu_dis">
         <p class="pu_t1">大赛简介</p>
         <p class="line"></p>
-        <p class="in_t">“HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院、瑞典皇家理工学院等指导并发起，由清华启迪链网与初链、布洛克科技、火聘online共同主办。大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
+        <p class="in_t">“HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院等指导并发起，由清华启迪链网与初链、布洛克科技、火聘online共同主办。大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
           本次大赛分为初赛、决赛两个阶段，初赛为线上赛，决赛为线下赛，涉及区块链场景包含但不限于“公益、人才、教育、农产品溯源、普惠金融、征信、智慧农业”等领域。对于开发的区块链应用以及产品等，最终提交作品需有Demo或完整产品进行演示。
-          各报名团队可针对大赛提出的相关领域和场景范围，进行实际需求构建。专家会对参赛项目的源代码，构思，设计和作品进行评审，同时通过投票及评分系统，选出切合实际，符合优先落地的应用场景。</p>
+          各报名团队可针对大赛提出的相关领域和场景范围，进行实际需求构建。专家会对参赛项目的源代码，构思，设计和作品进行评审，同时通过投票及评分系统，选出切合实际，符合优先落地的应用场景。
+        </p>
       </div>
     </section>
     <!-- area -->
@@ -25,7 +30,7 @@
       <div class="pu_dis _area_a">
         <p class="pu_t1">大赛区域</p>
         <p class="line"></p>
-        <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区。</p>
+        <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区</p>
         <img src="@/assets/map.png" class="_area_bg" alt="">
       </div>
     </section>
@@ -39,6 +44,8 @@
             <img src="../assets/excitation.png" alt="">
             <p class="rni_t">奖金激励</p>
             <p class="rni_t1">优胜者可获得丰富的奖金以及各种激励</p>
+            <p class="rni_t1">参赛队伍项目奖暨应用落地孵化基金：</p>
+            <p class="rni_t1">大赛主办方会注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
           </li>
           <li>
             <img src="../assets/incubation.png" alt="">
@@ -65,12 +72,12 @@
       <div class="pu_dis">
         <p class="pu_t1">评委嘉宾团</p>
         <p class="line"></p>
-        <p class="member_i">李鸣 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
+        <p class="member_i">于佳宁 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
       </div>
     </section>
 
     <!-- Award -->
-    <section class="wrap award" id='award'>
+    <!-- <section class="wrap award" id='award'>
       <div class="pu_dis award_area">
         <p class="pu_t1">大赛奖项</p>
         <p class="line"></p>
@@ -80,7 +87,7 @@
           <p>大赛主办方会注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Schedule -->
     <section class="wrap award schedule" id='schedule'>
@@ -88,13 +95,11 @@
         <p class="pu_t1">时间安排</p>
         <p class="line"></p>
         <ul class="award_t_a">
-          <li>1) 11月15日，大赛启动宣传，接收报名；</li>
-          <li>2) 11月15日-12月20日，大赛全球节点举办宣传活动；</li>
-          <li>3) 12月25日初赛结果公布，进入比赛下一个阶段；</li>
-          <li>4) 12月26日-2019年1月16日，参赛队伍深度开发；</li>
-          <li>5) 1月16日-21日，专家及技术评委评审，角逐进入总决赛赛队；</li>
-          <li>6) 2019年2月，总决赛和颁奖典礼。</li>
-          <li>成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
+          <li>1) 2018年11月15日，接收报名；大赛全球节点启动宣传，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
+          <li>2) 2018年12月15日-2019年1月5日，团体完善报名信息，提交项目简介及附件；</li>
+          <li>3) 2019年12月15日-2019年1月10日，参赛团队深度开发，提交参赛作品代码；</li>
+          <li>4) 团队提交代码后，团队进入拉票的最后阶段，专家及技术评委评审。</li>
+          <li>5) 2019年1月底，总决赛和颁奖典礼；</li>
         </ul>
       </div>
     </section>
@@ -105,7 +110,13 @@
         <p class="pu_t1">报名规则</p>
         <p class="line"></p>
         <div class="rule_t">
-          <p>采用节点推荐或自主报名机制，各团队缴纳100个TRUE作为活动报名凭证沉淀到奖金池中锁定，融入到后续的大赛奖金（官方已经融入奖金池10000个TRUE作为初始奖金）。</p>
+          <div>
+            <ul>
+              <li>采用节点推荐或自主报名机制，成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
+              <li>参赛对象报名需网上提交报名材料并以报名表规定形式提交。</li>
+              <li>每人只能参加一支参赛队伍，并且参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
+            </ul>
+          </div>
           <div>
             <p class="_t1">节点推荐：</p>
             <ul>
@@ -127,19 +138,18 @@
     <!-- Claim -->
     <section class="wrap award schedule claim" id='claim'>
       <div class="pu_dis award_area schedule_area">
-        <p class="pu_t1">参赛要求</p>
+        <p class="pu_t1">参赛作品要求</p>
         <p class="line"></p>
         <ul class="award_t_a">
           <li>1. 参与大赛的作品，需基于初链进行智能合约的编写。</li>
-          <li>2. 参赛对象报名需网上提交报名材料并以规定形式提交，提交材料要求在参赛通知中另行规定。</li>
-          <li>3. 报名时间：2018年11月15日至2018年12月5日。</li>
-          <li>4. 每人只能参加一支参赛队伍，并且参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
+          <li>2. 源代码及可部署运行的目标应用系统。</li>
+          <li>3. 应用系统演示材料（PPT或Word）</li>
         </ul>
       </div>
     </section>
 
     <!-- works -->
-    <section class="wrap award schedule works" id='works'>
+    <!-- <section class="wrap award schedule works" id='works'>
       <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">参赛作品</p>
         <p class="line"></p>
@@ -148,10 +158,10 @@
           <li>2. 应用系统演示材料(PPT或Word)。</li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- recommend -->
-    <section class="wrap award schedule recommend">
+    <!-- <section class="wrap award schedule recommend">
       <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">大赛官方推荐应用项目</p>
         <p class="line"></p>
@@ -169,7 +179,7 @@
           <li>10. 初链主网上的dapp，与正统交易所erc20对接系统之间的中间件（重要）</li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Schedule system -->
     <section class="wrap award rule scheSystem" id='scheSystem'>
@@ -222,16 +232,18 @@
         </ul>
       </div>
     </section>
+
   </div>
 </template>
 
 <script>
 import { Button } from 'iview'
+import Login from '@/pages/Login'
 export default {
   data () {
     return {
-      myWidth: (window.innerWidth) + 'px',
-      mechanism: []
+      mechanism: [],
+      isLogin: false
     }
   },
   mounted () {
@@ -241,14 +253,28 @@ export default {
     }
   },
   methods: {
+
   },
   components: {
-    Button
+    Button, Login
   }
 }
 </script>
 
 <style scoped lang='less'>
+
+.ivu-tabs-nav {
+left: 50%;
+transform: translateX(-50%);
+font-size: 20px;
+}
+.qqwximg {
+height: 38px;
+}
+.error-text {
+color: #fa8341;
+}
+
 .line{
   width:100px;
   height:6px;
@@ -286,6 +312,7 @@ export default {
 }
 
 .container{
+  width: 100%;
   .h_area{
     height:650px;
     background: url('../assets/bg.png') no-repeat center;
@@ -328,6 +355,12 @@ export default {
     }
     .introduction{
       border: 1px solid red;
+    }
+
+    .vertical-center-modal{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .pu_t1{
@@ -374,10 +407,10 @@ export default {
           }
           .rni_t1{
             width: 223px;
-            font-size:13px;
+            font-size:12px;
             font-weight:400;
             line-height:30px;
-            text-align: center;
+            // text-align: center;
             letter-spacing: 1px;
             font-family:PingFangSC-Regular;
             color:rgba(98,119,146,1);
@@ -412,7 +445,7 @@ export default {
     }
   }
   .schedule{
-    background:rgba(242,245,250,1);
+    // background:rgba(242,245,250,1);
     .schedule_area{
       li{
         font-size:16px;
@@ -423,6 +456,7 @@ export default {
     }
   }
   .rule{
+    background:rgba(242,245,250,1);
     .rule_t{
       margin-top: 50px;
       min-height: 280px;
@@ -452,7 +486,6 @@ export default {
     }
   }
   .mechanism{
-    background:rgba(242,245,250,1);
     .mechanism_area{
       margin-top: 50px;
       display: flex;

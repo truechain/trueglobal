@@ -31,9 +31,9 @@
         简体中文
         <Icon type="ios-arrow-down"></Icon>
       </a>
-      <!-- <DropdownMenu slot="list">
+      <DropdownMenu slot="list">
         <DropdownItem>EN</DropdownItem>
-      </DropdownMenu> -->
+      </DropdownMenu>
     </Dropdown>
   </header>
 </template>

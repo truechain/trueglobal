@@ -35,4 +35,7 @@ export default {
 </script>
 
 <style>
+.ivu-input-search{
+    background: rgba(30,100,180,1) !important;
+}
 </style>
