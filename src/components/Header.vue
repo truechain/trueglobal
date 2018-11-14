@@ -4,27 +4,35 @@
       TrueGlobal
     </router-link>
     <Menu mode="horizontal" class='menu'>
-      <MenuItem name="1">
-      <a href="#inter">大赛简介</a>
-      </MenuItem>
-      <!-- <MenuItem name="2">
-      <a href="#award">大赛区域</a>
-      </MenuItem> -->
-      <MenuItem name="2">
-      <a href="#pw">评委嘉宾</a>
-      </MenuItem>
-      <MenuItem name="3">
-      <a href="#rni">参赛权益</a>
-      </MenuItem>
-      <MenuItem name="4">
-      <a href="#rule">报名规则</a>
-      </MenuItem>
-      <MenuItem name="5">
-      <a href="#claim">作品要求</a>
-      </MenuItem>
-      <MenuItem name="6">
-      <a href="#contact">联系我们</a>
-      </MenuItem>
+      <a href="#inter">
+        <MenuItem name="1">大赛简介
+        </MenuItem>
+      </a>
+      <a href="#pw">
+        <MenuItem name="2">
+        评委嘉宾
+        </MenuItem>
+      </a>
+      <a href="#rni">
+        <MenuItem name="3">
+        参赛权益
+        </MenuItem>
+      </a>
+      <a href="#rule">
+        <MenuItem name="4">
+        报名规则
+        </MenuItem>
+      </a>
+      <a href="#claim">
+        <MenuItem name="5">
+        作品要求
+        </MenuItem>
+      </a>
+      <a href="#contact">
+        <MenuItem name="6">
+        联系我们
+        </MenuItem>
+      </a>
     </Menu>
     <Dropdown class="language">
       <a href="javascript:void(0)">

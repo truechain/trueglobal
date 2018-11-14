@@ -1,7 +1,7 @@
 <template>
   <div class="fun">
-    <Button class="sign" @click="_sign">报名参赛</Button>
-    <Modal v-model="isLogin" class-name="vertical-center-modal" :closable="false" footer-hide>
+    <Button class="sign" @click="_sign">报名参赛 </Button>
+    <Modal v-model="isSelect" class-name="vertical-center-modal" :closable="false" footer-hide>
       <Tabs value="name1" class="tab">
         <!-- :style="reg" -->
         <TabPane label="注册" name="name1" class="reg" :style='reg_area'>
@@ -18,12 +18,14 @@
                 <p :style="l_t_b">验证码</p>
               </div>
               <Input clearable v-model="authCode" />
+              <!-- maxlength="6" -->
             </li>
             <li :style='form_item'>
               <div :style="l_t">
                 <p :style="l_t_b">登录密码</p>
               </div>
-              <Input clearable v-model="password" />
+              <Input clearable type="password" v-model="password" />
+              <!-- maxlength="16" -->
             </li>
           </ul>
           <Button :style="reg_btn" @click="_register">注册</Button>
@@ -40,7 +42,8 @@
               <div :style="l_t">
                 <p :style="l_t_b">登录密码</p>
               </div>
-              <Input clearable v-model="login_password" />
+              <Input clearable v-model="login_password" type="password" />
+              <!-- maxlength="16" -->
             </li>
           </ul>
           <Button :style="reg_btn" @click="_login">登录</Button>
@@ -55,7 +58,7 @@ import { sendEmail, register, login } from '../api/index.js'
 export default {
   data () {
     return {
-      isLogin: false,
+      isSelect: false,
       mail: '',
       password: '',
       authCode: '',
@@ -79,11 +82,11 @@ export default {
   methods: {
     _sign () {
       // this.setCookie('login', 'true', '1')
-      this.isLogin = false
-      // this.isLogin = JSON.parse(this.getCookie('login'))
-      // if (!this.isLogin) {
-      //   alert('已登录')
-      // }
+      if (this.getCookie('login')) {
+        this.$router.push('/signin')
+      } else {
+        this.isSelect = true
+      }
     },
     setCookie: (cname, cvalue, exdays) => {
       var d = new Date()
@@ -128,11 +131,11 @@ export default {
                 this.setTime()
               }, 1000)
             } else {
-              this.$Message.success('发送失败，请稍后重试！')
+              this.$Message.error('发送失败，请稍后重试！')
             }
           })
         } else {
-          alert('请输入有效的邮箱地址！')
+          this.$Message.error('请输入有效的邮箱地址')
         }
       }
     },
@@ -142,15 +145,39 @@ export default {
         password: this.password,
         authCode: this.authCode
       }).then(res => {
-        console.log(res, '注册结果')
+        if (res.code === 0) {
+          this.$Message.success('注册成功，请前去登录！')
+        }
+      }).catch(error => {
+        console.log(error)
+        this.$Message.error('注册失败，请稍后重试！')
       })
     },
     _login () {
-      login({
-
-      }).then(res => {
-        console.log(res, '登录结果')
-      })
+      if (this.ver_mail.test(this.login_email)) {
+        if (this.login_password) {
+          login({
+            mail: this.login_email,
+            password: this.login_password
+          }).then(res => {
+            if (res.code === 0) {
+              this.$Message.success('登录成功')
+              this.setCookie('login', true, '1')
+              this.setCookie('token', res.data.token, '1')
+              setTimeout(() => {
+                this.isSelect = false
+              }, 1000)
+            }
+          }).catch(error => {
+            console.log(error)
+            this.$Message.error('登录失败，请检查邮箱地址与密码是否正确！')
+          })
+        } else {
+          this.$Message.error('请输入登录密码！')
+        }
+      } else {
+        this.$Message.error('请输入有效的邮箱地址')
+      }
     }
   },
   components: {

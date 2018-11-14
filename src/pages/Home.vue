@@ -217,7 +217,7 @@
 import { Button } from 'iview'
 import Login from '@/pages/Login'
 export default {
-  data() {
+  data () {
     return {
       memberList: [
         {
@@ -315,7 +315,7 @@ export default {
       isLogin: false
     }
   },
-  mounted() {
+  mounted () {
     for (var i = 0; i < 14; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
