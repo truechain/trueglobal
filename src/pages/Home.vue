@@ -173,6 +173,34 @@
       </div>
     </section>
 
+    <section class="wrap award mechanism contact">
+      <div class="pu_dis award_area">
+        <p class="pu_t1">联系我们</p>
+        <p class="line"></p>
+        <div class="contact_a">
+          <div class="_t">
+            <span>
+              如您有任何疑问，欢迎通过大赛官方进行交流。也可以发送邮件至
+            </span>
+            <a href="mailto:helloworld@trueglobal.pro">helloworld@trueglobal.pro</a>
+            <span>
+              联系我们。大赛的最终解释权归大赛组委会所有。
+            </span>
+          </div>
+          <ul class="qr">
+            <li>
+              <img src="../assets/qr/weixin.png" alt="">
+              <p>官方微信公众号</p>
+            </li>
+            <li>
+              <img src="../assets/qr/twitter.png" alt="">
+              <p>官方twitter</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -180,7 +208,7 @@
 import { Button } from 'iview'
 import Login from '@/pages/Login'
 export default {
-  data () {
+  data() {
     return {
       memberList: [
         {
@@ -282,7 +310,7 @@ export default {
       isLogin: false
     }
   },
-  mounted () {
+  mounted() {
     for (var i = 0; i < 13; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
@@ -585,6 +613,34 @@ color: #fa8341;
   }
   .community{
     background: #fff;
+  }
+  .contact{
+    background:rgba(242,245,250,1);
+    .contact_a{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ._t{
+        font-size:16px;
+        font-weight:400;
+        color:rgba(98,119,146,1);
+      }
+      .qr{
+        display: flex;
+        margin-top: 50px;
+        li{
+          margin: 0 50px;
+          text-align: center;
+          p{
+            margin-top: 10px;
+            font-size:16px;
+            font-weight:400;
+            color:rgba(98,119,146,1);
+          }
+        }
+      }
+    }
   }
 }
 </style>
