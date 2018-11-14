@@ -45,13 +45,13 @@
             </div>
             <Input v-model="phone" :maxlength="11" clearable />
           </li>
-          <li>
+          <!-- <li>
             <div class="l_t">
               <p class="l_t_b must">邮箱</p>
               <p class="l_t_s">Email</p>
             </div>
             <Input v-model="email" clearable />
-          </li>
+          </li> -->
           <li>
             <div class="l_t">
               <p class="l_t_b">微信</p>
@@ -93,6 +93,7 @@
 import Header from '@/components/Header'
 import Fotter from '@/components/Fotter'
 import { Buttoon, Input } from 'iview'
+import { signIn } from '../api/index.js'
 export default {
   props: {
 
@@ -104,7 +105,7 @@ export default {
       referal: '',
       city: '',
       phone: '',
-      email: '',
+      // email: '',
       wechat: '',
       telegram: '',
       facebook: '',
@@ -116,7 +117,22 @@ export default {
   },
   methods: {
     submit () {
-      alert('提交!')
+      if (!this.teamName && !this.teamLead && !this.phone) {
+        this.$Message.error('请填写所必需信息！')
+      } else {
+        signIn({
+          name: this.teamName,
+          leader: this.teamLead,
+          phone: this.phone
+        }).then(res => {
+          if (res.code === 0) {
+            this.$Message.success(res.message)
+          }
+        }).catch(error => {
+          console.log(error)
+          this.$Message.error('提交报名信息失败，不可重复提交， 请稍后重试！')
+        })
+      }
     }
   },
   components: {
