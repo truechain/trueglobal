@@ -10,6 +10,5 @@ module.exports = app => {
   router.post('/sendMail', controller.captcha.smsCaptcha);
   router.post('/register', controller.register.index);
   router.post('/login', controller.login.index);
-  router.post('/reset', controller.reset.index);
   router.post('/team', controller.team.index);
 };
