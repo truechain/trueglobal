@@ -7,8 +7,6 @@
         <p class="title_tit">—2018区块链应用落地大赛</p>
         <p class="title_intr">指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院</p>
         <p class="title_intr">主办方：TrueGlobal</p>
-        <p class="title_intr">联合主办：启迪链网、启迪之星、初链、布洛克科技、火聘online</p>
-        <p class="title_intr">联盟社区：ITPUB、CocoChina、ITechPlus、极部落、链习堂、GeekSight、Element</p>
         <!-- <Button class="sign" @click="_sign">报名参赛</Button> -->
         <Login />
       </div>
@@ -30,10 +28,30 @@
       <div class="pu_dis _area_a">
         <p class="pu_t1">大赛区域</p>
         <p class="line"></p>
-        <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区</p>
+        <p class="_area_t">中国，韩国，泰国，越南，美国等国家和地区。</p>
         <img src="@/assets/map.png" class="_area_bg" alt="">
       </div>
     </section>
+
+    <!-- member -->
+    <section class="wrap member">
+      <div class="pu_dis">
+        <p class="pu_t1">评委嘉宾团</p>
+        <p class="line"></p>
+        <!-- <p class="member_i">于佳宁 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p> -->
+        <ul>
+          <li v-for="(item,index) in memberList" :key='index'>
+            <div class="list-avatar">
+              <img :src="item.imgSrc" alt="">
+              <!-- <img :src="require(`@/assets/member/${item.imgSrc}.png`)" alt=""> -->
+            </div>
+            <div class="list-name">{{item.name}}</div>
+            <div class="list-detail" v-for="(t,index) in item.introList" :key='index'>{{t}}</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- rights and interests -->
     <section class="wrap rni" id="rni">
       <div class="pu_dis rni_area">
@@ -44,8 +62,6 @@
             <img src="../assets/excitation.png" alt="">
             <p class="rni_t">奖金激励</p>
             <p class="rni_t1">优胜者可获得丰富的奖金以及各种激励</p>
-            <p class="rni_t1">参赛队伍项目奖暨应用落地孵化基金：</p>
-            <p class="rni_t1">大赛主办方会注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
           </li>
           <li>
             <img src="../assets/incubation.png" alt="">
@@ -64,57 +80,39 @@
           </li>
         </ul>
 
+        <p class="pu_t1">奖金池实况</p>
+        <p class="rni_i">参赛队伍项目奖暨应用落地孵化基金：大赛主办方优先注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
+
       </div>
     </section>
-
-    <!-- member -->
-    <section class="wrap member">
-      <div class="pu_dis">
-        <p class="pu_t1">评委嘉宾团</p>
-        <p class="line"></p>
-        <p class="member_i">于佳宁 沈寓实 林垂宙 刘洋 张剑南 程小永 汪洋 叶雨</p>
-      </div>
-    </section>
-
-    <!-- Award -->
-    <!-- <section class="wrap award" id='award'>
-      <div class="pu_dis award_area">
-        <p class="pu_t1">大赛奖项</p>
-        <p class="line"></p>
-        <div class="award_t_a">
-          <p>大赛设置伯乐奖和伯乐奖将给予各节点由大赛赞助商提供相关礼品的大礼包。</p>
-          <p>参赛队伍项目奖暨应用落地孵化基金：</p>
-          <p>大赛主办方会注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Schedule -->
     <section class="wrap award schedule" id='schedule'>
       <div class="pu_dis award_area schedule_area">
-        <p class="pu_t1">时间安排</p>
+        <p class="pu_t1">大赛流程</p>
         <p class="line"></p>
         <ul class="award_t_a">
-          <li>1) 2018年11月15日，接收报名；大赛全球节点启动宣传，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
-          <li>2) 2018年12月15日-2019年1月5日，团体完善报名信息，提交项目简介及附件；</li>
-          <li>3) 2019年12月15日-2019年1月10日，参赛团队深度开发，提交参赛作品代码；</li>
-          <li>4) 团队提交代码后，团队进入拉票的最后阶段，专家及技术评委评审。</li>
-          <li>5) 2019年1月底，总决赛和颁奖典礼；</li>
+          <li>1. 2018年11月15日，接收报名；大赛全球节点启动宣传，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
+          <li>2. 2018年12月15日-2019年1月5日，团体完善报名信息，提交项目简介及附件；</li>
+          <li>3. 2019年12月15日-2019年1月10日，参赛团队深度开发，提交参赛作品代码；</li>
+          <li>4. 团队提交代码后，团队进入拉票的最后阶段，专家及技术评委评审。</li>
+          <li>5. 2019年1月底，总决赛和颁奖典礼</li>
         </ul>
       </div>
     </section>
 
     <!-- rule -->
-    <section class="wrap award rule" id='rule'>
-      <div class="pu_dis award_area rule_area">
+    <section class="wrap award schedule rule" id='rule'>
+      <div class="pu_dis award_area schedule_area rule_area">
         <p class="pu_t1">报名规则</p>
         <p class="line"></p>
         <div class="rule_t">
           <div>
             <ul>
-              <li>采用节点推荐或自主报名机制，成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
-              <li>参赛对象报名需网上提交报名材料并以报名表规定形式提交。</li>
-              <li>每人只能参加一支参赛队伍，并且参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
+              <li>采用节点推荐或自主报名机制; 成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
+              <li>- 参赛对象报名需网上提交报名材料并以报名表规定形式提交。</li>
+              <li>- 参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
+              <li>- 各团队缴纳100个TRUE作为活动报名凭证沉淀到奖金池中锁定，融入到后续的大赛奖金（官方已经融入奖金池10000个TRUE作为初始奖金）。</li>
             </ul>
           </div>
           <div>
@@ -141,89 +139,31 @@
         <p class="pu_t1">参赛作品要求</p>
         <p class="line"></p>
         <ul class="award_t_a">
-          <li>1. 参与大赛的作品，需基于初链进行智能合约的编写。</li>
-          <li>2. 源代码及可部署运行的目标应用系统。</li>
-          <li>3. 应用系统演示材料（PPT或Word）</li>
+          <li>参与大赛的作品，需基于初链进行智能合约的编写。</li>
+          <li>源代码及可部署运行的目标应用系统。</li>
+          <li>应用系统演示材料（PPT或Word）</li>
+          <!-- <li>参赛须知和评审细则</li>
+          <li>参考应用选题</li> -->
         </ul>
-      </div>
-    </section>
-
-    <!-- works -->
-    <!-- <section class="wrap award schedule works" id='works'>
-      <div class="pu_dis award_area schedule_area">
-        <p class="pu_t1">参赛作品</p>
-        <p class="line"></p>
-        <ul class="award_t_a">
-          <li>1. 源代码及可部署运行的目标应用系统；</li>
-          <li>2. 应用系统演示材料(PPT或Word)。</li>
-        </ul>
-      </div>
-    </section> -->
-
-    <!-- recommend -->
-    <!-- <section class="wrap award schedule recommend">
-      <div class="pu_dis award_area schedule_area">
-        <p class="pu_t1">大赛官方推荐应用项目</p>
-        <p class="line"></p>
-        <ul class="award_t_a">
-          <li>大赛官方推荐应用项目，作为指引供参赛团队参考:</li>
-          <li>1. Dapp 仓库</li>
-          <li>2. TrueInfo</li>
-          <li>3. TRUE主网Token的多重签名钱包</li>
-          <li>4. TRUE主网Token的硬件钱包</li>
-          <li>5. 基于TRUE主网的去中心化用户身份验证系统</li>
-          <li>6. 能和TrueChain智能合约进行数据交互的Oracle</li>
-          <li>7.形式化验证服务和API</li>
-          <li>8.基于TRUE主网一键发token/一键将token从以太坊转到TRUE主网</li>
-          <li>9. GPU挖矿节点程序windows/linux版本</li>
-          <li>10. 初链主网上的dapp，与正统交易所erc20对接系统之间的中间件（重要）</li>
-        </ul>
-      </div>
-    </section> -->
-
-    <!-- Schedule system -->
-    <section class="wrap award rule scheSystem" id='scheSystem'>
-      <div class="pu_dis award_area rule_area">
-        <p class="pu_t1">赛程赛制</p>
-        <p class="line"></p>
-        <div class="rule_t scheSystem_t">
-          <div>
-            <p class="_t1">全球节点宣传：11月15日-12月20日</p>
-            <ul>
-              <li>举行大赛全球节点的宣传活动，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
-            </ul>
-          </div>
-          <div>
-            <p class="_t1">初赛（2018年11月15日至2018年12月25日）</p>
-            <ul>
-              <li>1. 报名成功后，参赛队伍根据初赛题目要求完成方案制作和代码编写。</li>
-              <li>2. 自11月20日起，选手可在线提交作业结果。每支队伍共有2次提交并参与评测的机会。参赛队伍在一天内多次提交结果，新结果版本将覆盖旧版本。</li>
-              <li>3. 初赛提交截止时间为2018年12月20日中午12:00（北京时间），逾期提交将无法参与初赛评测。初赛最终成绩将在12月25日在大赛网站公布。</li>
-            </ul>
-          </div>
-          <div>
-            <p class="_t1">12月26日-2019年1月16日，参赛队伍深度开发</p>
-          </div>
-          <div>
-            <p class="_t1">奖金池实况</p>
-            <ul>
-              <li>敬请期待</li>
-            </ul>
-          </div>
-          <div>
-            <p class="_t1">联系我们</p>
-            <ul>
-              <li>如您有任何疑问，欢迎通过大赛官方进行交流。也可以发送邮件至联系我们。大赛的最终解释权归大赛组委会所有。</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- mechanism -->
-    <section class="wrap award mechanism">
+    <section class="wrap award mechanism co_hosting">
       <div class="pu_dis award_area">
-        <p class="pu_t1">合作机构</p>
+        <p class="pu_t1">联合主办</p>
+        <p class="line"></p>
+        <ul class="mechanism_area co_hosting_cen">
+          <li v-for="(item,index) in co_hosting" :key='index' class="mechanism_item">
+            <img :src='item' alt="" class="mechanism_i">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap award mechanism community">
+      <div class="pu_dis award_area">
+        <p class="pu_t1">联盟社区</p>
         <p class="line"></p>
         <ul class="mechanism_area">
           <li v-for="(item,index) in mechanism" :key='index' class="mechanism_item">
@@ -242,7 +182,103 @@ import Login from '@/pages/Login'
 export default {
   data () {
     return {
+      memberList: [
+        {
+          'name': '于佳宁',
+          'imgSrc': require('@/assets/member/yujianing.png'),
+          // 'imgSrc': 'yujianing',
+          'introList': [
+            '经济学博士',
+            '《2018年中国区块链产业白皮书》编委会主任'
+          ]
+        },
+        {
+          'name': '沈寓实',
+          'imgSrc': require('@/assets/member/shenyushi.png'),
+          'introList': [
+            '清华大学电子工程学士',
+            '美国加州大学圣地亚哥分校电子计算机硕士和博士',
+            '国家千人计划评审专家',
+            '清华大学等多所高校研究员',
+            '微软公司战略顾问'
+          ]
+        },
+        {
+          'name': '林垂宙',
+          'imgSrc': require('@/assets/member/linchuizhou.png'),
+          'introList': [
+            '瑞典皇家工程科学院院士',
+            '香港工程科学院院士',
+            '前香港科技大学副校长',
+            '台湾工业技术研究院院长'
+          ]
+        },
+        {
+          'name': '刘洋',
+          'imgSrc': require('@/assets/member/liuyang.png'),
+          'introList': [
+            '清华大学学士、硕士',
+            '十多年开发和系统架构经验',
+            '密码学和算法专家'
+          ]
+        },
+        {
+          'name': '张剑南',
+          'imgSrc': require('@/assets/member/zhangjiannan.png'),
+          'introList': [
+            '牛津大学计算机硕士',
+            'TopHacker和Dorahacks创始人',
+            '研究人员，欧洲核子研究组织CERN（2013）'
+          ]
+        },
+        {
+          'name': '程小永',
+          'imgSrc': require('@/assets/member/chengxiaoyong.png'),
+          'introList': [
+            '清华大学兼职研究员，连续创业者',
+            '中国云体系产业创新战略联盟执行理事',
+            '长安俱乐部青年领袖成员'
+          ]
+        },
+        {
+          'name': 'Andy郑西平',
+          'imgSrc': require('@/assets/member/zhengxiping.png'),
+          'introList': [
+            '布洛克科技合伙人&副总裁',
+            '东南亚Beecast  CEO'
+          ]
+        },
+        {
+          'name': '叶雨',
+          'imgSrc': require('@/assets/member/yeyu.png'),
+          'introList': [
+            '启迪链网集团常务副总裁',
+            '工学硕士学位',
+            '曾在国有大型装备制造企业从事研发、质量、项目管理、企业管理、销售、市场等工作'
+          ]
+        },
+        {
+          'name': '秋宣宇(秋婷南)',
+          'imgSrc': require('@/assets/member/qiutingnan.png'),
+          'introList': [
+            '韩国Element CEO 韩国国际金融学会中国委员会委员长',
+            '韩国Money Today 核心战略部 亚洲事务负责人',
+            '前韩国One Asia 总编',
+            '前韩国Asia Today 多媒体局/国际部总监'
+          ]
+        },
+        {
+          'name': 'Hillary Nguyen',
+          'imgSrc': require('@/assets/member/HillaryNguyen.png'),
+          'introList': [
+            '阿尔法鲸资本管理合伙人',
+            '区块链、数字资产管理战略家、顾问、社区代言人',
+            '在区块链时代为新兴项目提供有效的管理方案'
+          ]
+        }
+      ],
       mechanism: [],
+      co_hosting: [],
       isLogin: false
     }
   },
@@ -250,6 +286,10 @@ export default {
     for (var i = 0; i < 13; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
+    }
+    for (var x = 0; x < 4; x++) {
+      var p = x + 1
+      this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
     }
   },
   methods: {
@@ -353,9 +393,6 @@ color: #fa8341;
           background:rgba(255,255,255,1);
         }
     }
-    .introduction{
-      border: 1px solid red;
-    }
 
     .vertical-center-modal{
       display: flex;
@@ -386,6 +423,7 @@ color: #fa8341;
     }
   }
   .rni{
+    background:rgba(242,245,250,1);
     .rni_area{
       width: 80%;
       .rni_info{
@@ -407,30 +445,69 @@ color: #fa8341;
           }
           .rni_t1{
             width: 223px;
+            min-height: 80px;
             font-size:12px;
             font-weight:400;
             line-height:30px;
-            // text-align: center;
+            text-align: center;
             letter-spacing: 1px;
             font-family:PingFangSC-Regular;
             color:rgba(98,119,146,1);
           }
         }
       }
+      .rni_i{
+        margin-top: 50px;
+        font-size:12px;
+        font-weight:400;
+        color:rgba(98,119,146,1);
+      }
     }
   }
   .member{
-    background:rgba(242,245,250,1);
-    .member_i{
+    display: flex;
+    ul{
       margin-top: 50px;
-      font-size:24px;
-      font-weight:800;
-      color:rgba(30,100,180,1);
-      font-family:SourceHanSansSC-Heavy;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+          width: 200px;
+          display: flex;
+          flex-direction: column;
+          margin: 0 40px 60px;
+          .list-avatar{
+              width: 100%;
+              height: 200px;
+              border-radius: 50%;
+              overflow: hidden;
+              position: relative;
+              margin-bottom: 10px;
+            img{
+              vertical-align: bottom;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .list-name{
+            padding: 25px 0 5px;
+            font-size: 20px;
+            color:rgba(32,50,96,1);
+            text-align: center;
+          }
+          .list-detail{
+            text-align: center;
+            font-size: 12px;
+            line-height: 22px;
+            color:rgba(98,119,146,1);
+            position: relative;
+          }
+        }
     }
   }
   .award{
     .award_area{
+      display: flex;
+      justify-content: end;
       .award_t_a{
         margin-top: 50px;
         width: 100%;
@@ -445,7 +522,6 @@ color: #fa8341;
     }
   }
   .schedule{
-    // background:rgba(242,245,250,1);
     .schedule_area{
       li{
         font-size:16px;
@@ -458,11 +534,11 @@ color: #fa8341;
   .rule{
     background:rgba(242,245,250,1);
     .rule_t{
+      width: 100%;
       margin-top: 50px;
       min-height: 280px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
       ._t1{
         font-size:16px;
         font-weight:bold;
@@ -470,7 +546,7 @@ color: #fa8341;
         line-height:30px;
       }
       p,li{
-        font-size:16px;
+        font-size:13px;
         font-weight:400;
         line-height:30px;
         color:rgba(98,119,146,1);
@@ -486,21 +562,29 @@ color: #fa8341;
     }
   }
   .mechanism{
+    background:rgba(242,245,250,1);
     .mechanism_area{
-      margin-top: 50px;
+      margin-top: 48px;
       display: flex;
       width: 1205px;
-      // justify-content: center;
       flex-wrap:wrap;
+      // justify-content: center;
       .mechanism_item{
         margin: 3px 10px;
           img{
+            border: 1px solid #ccc;
             width: 220px;
             height: 100px;
           }
 
       }
     }
+    .co_hosting_cen{
+      justify-content: center;
+    }
+  }
+  .community{
+    background: #fff;
   }
 }
 </style>
