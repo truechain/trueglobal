@@ -1,3 +1,3 @@
-const serverUrl = 'http://192.168.31.8:8011/'
+const serverUrl = 'http://47.91.233.146:7001/'
 
 export { serverUrl }

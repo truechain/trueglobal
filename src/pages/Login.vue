@@ -17,32 +17,52 @@
               <div :style="l_t">
                 <p :style="l_t_b">验证码</p>
               </div>
-              <Input clearable />
+              <Input clearable v-model="authCode" />
             </li>
             <li :style='form_item'>
               <div :style="l_t">
                 <p :style="l_t_b">登录密码</p>
               </div>
-              <Input clearable />
+              <Input clearable v-model="password" />
             </li>
           </ul>
-          <Button :style="reg_btn">注册</Button>
+          <Button :style="reg_btn" @click="_register">注册</Button>
         </TabPane>
-        <TabPane label="登录" name="name2">登录</TabPane>
+        <TabPane label="登录" name="name2" class="reg" :style='reg_area'>
+          <ul :style="form_area">
+            <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">邮箱</p>
+              </div>
+              <Input clearable v-model="login_email" />
+            </li>
+            <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">登录密码</p>
+              </div>
+              <Input clearable v-model="login_password" />
+            </li>
+          </ul>
+          <Button :style="reg_btn" @click="_login">登录</Button>
+        </TabPane>
       </Tabs>
     </Modal>
   </div>
 </template>
 <script>
 import { Button, Modal } from 'iview'
-import { sendEmail } from '../api/index.js'
+import { sendEmail, register, login } from '../api/index.js'
 export default {
   data () {
     return {
       isLogin: false,
       mail: '',
+      password: '',
+      authCode: '',
       btn: true,
       timer: '',
+      login_email: '',
+      login_password: '',
       countdown: 60,
       btnBool: false,
       get_code_t: '获取验证码',
@@ -59,10 +79,11 @@ export default {
   methods: {
     _sign () {
       // this.setCookie('login', 'true', '1')
-      this.isLogin = JSON.parse(this.getCookie('login'))
-      if (!this.isLogin) {
-        alert('已登录')
-      }
+      this.isLogin = false
+      // this.isLogin = JSON.parse(this.getCookie('login'))
+      // if (!this.isLogin) {
+      //   alert('已登录')
+      // }
     },
     setCookie: (cname, cvalue, exdays) => {
       var d = new Date()
@@ -114,6 +135,22 @@ export default {
           alert('请输入有效的邮箱地址！')
         }
       }
+    },
+    _register () {
+      register({
+        mail: this.mail,
+        password: this.password,
+        authCode: this.authCode
+      }).then(res => {
+        console.log(res, '注册结果')
+      })
+    },
+    _login () {
+      login({
+
+      }).then(res => {
+        console.log(res, '登录结果')
+      })
     }
   },
   components: {

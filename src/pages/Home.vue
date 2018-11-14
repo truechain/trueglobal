@@ -13,13 +13,21 @@
       <!-- @click="isLogin = true" -->
     </section>
     <!-- introduction -->
-    <section class="wrap">
+    <section class="wrap" id='inter'>
       <div class="pu_dis">
         <p class="pu_t1">大赛简介</p>
         <p class="line"></p>
-        <p class="in_t">“HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院等指导并发起，由清华启迪链网与初链、布洛克科技、火聘online共同主办。大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
-          本次大赛分为初赛、决赛两个阶段，初赛为线上赛，决赛为线下赛，涉及区块链场景包含但不限于“公益、人才、教育、农产品溯源、普惠金融、征信、智慧农业”等领域。对于开发的区块链应用以及产品等，最终提交作品需有Demo或完整产品进行演示。
+        <p class="in_t"> “HelloWorld”区块链应用落地大赛由中国云体系产业战略创新联盟、清华大学互联网产业研究院等指导并发起，TrueGlobal 主办，由清华启迪链网与初链、布洛克科技、火聘online协同主办。
+          <br>
+          <br>
+          大赛立足全球区块链行业，致力于寻找全球区块链领域具备创新能力的优秀人才以及项目，关注并致力于促进区块链技术在现实生活的不同场景中应用落地，通过打造“全球区块链技术开源社区”的理念，区块链应用落地大赛应运而生。
+          <br>
+          <br>
+          本次大赛涉及区块链场景包含但不限于“公益、人才、教育、农产品溯源、普惠金融、征信、智慧农业”等领域。对于开发的区块链应用以及产品等，最终提交作品需有Demo或完整产品进行演示。
           各报名团队可针对大赛提出的相关领域和场景范围，进行实际需求构建。专家会对参赛项目的源代码，构思，设计和作品进行评审，同时通过投票及评分系统，选出切合实际，符合优先落地的应用场景。
+          <br>
+          <br>
+          关于主办方：TrueGlobal是由全球多个技术社群联合发起， 通过传播和教授新技术、扶持开发者社区、推动新技术的发展，共同建立一个由全球TRUE开发者和创业者组成的世界级生态系统。为了实现这一目标，我们在全球各地参加并组织线上线下的技术讨论、Hackathon、区块链应用落地大赛。
         </p>
       </div>
     </section>
@@ -34,7 +42,7 @@
     </section>
 
     <!-- member -->
-    <section class="wrap member">
+    <section class="wrap member" id='pw'>
       <div class="pu_dis">
         <p class="pu_t1">评委嘉宾团</p>
         <p class="line"></p>
@@ -66,7 +74,7 @@
           <li>
             <img src="../assets/incubation.png" alt="">
             <p class="rni_t">项目孵化</p>
-            <p class="rni_t1">优秀项目帮助对接地方政府孵化器的创投和孵化机会</p>
+            <p class="rni_t1">帮助优秀项目对接地方政府的创投和孵化机会</p>
           </li>
           <li>
             <img src="../assets/media.png" alt="">
@@ -82,6 +90,7 @@
 
         <p class="pu_t1">奖金池实况</p>
         <p class="rni_i">参赛队伍项目奖暨应用落地孵化基金：大赛主办方优先注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
+        <p class="rni_i" style="font-size:50px">10000 TRUE +</p>
 
       </div>
     </section>
@@ -92,7 +101,7 @@
         <p class="pu_t1">大赛流程</p>
         <p class="line"></p>
         <ul class="award_t_a">
-          <li>1. 2018年11月15日，接收报名；大赛全球节点启动宣传，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
+          <li>1. 2018年11月15日起，接受报名。同时，大赛全球节点启动宣传，辐射韩国首尔、越南胡志明市、中国上海、中国成都、中国北京、中国长沙、美国硅谷等。</li>
           <li>2. 2018年12月15日-2019年1月5日，团体完善报名信息，提交项目简介及附件；</li>
           <li>3. 2019年12月15日-2019年1月10日，参赛团队深度开发，提交参赛作品代码；</li>
           <li>4. 团队提交代码后，团队进入拉票的最后阶段，专家及技术评委评审。</li>
@@ -109,7 +118,7 @@
         <div class="rule_t">
           <div>
             <ul>
-              <li>采用节点推荐或自主报名机制; 成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节，并送出本次大赛纪念品。</li>
+              <li>采用节点推荐或自主报名机制; 成功报名之后， 主办方会以邮件形式，联系参赛团队确认相关细节。</li>
               <li>- 参赛对象报名需网上提交报名材料并以报名表规定形式提交。</li>
               <li>- 参赛团队需独立完成作品，无任何作弊以及侵犯他人知识产权的行为，如有违反，取消参赛资格和相应的成绩。</li>
               <li>- 各团队缴纳100个TRUE作为活动报名凭证沉淀到奖金池中锁定，融入到后续的大赛奖金（官方已经融入奖金池10000个TRUE作为初始奖金）。</li>
@@ -173,7 +182,7 @@
       </div>
     </section>
 
-    <section class="wrap award mechanism contact">
+    <section class="wrap award mechanism contact" id='contact'>
       <div class="pu_dis award_area">
         <p class="pu_t1">联系我们</p>
         <p class="line"></p>
@@ -184,7 +193,7 @@
             </span>
             <a href="mailto:helloworld@trueglobal.pro">helloworld@trueglobal.pro</a>
             <span>
-              联系我们。大赛的最终解释权归大赛组委会所有。
+              联系我们。
             </span>
           </div>
           <ul class="qr">
@@ -208,7 +217,7 @@
 import { Button } from 'iview'
 import Login from '@/pages/Login'
 export default {
-  data () {
+  data() {
     return {
       memberList: [
         {
@@ -224,10 +233,8 @@ export default {
           'name': '沈寓实',
           'imgSrc': require('@/assets/member/shenyushi.png'),
           'introList': [
-            '清华大学电子工程学士',
-            '美国加州大学圣地亚哥分校电子计算机硕士和博士',
+            '美国加州大学计算机博士',
             '国家千人计划评审专家',
-            '清华大学等多所高校研究员',
             '微软公司战略顾问'
           ]
         },
@@ -237,7 +244,6 @@ export default {
           'introList': [
             '瑞典皇家工程科学院院士',
             '香港工程科学院院士',
-            '前香港科技大学副校长',
             '台湾工业技术研究院院长'
           ]
         },
@@ -245,7 +251,7 @@ export default {
           'name': '刘洋',
           'imgSrc': require('@/assets/member/liuyang.png'),
           'introList': [
-            '清华大学学士、硕士',
+            '清华大学硕士',
             '十多年开发和系统架构经验',
             '密码学和算法专家'
           ]
@@ -256,15 +262,15 @@ export default {
           'introList': [
             '牛津大学计算机硕士',
             'TopHacker和Dorahacks创始人',
-            '研究人员，欧洲核子研究组织CERN（2013）'
+            '原欧洲核子研究组织CERN研究人员'
           ]
         },
         {
           'name': '程小永',
           'imgSrc': require('@/assets/member/chengxiaoyong.png'),
           'introList': [
-            '清华大学兼职研究员，连续创业者',
-            '中国云体系产业创新战略联盟执行理事',
+            '清华大学兼职研究员',
+            '云体系产业创新战略联盟执行理事',
             '长安俱乐部青年领袖成员'
           ]
         },
@@ -280,19 +286,18 @@ export default {
           'name': '叶雨',
           'imgSrc': require('@/assets/member/yeyu.png'),
           'introList': [
-            '启迪链网集团常务副总裁',
             '工学硕士学位',
-            '曾在国有大型装备制造企业从事研发、质量、项目管理、企业管理、销售、市场等工作'
+            '启迪链网集团常务副总裁',
+            '原启迪之星人工智能与大数据总经理'
           ]
         },
         {
           'name': '秋宣宇(秋婷南)',
           'imgSrc': require('@/assets/member/qiutingnan.png'),
           'introList': [
-            '韩国Element CEO 韩国国际金融学会中国委员会委员长',
-            '韩国Money Today 核心战略部 亚洲事务负责人',
-            '前韩国One Asia 总编',
-            '前韩国Asia Today 多媒体局/国际部总监'
+            '韩国Element CEO',
+            '韩国国际金融学会中国委员会委员长',
+            '韩国Money Today 亚洲事务负责人'
           ]
         },
         {
@@ -300,8 +305,8 @@ export default {
           'imgSrc': require('@/assets/member/HillaryNguyen.png'),
           'introList': [
             '阿尔法鲸资本管理合伙人',
-            '区块链、数字资产管理战略家、顾问、社区代言人',
-            '在区块链时代为新兴项目提供有效的管理方案'
+            '区块链、数字资产管理战略家、顾问',
+            '为区块链时代新兴项目提供管理方案'
           ]
         }
       ],
@@ -310,7 +315,7 @@ export default {
       isLogin: false
     }
   },
-  mounted () {
+  mounted() {
     for (var i = 0; i < 14; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))

@@ -5,25 +5,25 @@
     </router-link>
     <Menu mode="horizontal" class='menu'>
       <MenuItem name="1">
-      <a href="#rni">参赛权益</a>
+      <a href="#inter">大赛简介</a>
       </MenuItem>
+      <!-- <MenuItem name="2">
+      <a href="#award">大赛区域</a>
+      </MenuItem> -->
       <MenuItem name="2">
-      <a href="#award">大赛奖项</a>
+      <a href="#pw">评委嘉宾</a>
       </MenuItem>
       <MenuItem name="3">
-      <a href="#schedule">时间安排</a>
+      <a href="#rni">参赛权益</a>
       </MenuItem>
       <MenuItem name="4">
       <a href="#rule">报名规则</a>
       </MenuItem>
       <MenuItem name="5">
-      <a href="#claim">参赛要求</a>
+      <a href="#claim">作品要求</a>
       </MenuItem>
       <MenuItem name="6">
-      <a href="#works">参赛作品</a>
-      </MenuItem>
-      <MenuItem name="7">
-      <a href="#scheSystem">赛程赛制</a>
+      <a href="#contact">联系我们</a>
       </MenuItem>
     </Menu>
     <Dropdown class="language">
@@ -31,9 +31,9 @@
         简体中文
         <Icon type="ios-arrow-down"></Icon>
       </a>
-      <DropdownMenu slot="list">
+      <!-- <DropdownMenu slot="list">
         <DropdownItem>EN</DropdownItem>
-      </DropdownMenu>
+      </DropdownMenu> -->
     </Dropdown>
   </header>
 </template>

@@ -1,6 +1,11 @@
 <template>
   <div class="fotter">
-    <p>{{trueglobal}}</p>
+    <p>
+      {{exp}}
+      <br>
+      {{trueglobal}}
+    </p>
+
   </div>
 </template>
 
@@ -8,7 +13,8 @@
 export default {
   data () {
     return {
-      trueglobal: 'Copyright ©2018 trueglobal'
+      trueglobal: 'Copyright ©2018 trueglobal',
+      exp: '大赛的最终解释权归TrueGlobal所有'
     }
   }
 }
@@ -20,6 +26,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background:rgba(11,18,55,1);
   p{
     font-size:16px;
