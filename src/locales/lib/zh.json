@@ -123,7 +123,7 @@
         "imgSrc": "zhangjiannan",
         "introList": [
           "牛津大学计算机硕士",
-          "TopHacker和Dorahacks创始人",
+          "Dorahacks创始人",
           "原欧洲核子研究组织CERN研究人员"
         ]
       },
@@ -216,7 +216,8 @@
     "list": [
       "参与大赛的作品，需基于初链进行智能合约的编写。",
       "源代码及可部署运行的目标应用系统。",
-      "应用系统演示材料（PPT或Word）"
+      "应用系统演示材料（PPT或Word）",
+      "更多细节陆续更新中"
     ]
   },
   "sponsor": {

@@ -2,7 +2,7 @@
   <div class="fun">
     <Button class="sign" @click="_sign">{{ $t('root.run') }} </Button>
     <Modal v-model="isSelect" class-name="vertical-center-modal" :closable="false" footer-hide>
-      <Tabs value="name1" class="tab">
+      <Tabs :value="currentName" class="tab">
         <!-- :style="reg" -->
         <TabPane :label="$t('function.register')" name="name1" class="reg" :style='reg_area'>
           <ul :style="form_area">
@@ -56,6 +56,7 @@ export default {
   data () {
     return {
       isSelect: false,
+      currentName: 'name1',
       mail: '',
       password: '',
       authCode: '',
@@ -120,15 +121,11 @@ export default {
           sendEmail({
             mail: this.mail
           }).then(res => {
-            if (res.data === 0) {
-              this.$Message.success('验证码发送成功，请去查看验证！')
+            this.$Message.success('验证码发送成功，请去查看验证！')
+            this.setTime()
+            this.timer = setInterval(() => {
               this.setTime()
-              this.timer = setInterval(() => {
-                this.setTime()
-              }, 1000)
-            } else {
-              this.$Message.error('发送失败，请稍后重试！')
-            }
+            }, 1000)
           })
         } else {
           this.$Message.error('请输入有效的邮箱地址')
@@ -136,6 +133,7 @@ export default {
       }
     },
     _register () {
+
       register({
         mail: this.mail,
         password: this.password,
@@ -143,10 +141,12 @@ export default {
       }).then(res => {
         if (res.code === 0) {
           this.$Message.success('注册成功，请前去登录！')
+          setTimeout(() => {
+            this.currentName = 'name2'
+          }, 1000);
         }
       }).catch(error => {
-        console.log(error)
-        this.$Message.error('注册失败，请稍后重试！')
+        this.$Message.error('账户已注册.')
       })
     },
     _login () {
@@ -162,10 +162,10 @@ export default {
               this.setCookie('token', res.data.token, 0.05)
               setTimeout(() => {
                 this.isSelect = false
+                this.$router.push('/signin')
               }, 1000)
             }
           }).catch(error => {
-            console.log(error)
             this.$Message.error('登录失败，请检查邮箱地址与密码是否正确！')
           })
         } else {

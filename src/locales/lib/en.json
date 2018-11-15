@@ -124,7 +124,7 @@
         "imgSrc": "zhangjiannan",
         "introList": [
           "M.S. In Computer Science, Oxford University",
-          " Founder of TopHacker Group and DoraHacks",
+          "Founder of DoraHacks",
           "Former Researcher, CERN Open Lab"
         ]
       },
@@ -217,7 +217,8 @@
     "list": [
       "The smart contract of the works must be based on TrueChain.",
       "The code and deployable target application system",
-      "Application demonstration materials (PPT or Word)"
+      "Application demonstration materials (PPT or Word)",
+      "More details are being updated"
     ]
   },
   "sponsor": {

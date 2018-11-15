@@ -170,9 +170,6 @@
 </template>
 
 <script>
-  import {
-    Button
-  } from 'iview'
   import Login from '@/pages/Login'
   export default {
     data() {
@@ -183,7 +180,7 @@
       }
     },
     mounted() {
-      for (var i = 0; i < 14; i++) {
+      for (var i = 0; i < 15; i++) {
         var j = i + 1
         this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
       }
@@ -191,13 +188,6 @@
         var p = x + 1
         this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
       }
-    },
-    methods: {
-
-    },
-    components: {
-      Button,
-      Login
     }
   }
 
@@ -207,6 +197,10 @@
   @media screen and (max-width: 860px) {
     .block-br {
       display: block;
+    }
+    .qr {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -558,15 +552,17 @@
         }
 
         .qr {
-          // display: flex;
+          display: flex;
           margin-top: 10px;
           width: 100%;
-          justify-content: space-between;
-
+          justify-content: center;
           li {
-            margin-top: 20px;
+            margin: 20px 20px 0;
             text-align: center;
-
+            width: 150px;
+            img {
+              width: 100%;
+            }
             p {
               // margin-top: 20px;
               line-height: 30px;
