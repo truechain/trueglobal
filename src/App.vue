@@ -1,6 +1,8 @@
 <template>
   <div id="app" @mousewheel="getIsBg">
-    <Header :isBg='isBg' />
+    <div v-show="!$route.meta.isHeader">
+      <Header :isBg='isBg' />
+    </div>
     <router-view />
     <Fotter></Fotter>
   </div>
@@ -29,7 +31,8 @@ export default {
     }
   },
   components: {
-    Header, Fotter
+    Header,
+    Fotter
   }
 }
 </script>
