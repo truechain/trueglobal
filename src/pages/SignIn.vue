@@ -2,7 +2,7 @@
   <div class="container">
     <section class='sign_area'>
       <div class="sign_area_t">
-        <p class="title_tit">"HelloWorld" - 2018 区块链应用落地大赛</p>
+        <p class="title_tit">"HelloWorld" - 2018 <span class="block-br">区块链应用落地大赛</span></p>
         <p class="title_tit">报名表</p>
       </div>
     </section>
@@ -136,12 +136,24 @@ export default {
     }
   },
   components: {
-    Header, Input, Buttoon, Fotter
+    Header,
+    Input,
+    Buttoon,
+    Fotter
   }
 }
 </script>
 
 <style scoped lang='less'>
+@media screen and (max-width: 860px) {
+  .block-br {
+    display: block;
+  }
+}
+.team_t {
+  font-size: 20px;
+  font-weight: bold;
+}
 .must{
   &::after{
     content: '*';
@@ -164,7 +176,7 @@ export default {
               padding: 5px 0;
               font-size:30px;
               font-weight:400;
-              line-height:30px;
+              line-height:40px;
               color:rgba(255,255,255,1);
             }
           }

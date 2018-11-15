@@ -4,7 +4,7 @@
       <div class="_w">
         <img src="@/assets/logo.png" class="logo" alt="">
         <p class="title_tit">“HelloWorld”</p>
-        <p class="title_tit">—2018区块链应用落地大赛</p>
+        <p class="title_tit">2018区块链 <span class="block-br">应用落地大赛</span></p>
         <p class="title_intr">指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院</p>
         <p class="title_intr">主办方：TrueGlobal</p>
         <!-- <Button class="sign" @click="_sign">报名参赛</Button> -->
@@ -90,7 +90,7 @@
 
         <p class="pu_t1">奖金池实况</p>
         <p class="rni_i">参赛队伍项目奖暨应用落地孵化基金：大赛主办方优先注入大赛启动基金到奖金池中， 优胜团队会一起瓜分大赛奖金池， 奖金池会根据大赛参赛团队数量随之变化。</p>
-        <p class="rni_i" style="font-size:50px">10000 TRUE +</p>
+        <p class="rni_i" style="font-size:45px">10000 TRUE +</p>
 
       </div>
     </section>
@@ -335,6 +335,11 @@ export default {
 </script>
 
 <style scoped lang='less'>
+@media screen and (max-width: 860px) {
+  .block-br {
+    display: block;
+  }
+}
 
 .ivu-tabs-nav {
 left: 50%;
@@ -402,16 +407,17 @@ color: #fa8341;
           height:100px;
         }
         .title_tit{
+          text-align: center;
           font-size:44px;
           font-weight:600;
           line-height:60px;
           color:rgba(255,255,255,1);
-          font-family:PingFangSC-Semibold;
         }
         .title_intr{
           font-size:16px;
           font-weight:400;
           line-height:24px;
+          padding: 0 20px;
           color:rgba(255,255,255,1);
           font-family:PingFangSC-Regular;
         }
@@ -462,6 +468,8 @@ color: #fa8341;
       .rni_info{
         display: flex;
         margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
         li{
           display: flex;
           height: 300px;
@@ -503,6 +511,7 @@ color: #fa8341;
       margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       li{
           width: 200px;
           display: flex;
@@ -599,9 +608,9 @@ color: #fa8341;
     .mechanism_area{
       margin-top: 48px;
       display: flex;
-      width: 1205px;
-      flex-wrap:wrap;
-      // justify-content: center;
+      // width: 1205px;
+      flex-wrap: wrap;
+      justify-content: center;
       .mechanism_item{
         margin: 3px 10px;
           img{
@@ -632,15 +641,17 @@ color: #fa8341;
         color:rgba(98,119,146,1);
       }
       .qr{
-        display: flex;
-        margin-top: 50px;
+        // display: flex;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
         li{
-          margin: 0 50px;
+          margin-top: 20px;
           text-align: center;
           p{
-            margin-top: 10px;
-            font-size:16px;
-            font-weight:400;
+            // margin-top: 20px;
+            line-height: 30px;
+            font-size: 16px;
             color:rgba(98,119,146,1);
           }
         }

@@ -5,7 +5,8 @@
     </router-link>
     <Menu mode="horizontal" class='menu'>
       <a href="#inter">
-        <MenuItem name="1">大赛简介
+        <MenuItem name="1">
+        大赛简介
         </MenuItem>
       </a>
       <a href="#pw">
@@ -62,6 +63,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
+  @media screen and (max-width: 900px) {
+    .menu {
+      display: none;
+    }
+  }
   ._bg{
     background-color: #203260 !important;
   }

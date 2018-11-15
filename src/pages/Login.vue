@@ -17,13 +17,13 @@
               <div :style="l_t">
                 <p :style="l_t_b">验证码</p>
               </div>
-              <Input clearable v-model="authCode" maxlength="6" />
+              <Input clearable v-model="authCode" :maxlength="6" />
             </li>
             <li :style='form_item'>
               <div :style="l_t">
                 <p :style="l_t_b">登录密码</p>
               </div>
-              <Input clearable type="password" v-model="password" maxlength="16" />
+              <Input clearable type="password" v-model="password" :maxlength="16" />
             </li>
           </ul>
           <Button :style="reg_btn" @click="_register">注册</Button>
@@ -40,7 +40,7 @@
               <div :style="l_t">
                 <p :style="l_t_b">登录密码</p>
               </div>
-              <Input clearable v-model="login_password" type="password" maxlength="16" />
+              <Input clearable v-model="login_password" type="password" :maxlength="16" />
             </li>
           </ul>
           <Button :style="reg_btn" @click="_login">登录</Button>
