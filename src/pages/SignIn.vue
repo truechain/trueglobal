@@ -3,44 +3,44 @@
     <section class='sign_area'>
       <div class="sign_area_t">
         <p class="title_tit">"HelloWorld" - 2018 <span class="block-br">区块链应用落地大赛</span></p>
-        <p class="title_tit">报名表</p>
+        <p class="title_tit">{{ $t('root.runTable')}}</p>
       </div>
     </section>
     <section class="form">
       <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80" class="form_a">
-        <p class="team_t">团队信息</p>
-        <FormItem label="团队名称" prop="name">
+        <p class="team_t">{{ $t('team.item.title')}}</p>
+        <FormItem :label="$t('team.item.name')" prop="name">
           <Input v-model="formValidate.name" />
         </FormItem>
-        <FormItem label="联系人" prop="leader">
+        <FormItem :label="$t('team.item.leader')" prop="leader">
           <Input v-model="formValidate.leader" />
         </FormItem>
-        <FormItem label="联系手机" prop="phone">
+        <FormItem :label="$t('team.item.phone')" prop="phone">
           <Input v-model="formValidate.phone" />
         </FormItem>
-        <FormItem label="微信" prop="wechat">
+        <FormItem :label="$t('team.item.wechat')" prop="wechat">
           <Input v-model="formValidate.wechat" />
         </FormItem>
-        <FormItem label="Telegram" prop="telegram">
+        <FormItem :label="$t('team.item.telegram')" prop="telegram">
           <Input v-model="formValidate.telegram" />
         </FormItem>
-        <FormItem label="Facebook" prop="facebook">
+        <FormItem :label="$t('team.item.facebook')" prop="facebook">
           <Input v-model="formValidate.facebook" />
         </FormItem>
-        <FormItem label="Twitter" prop="twitter">
+        <FormItem :label="$t('team.item.twitter')" prop="twitter">
           <Input v-model="formValidate.twitter" />
         </FormItem>
-         <FormItem label="参赛区域" prop="city">
+         <FormItem :label="$t('team.item.city')" prop="city">
           <Input v-model="formValidate.city" placeholder="中国北京/Beijing, China"  />
         </FormItem>
-         <FormItem label="节点推荐人" prop="referal">
+         <FormItem :label="$t('team.item.referal')" prop="referal">
           <Input v-model="formValidate.referal" />
         </FormItem>
         <div class="prompt">
-          <p class="_t">报名成功后，主办方会以邮件形式和您取得联系。</p>
+          <p class="_t">{{ $t('team.state')}}</p>
         </div>
         <FormItem>
-          <Button type="primary" class="submit" @click="handleSubmit('formValidate')">提交</Button>
+          <Button type="primary" class="submit" @click="handleSubmit('formValidate')">{{ $t('team.button')}}</Button>
           <!-- <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button> -->
         </FormItem>
       </Form>

@@ -1,49 +1,49 @@
 <template>
   <div class="fun">
-    <Button class="sign" @click="_sign">报名参赛 </Button>
+    <Button class="sign" @click="_sign">{{ $t('root.run') }} </Button>
     <Modal v-model="isSelect" class-name="vertical-center-modal" :closable="false" footer-hide>
       <Tabs value="name1" class="tab">
         <!-- :style="reg" -->
-        <TabPane label="注册" name="name1" class="reg" :style='reg_area'>
+        <TabPane :label="$t('function.register')" name="name1" class="reg" :style='reg_area'>
           <ul :style="form_area">
             <li :style='form_item'>
               <div :style="l_t">
-                <p :style="l_t_b">邮箱</p>
+                <p :style="l_t_b">{{ $t('function.mail') }}</p>
               </div>
               <Input clearable v-model="mail" />
-              <Button class="ivu-input-group-append ivu-input-search" :disabled='btnBool' @click="getCode" :style="get_code">{{get_code_t}}</Button>
+              <Button class="ivu-input-group-append ivu-input-search" :disabled='btnBool' @click="getCode" :style="get_code">{{$t('function.getAuthCode')}}</Button>
             </li>
             <li :style='form_item'>
               <div :style="l_t">
-                <p :style="l_t_b">验证码</p>
+                <p :style="l_t_b">{{ $t('function.authCode') }}</p>
               </div>
               <Input clearable v-model="authCode" :maxlength="6" />
             </li>
             <li :style='form_item'>
               <div :style="l_t">
-                <p :style="l_t_b">登录密码</p>
+                <p :style="l_t_b">{{ $t('function.password') }}</p>
               </div>
               <Input clearable type="password" v-model="password" :maxlength="16" />
             </li>
           </ul>
-          <Button :style="reg_btn" @click="_register">注册</Button>
+          <Button :style="reg_btn" @click="_register"> {{ $t('function.register') }}</Button>
         </TabPane>
-        <TabPane label="登录" name="name2" class="reg" :style='reg_area'>
+        <TabPane :label="$t('function.login')" name="name2" class="reg" :style='reg_area'>
           <ul :style="form_area">
             <li :style='form_item'>
               <div :style="l_t">
-                <p :style="l_t_b">邮箱</p>
+                <p :style="l_t_b">{{$t('function.mail')}}</p>
               </div>
               <Input clearable v-model="login_email" />
             </li>
             <li :style='form_item'>
               <div :style="l_t">
-                <p :style="l_t_b">登录密码</p>
+                <p :style="l_t_b">{{$t('function.password')}}</p>
               </div>
               <Input clearable v-model="login_password" type="password" :maxlength="16" />
             </li>
           </ul>
-          <Button :style="reg_btn" @click="_login">登录</Button>
+          <Button :style="reg_btn" @click="_login">{{$t('function.login')}}</Button>
         </TabPane>
       </Tabs>
     </Modal>

@@ -1,24 +1,12 @@
 <template>
   <div class="fotter">
     <p>
-      {{exp}}
+      {{$t('state.content')}}
       <br>
-      {{trueglobal}}
+      <span>Copyright ©2018 trueglobal</span>
     </p>
-
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      trueglobal: 'Copyright ©2018 trueglobal',
-      exp: '大赛的最终解释权归TrueGlobal所有'
-    }
-  }
-}
-</script>
 
 <style scoped lang='less'>
 .fotter{

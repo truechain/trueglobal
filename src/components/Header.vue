@@ -1,64 +1,84 @@
 <template>
   <header :class="[isBg?'_bg':null ,'container']">
     <router-link tag='div' to='/' class="logo_t">
-      TrueGlobal
+      TrueGlobal&nbsp;&nbsp;&nbsp;&nbsp;
     </router-link>
     <Menu mode="horizontal" class='menu'>
       <a href="#inter">
         <MenuItem name="1">
-        大赛简介
+        {{ $t('nav.intro')}}
         </MenuItem>
       </a>
       <a href="#pw">
         <MenuItem name="2">
-        评委嘉宾
+        {{ $t('nav.guest')}}
         </MenuItem>
       </a>
       <a href="#rni">
         <MenuItem name="3">
-        参赛权益
+        {{ $t('nav.rights')}}
         </MenuItem>
       </a>
       <a href="#rule">
         <MenuItem name="4">
-        报名规则
+        {{ $t('nav.rule')}}
         </MenuItem>
       </a>
       <a href="#claim">
         <MenuItem name="5">
-        作品要求
+        {{ $t('nav.require')}}
         </MenuItem>
       </a>
       <a href="#contact">
         <MenuItem name="6">
-        联系我们
+        {{ $t('nav.we')}}
         </MenuItem>
       </a>
     </Menu>
-    <!-- <Dropdown class="language">
-      <a href="javascript:void(0)">
-        简体中文
-        <Icon type="ios-arrow-down"></Icon>
-      </a>
-      <DropdownMenu slot="list">
-        <DropdownItem>EN</DropdownItem>
-      </DropdownMenu>
-    </Dropdown> -->
+    <div>
+      <Dropdown @on-click="changeLanguage">
+        <a href="javascript:void(0)">
+          {{ $t('language') }}
+          <Icon type="ios-arrow-down"></Icon>
+        </a>
+        <DropdownMenu slot="list">
+          <DropdownItem v-for="item in langs" :name="item.tag" :key="item.tag">
+            {{item.name}}
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </div>
   </header>
 </template>
 
 <script>
-import { Dropdown, DropdownMenu } from 'iview'
-export default {
-  name: 'Header',
-  props: ['isBg'],
-  data () {
-    return {}
-  },
-  components: {
-    Dropdown, DropdownMenu
+  import { getStore, setStore } from '@/util'
+  export default {
+    name: 'Header',
+    props: ['isBg'],
+    data() {
+      return {
+        langs: [{
+            name: '简体中文',
+            tag: 'zh'
+          },
+          {
+            name: 'EN',
+            tag: 'en'
+          },
+        ]
+      }
+    },
+    methods: {
+      changeLanguage (lang) {
+        setStore('lang', lang)
+        location.reload()
+        // debugger
+        // console.log(this,'===');
+      }
+    }
   }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -68,47 +88,57 @@ export default {
       display: none;
     }
   }
-  ._bg{
+
+  ._bg {
     background-color: #203260 !important;
   }
-  .ivu-menu{
+
+  .ivu-menu {
     position: unset;
   }
-  .ivu-menu-horizontal.ivu-menu-light:after{
+
+  .ivu-menu-horizontal.ivu-menu-light:after {
     background: transparent
   }
-  a{
-    text-decoration:none;
-    color: rgba(169,173,187,1);
+
+  a {
+    text-decoration: none;
+    color: rgba(169, 173, 187, 1);
   }
+
   .container {
-    top:0;
-    width:100%;
-    height:90px;
+    top: 0;
+    width: 100%;
+    height: 90px;
     z-index: 10;
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
-    background-color:rgba(0,0,0,0.1);
-    .logo_t{
-      width:30%;
-      font-size:24px;
-      font-family:SourceHanSansSC-Regular;
-      font-weight:400;
-      color:rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .logo_t {
+      width: 30%;
+      font-size: 24px;
+      font-family: SourceHanSansSC-Regular;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
     }
-    .menu{
+
+    .menu {
       // max-width:50%;
       border: none;
       background: transparent;
-      .ivu-menu-item{
-        font-size: 12px !important;
-        color:rgba(169,173,187,1);
+
+      .ivu-menu-item {
+        // font-size: 12px !important;
+        color: rgba(169, 173, 187, 1);
       }
     }
-    .language{
-      font-size: 12px;
+
+    .ivu-dropdown-rel > a {
+      font-size: 15px !important;
     }
   }
+
 </style>

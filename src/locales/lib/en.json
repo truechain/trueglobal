@@ -1,0 +1,238 @@
+{
+  "language": "EN",
+  "nav": {
+    "intro": "Introduction",
+    "guest": "Honored guest and judges",
+    "rights": "Rights and Interest",
+    "rule": "Enrollment rules",
+    "require": "Requirements",
+    "we": "Contact us"
+  },
+  "root": {
+    "slogan": "2018 Blockchain True DApp Competition",
+    "subhead": "Guidance: China Cloud System Pioneer Strategic Alliance, The Internet Industry Institute of Tsinghua University  ",
+    "host": "Organizer",
+    "run": "Apply",
+    "runTable": "Enrollment form"
+  },
+  "function": {
+    "register": "Register",
+    "login": "Login",
+    "mail": "Email",
+    "authCode": "Verification code",
+    "password": "Password",
+    "getAuthCode": "get auth code"
+  },
+  "team": {
+    "title": "\"HelloWorld\"  2018 Blockchain TRUE DApp Competition",
+    "subhead": "Enrolloment form",
+    "item": {
+      "title": "Team information",
+      "name": "Name of the team",
+      "leader": "Team leader",
+      "referal": "Refferal",
+      "city": "Area",
+      "phone": "Phone",
+      "wechat": "Wechat",
+      "telegram": "Telegram",
+      "facebook": "Facebook",
+      "twitter": "Twitter"
+    },
+    "state": "The organizer will contact the team lead to confirm details after registration",
+    "button": "Submit"
+  },
+  "intro": {
+    "title": "Introduction",
+    "list": [
+      "\"HelloWorld\" -- 2018 Blockchain TRUE DApp Competition is initiated and guided by China Cloud System Pioneer Strategic Alliance and The Internet Industry Institute of Tsinghua University. It is co - hosted by TrueChain, Block Tech, and Huopin Online.  ",
+      "Established in the global blockchain industry, The competition is focusing on promoting applications of blockchain technology in different real-life scenarios and dedicated to find talents and projects with innovative capabilities in global blockchain field. The concept of \"global open sourced community of blockchain technology\" hence emerged at the right moment. ",
+      "The blockchain application scenario is including but not limited to the fields of \"public welfare, talents recruitment, education, traceability of agricultural products, finance, credit investigation and smart agriculture\". For blockchain applications and products, the submitted work need a demo or a complete product demonstration.Each team can build practical needs according to the related field and scenario proposed by the competition. The experts will review the code, the conception, design and the actual works of the project, then select the most practical applications that meet the requirements through the voting and scoring system.",
+      "About the organizer: TrueGlobal is initiates by developer communities around the world, and is aimed at building and empowering a global ecosystem of TRUE developers and entrepreneurs through teaching and promoting of new technologies. To achieve this goal, we participate in and organize online and offline technical discussions, Hackathon, and blockchain application landing contests around the world."
+    ]
+  },
+  "irea": {
+    "title": "Area",
+    "content": "China, Korea, Thailand, Vietnam, America and other countries and regions."
+  },
+"guest": {
+    "title": "Panels of judges and guests",
+    "list": [
+      {
+        "name": "Lin Chuizhou",
+        "imgSrc": "linchuizhou",
+        "introList": [
+          "academician of the Royal Swedish Academy of Sciences",
+          "academician of Hong Kong Academy of Engineering Sciences",
+         	  "President of Taiwan industrial technology research institute"
+
+        ]
+      },
+      {
+        "name": "Shen Yushi",
+        "imgSrc": "shenyushi",
+        "introList": [
+          " PH.D, computer science, University of California",
+          "Panelist for China’s ‘the Thousand Talents Plan’",
+          "Strategic consultant for Microsoft"
+        ]
+      },
+      {
+        "name": "Yu Jianing",
+        "imgSrc": "yujianing",
+        "introList": [
+          "PHD in economics",
+          "Editorial director of 2018 China blockchain industry white paper"
+        ]
+      },
+      {
+        "name": "Ye Yu",
+        "imgSrc": "yeyu",
+        "introList": [
+          "Master’s degree of Engineering",
+          "Executive vice president of ITPUB",
+          "Former general manager of AI and big data inCocoaChina"
+        ]
+      },
+      {
+        "name": "Zheng Xiping",
+        "imgSrc": "zhengxiping",
+        "introList": [
+          "Co - founder & Vice president of Block tech",
+          "CEO of Southeast Beecast"
+        ]
+      },
+      {
+        "name": "Qiu Tingnan",
+        "imgSrc": "qiutingnan",
+        "introList": [
+          "Element CEO",
+          "Global Finance Society’s China Committee Chairman",
+          "Former Money Today Innovation Strategy Team Asia Chief"
+        ]
+      },
+      {
+        "name": "Hillary Nguyen",
+        "imgSrc": "HillaryNguyen",
+        "introList": [
+          "Managing partner of Alphawhale Capital",
+          "A Strategist, Advisor, Communicator, Consultant, community influencer and Speaker in Blockchain, Digital asset management",
+          "Provide management solutions for emerging projects in the blockchain era"
+        ]
+      },
+      {
+        "name": "Zhang Jiannan",
+        "imgSrc": "zhangjiannan",
+        "introList": [
+          "M.S. In Computer Science, Oxford University",
+          " Founder of TopHacker Group and DoraHacks",
+          "Former Researcher, CERN Open Lab"
+        ]
+      },
+      {
+        "name": "Cheng Xiaoyong",
+        "imgSrc": "chengxiaoyong",
+        "introList": [
+          "Part-time research staff of Tsinghua University",
+          "Executive Committee of China Cloud System Pioneer Strategic Alliance",
+          "Member of Youth Lead in Changan Club"
+        ]
+      },
+      {
+        "name": "Liu Yang",
+        "imgSrc": "liuyang",
+        "introList": [
+          " M.S. Computer Science, Tsinghua University",
+          "10+years experience in development and system architecture",
+          "Cryptography and algorithms expert"
+        ]
+      }
+    ]
+  },
+  "rights": {
+    "title": "Right and Interests",
+    "actual": "Prize pool update",
+    "info": "The project award is also the incubation fund for the application to be applied in real life. The contest organizer will put the contest start-up fund into the prize pool, and the bonus pool will grow according to the number of teams that participated in the contest. The winning teams will share the prize. ",
+    "list": [
+        {
+          "icon": "excitation",
+          "title": "Bonus incentives",
+          "content": "The winner can get abundant bonus and various incentives"
+        },
+        {
+          "icon": "incubation",
+          "title": "Project incubation",
+          "content": "Excellent projects will have the opportunity of investment and incubation by connecting with local government incubators "
+        },
+        {
+          "icon": "media",
+          "title": "Media exposure",
+          "content": "Millions of media exposures + media interview"
+        },
+        {
+          "icon": "community",
+          "title": "Join the community",
+          "content": "The opportunity of becoming an expert in the open sourced technology of blockchain and sharing resources with developers around the world"
+        }
+    ]
+  },
+  "flow": {
+    "title": "Schedule",
+    "list": [
+      "1. Registration starts at November 15th; We will hold events to promote the global nodes in Seoul, Ho Chi Minh City, Shanghai, Chengdu, Beijing, Changsha, and Silicon Valley, etc.",
+      "2. From December 15th, 2018 to January 5th, 2019, teams need to complete registration information and submit the introduction and attachment of their project.",
+      "3. From December 15th, 2019 to January 10th, 2019 participants conduct deep development and submit the code of their works.",
+      "4. After the code is submitted, participants will have the final chance to ask voters for support, experts and judges will review the works.",
+      "5. The finals and the award ceremony will hold in the end of January. "
+    ]
+  },
+  "rule": {
+    "title": "Enrollment rules",
+    "list": [
+      {
+        "title": "We accept recommendation by nodes or the participant team can enroll them online; the organizer will contact the team lead to confirm details after registration. ",
+        "list": [
+          "- All participants need to hand in the registration materials online and the form  must conform to the requirements.",
+          "- Each team must complete the work independently with NO cheating or infringement of others' intellectual property rights. If there is any violation, the team will be disqualified and the corresponding scores will be canceled.",
+          "- Each team need to pay 100 TRUE to enter the contest, which is locked in the prize  pool and will be used for the competition bonus. (TrueGlobal has already locked 10000 TRUE as the startup bonus)"
+        ]
+      },
+      {
+        "title": "Nodes recommendation:",
+        "list": [
+          "1. Nodes can be composed of regions, organizations, communities and institutions. Nodes can participate in the competition or recommend high-quality teams, companies, individuals to participate."
+        ]
+      },
+      {
+        "title": "Self enrollment:",
+        "list": [
+          "1. The competition is open to the whole society, and the number of people is not limited. Individuals, universities and colleges, scientific research units, enterprises and entrepreneurial team are welcomed to sign up for the competition.",
+          "2. Contestants can participate individually or in teams. Although there is no limit on the number of team members, but we do suggest at least 3 members in one team considering project integrity.",
+          "3. Participants can choose technical experts in the blockchain industry as advisor, or technical executives of Internet companies as consultants. Participants will be given the title of \"mentor\" after breaking through the preliminary contest."
+        ]
+      }
+    ]
+  },
+  "require": {
+    "title": "Requirements of the entries",
+    "list": [
+      "The smart contract of the works must be based on TrueChain.",
+      "The code and deployable target application system",
+      "Application demonstration materials (PPT or Word)"
+    ]
+  },
+  "sponsor": {
+    "title": "co-organizer"
+  },
+  "alliance": {
+    "title": "Alliance communities"
+  },
+  "we": {
+    "title": "Contact us ",
+    "content": "If you have any questions, please contact us through the official wechat account of the competition or you can also send email to contact us. ",
+    "qr1": "TrueGlobal WeChat",
+    "qr2": "Offical Twitter"
+  },
+  "state": {
+    "content": "The final explanation right of the competition belongs to TrueGlobal "
+  }
+}
