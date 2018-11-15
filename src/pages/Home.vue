@@ -189,7 +189,7 @@
         <div class="contact_a">
           <div class="_t">
             <span>
-              如您有任何疑问，欢迎通过大赛官方进行交流。也可以发送邮件至
+              如您有任何疑问，欢迎关注大赛官方进行交流或发送邮件至
             </span>
             <a href="mailto:helloworld@trueglobal.pro">helloworld@trueglobal.pro</a>
             <span>
@@ -220,6 +220,15 @@ export default {
   data () {
     return {
       memberList: [
+         {
+          'name': '林垂宙',
+          'imgSrc': require('@/assets/member/linchuizhou.png'),
+          'introList': [
+            '瑞典皇家工程科学院院士',
+            '香港工程科学院院士',
+            '台湾工业技术研究院院长'
+          ]
+        },
         {
           'name': '于佳宁',
           'imgSrc': require('@/assets/member/yujianing.png'),
@@ -239,24 +248,41 @@ export default {
           ]
         },
         {
-          'name': '林垂宙',
-          'imgSrc': require('@/assets/member/linchuizhou.png'),
+          'name': '叶雨',
+          'imgSrc': require('@/assets/member/yeyu.png'),
           'introList': [
-            '瑞典皇家工程科学院院士',
-            '香港工程科学院院士',
-            '台湾工业技术研究院院长'
+            '工学硕士学位',
+            '启迪链网集团常务副总裁',
+            '原启迪之星人工智能与大数据总经理'
           ]
         },
-        {
-          'name': '刘洋',
-          'imgSrc': require('@/assets/member/liuyang.png'),
+{
+          'name': '郑西平',
+          'imgSrc': require('@/assets/member/zhengxiping.png'),
           'introList': [
-            '清华大学硕士',
-            '十多年开发和系统架构经验',
-            '密码学和算法专家'
+            '布洛克科技合伙人&副总裁',
+            '东南亚Beecast  CEO'
           ]
         },
-        {
+ {
+          'name': '秋宣宇(秋婷南)',
+          'imgSrc': require('@/assets/member/qiutingnan.png'),
+          'introList': [
+            '韩国Element CEO',
+            '韩国国际金融学会中国委员会委员长',
+            '韩国Money Today 亚洲事务负责人'
+          ]
+        },
+{
+          'name': 'Hillary Nguyen',
+          'imgSrc': require('@/assets/member/HillaryNguyen.png'),
+          'introList': [
+            '阿尔法鲸资本管理合伙人',
+            '区块链、数字资产管理战略家、顾问',
+            '为区块链时代新兴项目提供管理方案'
+          ]
+        },
+ {
           'name': '张剑南',
           'imgSrc': require('@/assets/member/zhangjiannan.png'),
           'introList': [
@@ -275,40 +301,19 @@ export default {
           ]
         },
         {
-          'name': 'Andy郑西平',
-          'imgSrc': require('@/assets/member/zhengxiping.png'),
+          'name': '刘洋',
+          'imgSrc': require('@/assets/member/liuyang.png'),
           'introList': [
-            '布洛克科技合伙人&副总裁',
-            '东南亚Beecast  CEO'
-          ]
-        },
-        {
-          'name': '叶雨',
-          'imgSrc': require('@/assets/member/yeyu.png'),
-          'introList': [
-            '工学硕士学位',
-            '启迪链网集团常务副总裁',
-            '原启迪之星人工智能与大数据总经理'
-          ]
-        },
-        {
-          'name': '秋宣宇(秋婷南)',
-          'imgSrc': require('@/assets/member/qiutingnan.png'),
-          'introList': [
-            '韩国Element CEO',
-            '韩国国际金融学会中国委员会委员长',
-            '韩国Money Today 亚洲事务负责人'
-          ]
-        },
-        {
-          'name': 'Hillary Nguyen',
-          'imgSrc': require('@/assets/member/HillaryNguyen.png'),
-          'introList': [
-            '阿尔法鲸资本管理合伙人',
-            '区块链、数字资产管理战略家、顾问',
-            '为区块链时代新兴项目提供管理方案'
+            '清华大学硕士',
+            '十多年开发和系统架构经验',
+            '密码学和算法专家'
           ]
         }
+
+
+
+
+
       ],
       mechanism: [],
       co_hosting: [],
