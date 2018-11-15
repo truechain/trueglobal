@@ -35,15 +35,15 @@
         </MenuItem>
       </a>
     </Menu>
-    <Dropdown class="language">
+    <!-- <Dropdown class="language">
       <a href="javascript:void(0)">
         简体中文
         <Icon type="ios-arrow-down"></Icon>
       </a>
-      <!-- <DropdownMenu slot="list">
+      <DropdownMenu slot="list">
         <DropdownItem>EN</DropdownItem>
-      </DropdownMenu> -->
-    </Dropdown>
+      </DropdownMenu>
+    </Dropdown> -->
   </header>
 </template>
 
