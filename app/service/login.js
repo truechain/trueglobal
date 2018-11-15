@@ -24,6 +24,7 @@ class LoginServer extends Service {
 
     const token = jwt.encode({
       mail,
+      uid: res.uid,
       createTime: +new Date(),
     }, app.config.secret);
 

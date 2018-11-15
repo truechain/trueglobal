@@ -3,10 +3,17 @@
 const Service = require('egg').Service;
 class TeamService extends Service {
   async create(item) {
-    return await this.app.mysql.insert('team', {
-      ...item,
-      mail: this.ctx.decode.mail
-    })
+    const { mail, uid } = this.ctx.decode;
+    try {
+      return await this.app.mysql.insert('team', {
+        ...item,
+        mail,
+        uid
+      })
+    } catch (error) {
+      this.ctx.throw(402, '不可重复提交')
+    }
+
   }
 }
 
