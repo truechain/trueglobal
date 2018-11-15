@@ -63,7 +63,7 @@
         "introList": [
           "瑞典皇家工程科学院院士",
           "香港工程科学院院士",
-          "台湾工业技术研究院院长"
+          "曾任香港科技大学副校长 "
         ]
       },
       {
@@ -106,7 +106,7 @@
         "introList": [
           "韩国Element CEO",
           "韩国国际金融学会中国委员会委员长",
-          "韩国Money Today 亚洲事务负责人"
+          "原韩国Money Today 亚洲事务负责人"
         ]
       },
       {
@@ -122,6 +122,7 @@
         "name": "张剑南",
         "imgSrc": "zhangjiannan",
         "introList": [
+          "truechain ceo",
           "牛津大学计算机硕士",
           "DoraHacks创始人",
           "原欧洲核子研究组织CERN研究人员"
@@ -140,6 +141,8 @@
         "name": "刘洋",
         "imgSrc": "liuyang",
         "introList": [
+          "truechain基金会理事",
+          "工程团队负责人",
           "清华大学硕士",
           "十多年开发和系统架构经验",
           "密码学和算法专家"

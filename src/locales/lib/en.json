@@ -63,7 +63,7 @@
         "introList": [
           "academician of the Royal Swedish Academy of Sciences",
           "academician of Hong Kong Academy of Engineering Sciences",
-         	  "President of Taiwan industrial technology research institute"
+         	"Former Vice principal of The Hong Kong University of Science and Technology"
 
         ]
       },
@@ -123,6 +123,7 @@
         "name": "Zhang Jiannan",
         "imgSrc": "zhangjiannan",
         "introList": [
+          "CEO of TrueChain",
           "M.S. In Computer Science, Oxford University",
           "Founder of DoraHacks",
           "Former Researcher, CERN Open Lab"
@@ -141,6 +142,8 @@
         "name": "Liu Yang",
         "imgSrc": "liuyang",
         "introList": [
+          "TrueChain foundation committee member",
+          "Engineering Lead",
           " M.S. Computer Science, Tsinghua University",
           "10+years experience in development and system architecture",
           "Cryptography and algorithms expert"
