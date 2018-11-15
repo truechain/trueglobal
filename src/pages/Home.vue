@@ -188,6 +188,9 @@
         var p = x + 1
         this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
       }
+    },
+    components: {
+      Login
     }
   }
 
