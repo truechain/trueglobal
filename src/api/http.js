@@ -1,22 +1,23 @@
 import axios from 'axios'
-import { serverUrl } from '../config/default'
+import { serverUrl } from '../config'
 
 // 请求拦截器
 axios.interceptors.request.use(
   (config) => {
     return config
-	},
-  (error) => {
-    return Promise.reject(error)
-	}
+  },
+  (err) => {
+    return Promise.reject(err)
+  }
 )
 
 // 响应拦截器
 axios.interceptors.response.use(
   (response) => {
     return response.data
-	},
-  (error) => {
+  },
+  () => {
+    // return Promise.reject(err)
     // 响应异常处理
   }
 )
@@ -36,9 +37,9 @@ export default {
         params: param || null
       }).then((res) => {
         resolve(res)
-			})
-		})
-	},
+      })
+    })
+  },
   post (url, param, headers) {
     return new Promise((resolve, reject) => {
       axios({
@@ -48,7 +49,7 @@ export default {
         data: param || null
       }).then((res) => {
         resolve(res)
-			})
-		})
-	}
+      })
+    })
+  }
 }
