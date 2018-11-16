@@ -8,7 +8,7 @@ import i18n from './locales'
 
 import 'iview/dist/styles/iview.css'
 // 初始css
-import 'reset-css'
+import './assets/reset.css'
 
 Vue.use(iView)
 
