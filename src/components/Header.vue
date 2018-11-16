@@ -1,8 +1,10 @@
 <template>
   <header :class="[isBg?'_bg':null ,'container']">
-    <router-link tag='div' to='/' class="logo_t">
-      TrueGlobal&nbsp;&nbsp;&nbsp;&nbsp;
-    </router-link>
+    <div>
+      <router-link tag='div' to='/' class="logo_t">
+        TrueGlobal
+      </router-link>
+    </div>
     <Menu mode="horizontal" class='menu'>
       <a href="#inter">
         <MenuItem name="1">
@@ -123,6 +125,7 @@
       font-family: SourceHanSansSC-Regular;
       font-weight: 400;
       color: rgba(255, 255, 255, 1);
+      margin: 0 30px;
     }
 
     .menu {
