@@ -39,10 +39,7 @@
         <div class="prompt">
           <p class="_t">{{ $t('team.state')}}</p>
         </div>
-        <FormItem>
-          <Button type="primary" class="submit" @click="handleSubmit('formValidate')">{{ $t('team.button')}}</Button>
-          <!-- <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button> -->
-        </FormItem>
+        <div class="submit-c" @click="handleSubmit('formValidate')">{{ $t('team.button')}}</div>
       </Form>
     </section>
   </div>
@@ -230,16 +227,16 @@
             color: rgba(98, 119, 146, 1);
           }
         }
-
-        .submit {
-          text-align: center;
-          // margin: auto;
-          margin-left: 110px;
-          width: 150px;
-          height: 40px;
-          background: rgba(30, 100, 180, 1);
-          border-radius: 30px;
-        }
+        .submit-c {
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            background: rgba(30, 100, 180, 1);
+            border-radius: 30px;
+          }
       }
     }
   }

@@ -61,7 +61,7 @@
     data() {
       return {
         langs: [{
-            name: '简体中文',
+            name: '中文',
             tag: 'zh'
           },
           {
