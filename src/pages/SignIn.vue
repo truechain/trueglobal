@@ -46,66 +46,66 @@
 </template>
 
 <script>
-  import {
-    signIn
-  } from '../api/index.js'
-  export default {
-    data() {
-      return {
-        formValidate: {
-          name: '',
-          leader: '',
-          referal: '',
-          city: '',
-          phone: '',
-          wechat: '',
-          telegram: '',
-          facebook: '',
-          twitter: ''
-        },
-        ruleValidate: {
-          name: [{
-            required: true,
-            message: '名称不能为空',
-            trigger: 'blur'
-          }],
-          phone: [{
-            required: true,
-            message: '电话不能为空',
-            trigger: 'change'
-          }],
-          leader: [{
-            required: true,
-            message: '联系人不能为空',
-            trigger: 'change'
-          }]
-        },
+import {
+  signIn
+} from '../api/index.js'
+export default {
+  data () {
+    return {
+      formValidate: {
+        name: '',
+        leader: '',
+        referal: '',
+        city: '',
+        phone: '',
+        wechat: '',
+        telegram: '',
+        facebook: '',
+        twitter: ''
+      },
+      ruleValidate: {
+        name: [{
+          required: true,
+          message: '名称不能为空',
+          trigger: 'blur'
+        }],
+        phone: [{
+          required: true,
+          message: '电话不能为空',
+          trigger: 'change'
+        }],
+        leader: [{
+          required: true,
+          message: '联系人不能为空',
+          trigger: 'change'
+        }]
       }
-    },
-    methods: {
-      handleSubmit(name) {
-        this.$refs[name].validate((valid) => {
-          if (valid) {
-             signIn(this.formValidate).then(res => {
+    }
+  },
+  methods: {
+    handleSubmit (name) {
+      this.$refs[name].validate((valid) => {
+        if (valid) {
+          signIn(this.formValidate).then(res => {
             if (res.code === 0) {
               this.$Message.success(res.message)
               setTimeout(() => {
                 this.$router.push('/')
-              }, 1000);
+              }, 1000)
             }
-          }).catch(error => {
+          }).catch(() => {
             this.$Message.error('提交报名信息失败，不可重复提交！')
           })
-          } else {
-            this.$Message.error('请填写必填项!');
-          }
-        })
-      },
-      handleReset(name) {
-        this.$refs[name].resetFields();
-      }
+        } else {
+          this.$Message.error('请填写必填项!')
+        }
+      })
+    },
+    handleReset (name) {
+      this.$refs[name].resetFields()
     }
   }
+}
 
 </script>
 

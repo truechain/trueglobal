@@ -54,32 +54,32 @@
 </template>
 
 <script>
-  import { getStore, setStore } from '@/util'
-  export default {
-    name: 'Header',
-    props: ['isBg'],
-    data() {
-      return {
-        langs: [{
-            name: '中文',
-            tag: 'zh'
-          },
-          {
-            name: 'EN',
-            tag: 'en'
-          },
-        ]
+import { setStore } from '@/util'
+export default {
+  name: 'Header',
+  props: ['isBg'],
+  data () {
+    return {
+      langs: [{
+        name: '中文',
+        tag: 'zh'
+      },
+      {
+        name: 'EN',
+        tag: 'en'
       }
-    },
-    methods: {
-      changeLanguage (lang) {
-        setStore('lang', lang)
-        location.reload()
-        // debugger
-        // console.log(this,'===');
-      }
+      ]
+    }
+  },
+  methods: {
+    changeLanguage (lang) {
+      setStore('lang', lang)
+      location.reload()
+      // debugger
+      // console.log(this,'===');
     }
   }
+}
 
 </script>
 

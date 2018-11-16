@@ -133,7 +133,6 @@ export default {
       }
     },
     _register () {
-
       register({
         mail: this.mail,
         password: this.password,
@@ -143,10 +142,10 @@ export default {
           this.$Message.success('注册成功，请前去登录！')
           setTimeout(() => {
             this.currentName = 'name2'
-          }, 1000);
+          }, 1000)
         }
-      }).catch(error => {
-        this.$Message.error('账户已注册.')
+      }).catch(() => {
+        this.$Message.error(`账户已注册. `)
       })
     },
     _login () {
@@ -165,7 +164,7 @@ export default {
                 this.$router.push('/signin')
               }, 1000)
             }
-          }).catch(error => {
+          }).catch(() => {
             this.$Message.error('登录失败，请检查邮箱地址与密码是否正确！')
           })
         } else {

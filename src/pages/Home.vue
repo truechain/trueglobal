@@ -18,7 +18,10 @@
       <div class="pu_dis">
         <p class="pu_t1">{{ $t('intro.title')}}</p>
         <p class="line"></p>
-        <p class="in_t" v-for="(item, index) in $t('intro.list')" :ket="index">
+        <p
+          class="in_t"
+          v-for="(item, index) in $t('intro.list')"
+          :key="index">
           {{item}}
         </p>
       </div>
@@ -170,29 +173,29 @@
 </template>
 
 <script>
-  import Login from '@/pages/Login'
-  export default {
-    data() {
-      return {
-        mechanism: [],
-        co_hosting: [],
-        isLogin: false
-      }
-    },
-    mounted() {
-      for (var i = 0; i < 15; i++) {
-        var j = i + 1
-        this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
-      }
-      for (var x = 0; x < 4; x++) {
-        var p = x + 1
-        this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
-      }
-    },
-    components: {
-      Login
+import Login from '@/pages/Login'
+export default {
+  data () {
+    return {
+      mechanism: [],
+      co_hosting: [],
+      isLogin: false
     }
+  },
+  mounted () {
+    for (var i = 0; i < 15; i++) {
+      var j = i + 1
+      this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
+    }
+    for (var x = 0; x < 4; x++) {
+      var p = x + 1
+      this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
+    }
+  },
+  components: {
+    Login
   }
+}
 
 </script>
 
