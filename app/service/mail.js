@@ -5,21 +5,23 @@ class MailService extends Service {
   async sendMail(code, to) {
     const {
       user,
-      pass
+      pass,
+      host
     } = this.app.config.mail;
     const transporter = nodemailer.createTransport({
-      service: 'qq',
+      host,
       port: 465,
       secureConnection: true,
       auth: {
         user,
-        pass,
+        pass
       },
-    });
+    })
+
     const option = {
-      from: 'TrueGlobal <839780963@qq.com>',
+      from: `TrueGlobal <${user}>`,
       to,
-      subject: '邮件验证 && email verification',
+      subject: '邮件验证',
       // 发送text或者html格式
       // text: 'Hello world', // text 格式
       html: `
@@ -38,8 +40,6 @@ class MailService extends Service {
         if (err) {
           reject(err);
         }
-        console.log(info, ' info');
-
         resolve(info.messageId);
       });
     });
