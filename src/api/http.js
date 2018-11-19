@@ -1,8 +1,19 @@
 import axios from 'axios'
-import { serverUrl } from '../config'
-
+import {
+  serverUrl
+} from '../config'
+import Vue from 'vue'
+const service = axios.create({
+  baseURL: serverUrl,
+  timeout: 5000,
+  headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json; charset=UTF-8'
+  }
+})
+const that = Vue.prototype
 // 请求拦截器
-axios.interceptors.request.use(
+service.interceptors.request.use(
   (config) => {
     return config
   },
@@ -12,44 +23,38 @@ axios.interceptors.request.use(
 )
 
 // 响应拦截器
-axios.interceptors.response.use(
-  (response) => {
-    return response.data
+service.interceptors.response.use(
+  (res) => {
+    return res.data
   },
-  () => {
-    // return Promise.reject(err)
-    // 响应异常处理
+  ({
+    response = {}
+  }) => {
+    const {
+      data = {}, status
+    } = response
+    that.$Message.error(data.message)
+    /* eslint-disable */
+    return Promise.reject({
+      status: status,
+      message: data.message,
+    })
   }
 )
 
-axios.defaults.baseURL = serverUrl
-axios.defaults.headers = {
-  'X-Requested-With': 'XMLHttpRequest'
-}
-axios.defaults.timeout = 10000
-
 export default {
-  get (url, param) {
-    return new Promise((resolve, reject) => {
-      axios({
-        method: 'get',
-        url,
-        params: param || null
-      }).then((res) => {
-        resolve(res)
-      })
+  get (url, params) {
+    return service({
+      method: 'get',
+      url,
+      params
     })
   },
-  post (url, param, headers) {
-    return new Promise((resolve, reject) => {
-      axios({
-        method: 'post',
-        headers: headers || null,
-        url,
-        data: param || null
-      }).then((res) => {
-        resolve(res)
-      })
+  post (url, data) {
+    return service({
+      method: 'post',
+      url,
+      data
     })
   }
 }
