@@ -1,10 +1,5 @@
 import http from './http'
 
-const sendEmailUrl = '/sendMail'
-const registerUrl = '/register'
-const loginUrl = '/login'
-const signInUrl = '/team'
-
 // const getToken = () => {
 //   return storage.load({
 //     key: 'token'
@@ -24,7 +19,7 @@ const getToken = () => {
 
 // 获取验证码
 const sendEmail = (params) => {
-  return http.post(sendEmailUrl, params)
+  return http.post('/sendMail', params)
 }
 
 // 注册
@@ -32,13 +27,16 @@ const sendEmail = (params) => {
 // password: 'string',
 // authCode: 'string'
 const register = (params) => {
-  return http.post(registerUrl, params)
+  return http.post('/register', params)
 }
 
 // mail: 'string',
 // password: 'string',
 const login = (params) => {
-  return http.post(loginUrl, params)
+  return http.post('/login', params)
+}
+const active = (params) => {
+  return http.get('/active', params)
 }
 
 // name
@@ -49,7 +47,13 @@ const signIn = async (params) => {
   const headers = {
     token: res
   }
-  return http.post(signInUrl, params, headers)
+  return http.post('/team', params, headers)
 }
 
-export { sendEmail, register, login, signIn }
+export {
+  sendEmail,
+  register,
+  login,
+  signIn,
+  active
+}
