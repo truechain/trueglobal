@@ -11,4 +11,5 @@ module.exports = app => {
   router.post('/register', controller.register.index);
   router.post('/login', controller.login.index);
   router.post('/team', controller.team.index);
+  router.get('/active', controller.check.index);
 };

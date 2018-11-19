@@ -10,6 +10,7 @@ module.exports = (options, app) => {
       '/register',
       '/login',
       '/reset',
+      '/active',
     ];
     if (!whitePaths.includes(ctx.URL.pathname)) {
       if (!ctx.request.header.token) {
