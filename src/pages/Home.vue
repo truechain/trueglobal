@@ -9,7 +9,7 @@
         <p class="title_intr">{{ $t('root.subhead')}}</p>
         <p class="title_intr">{{ $t('root.host')}}：TrueGlobal</p>
         <!-- <Button class="sign" @click="_sign">报名参赛</Button> -->
-        <Login />
+        <Login :isLogin="Boolean($route.query.login)" />
       </div>
       <!-- @click="isLogin = true" -->
     </section>

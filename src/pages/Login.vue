@@ -4,31 +4,7 @@
     <Modal v-model="isSelect" class-name="vertical-center-modal" :closable="false" footer-hide>
       <Tabs :value="currentName" class="tab">
         <!-- :style="reg" -->
-        <TabPane :label="$t('function.register')" name="name1" class="reg" :style='reg_area'>
-          <ul :style="form_area">
-            <li :style='form_item'>
-              <div :style="l_t">
-                <p :style="l_t_b">{{ $t('function.mail') }}</p>
-              </div>
-              <Input clearable v-model="mail" />
-              <Button class="ivu-input-group-append ivu-input-search" :disabled='btnBool' @click="getCode" :style="get_code">{{$t('function.getAuthCode')}}</Button>
-            </li>
-            <li :style='form_item'>
-              <div :style="l_t">
-                <p :style="l_t_b">{{ $t('function.authCode') }}</p>
-              </div>
-              <Input clearable v-model="authCode" :maxlength="6" />
-            </li>
-            <li :style='form_item'>
-              <div :style="l_t">
-                <p :style="l_t_b">{{ $t('function.password') }}</p>
-              </div>
-              <Input clearable type="password" v-model="password" :maxlength="16" />
-            </li>
-          </ul>
-          <Button :style="reg_btn" @click="_register"> {{ $t('function.register') }}</Button>
-        </TabPane>
-        <TabPane :label="$t('function.login')" name="name2" class="reg" :style='reg_area'>
+         <TabPane :label="$t('function.login')" name="name1" class="reg" :style='reg_area'>
           <ul :style="form_area">
             <li :style='form_item'>
               <div :style="l_t">
@@ -45,6 +21,34 @@
           </ul>
           <Button :style="reg_btn" @click="_login">{{$t('function.login')}}</Button>
         </TabPane>
+        <TabPane
+          :label="$t('function.register')"
+          name="name2"
+          class="reg"
+          :style='reg_area'>
+          <ul :style="form_area">
+            <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">{{ $t('function.mail') }}</p>
+              </div>
+              <Input clearable v-model="mail" />
+              <!-- <Button class="ivu-input-group-append ivu-input-search" :disabled='btnBool' @click="getCode" :style="get_code">{{$t('function.getAuthCode')}}</Button> -->
+            </li>
+            <!-- <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">{{ $t('function.authCode') }}</p>
+              </div>
+              <Input clearable v-model="authCode" :maxlength="6" />
+            </li> -->
+            <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">{{ $t('function.password') }}</p>
+              </div>
+              <Input clearable type="password" v-model="password" :maxlength="16" />
+            </li>
+          </ul>
+          <Button :style="reg_btn" @click="_register"> {{ $t('function.register') }}</Button>
+        </TabPane>
       </Tabs>
     </Modal>
   </div>
@@ -53,6 +57,14 @@
 import { Button, Modal } from 'iview'
 import { sendEmail, register, login } from '../api/index.js'
 export default {
+  props: {
+    isLogin: Boolean
+  },
+  mounted () {
+    if (this.isLogin) {
+      this.isSelect = true
+    }
+  },
   data () {
     return {
       isSelect: false,
@@ -132,21 +144,14 @@ export default {
         }
       }
     },
-    _register () {
-      register({
+    async _register () {
+      await register({
         mail: this.mail,
         password: this.password,
         authCode: this.authCode
-      }).then(res => {
-        if (res.code === 0) {
-          this.$Message.success('注册成功，请前去登录！')
-          setTimeout(() => {
-            this.currentName = 'name2'
-          }, 1000)
-        }
-      }).catch(() => {
-        this.$Message.error(`账户已注册. `)
       })
+      this.$Message.success('激活邮件已发送,请及时查看！')
+      this.isSelect = false
     },
     _login () {
       if (this.ver_mail.test(this.login_email)) {
@@ -164,8 +169,6 @@ export default {
                 this.$router.push('/signin')
               }, 1000)
             }
-          }).catch(() => {
-            this.$Message.error('登录失败，请检查邮箱地址与密码是否正确！')
           })
         } else {
           this.$Message.error('请输入登录密码！')
@@ -176,7 +179,8 @@ export default {
     }
   },
   components: {
-    Button, Modal
+    Button,
+    Modal
   }
 }
 </script>

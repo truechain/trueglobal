@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Login from '@/pages/Login'
 import SignIn from '@/pages/SignIn'
+import Active from '@/pages/Active'
 import { pagestar } from '@/util'
 
 Vue.use(Router)
@@ -26,13 +27,16 @@ const router = new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/active',
+      name: 'Active',
+      component: Active
     }
   ]
 })
 
 router.beforeEach((to, from, next) => {
-  console.log(to, 'to')
-  console.log(from, 'from')
   const goHomeList = ['/inter', '/pw', '/rni', '/rule', '/claim', '/contact']
   if (goHomeList.includes(to.fullPath)) {
     next('/')
