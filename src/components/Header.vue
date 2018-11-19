@@ -67,6 +67,10 @@ export default {
       {
         name: 'EN',
         tag: 'en'
+      },
+      {
+        name: '한국어',
+        tag: 'ko'
       }
       ]
     }
