@@ -30,6 +30,16 @@ const router = new Router({
   ]
 })
 
+router.beforeEach((to, from, next) => {
+  console.log(to, 'to')
+  console.log(from, 'from')
+  const goHomeList = ['/inter', '/pw', '/rni', '/rule', '/claim', '/contact']
+  if (goHomeList.includes(to.fullPath)) {
+    next('/')
+  } else {
+    next()
+  }
+})
 router.afterEach((to, from) => {
   pagestar()
 })
