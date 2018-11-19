@@ -1,0 +1,239 @@
+{
+  "language": "VN",
+  "nav": {
+    "intro": "Giới thiệu",
+    "guest": "Vị khách danh dự và ban giám khảo",
+    "rights": "Quyền lợi và lợi ích",
+    "rule": "Quy tắc đăng ký",
+    "require": "Yêu cầu",
+    "we": "Liên hệ chúng tôi"
+  },
+  "root": {
+    "slogan": "Cuộc thi Blockchain True DApp 2018",
+    "subhead": "Hướng dẫn:Liên Minh Chiến Lược Tiên Phong về Hệ Thống Dữ Liệu Đám Mây của Trung Quốc,Viện Công nghiệp Internet thuộc Đại Học Tsinghua  ",
+    "host": "Người tổ chức",
+    "run": "Ứng dụng",
+    "runTable": "Biểu mẫu đăng ký"
+  },
+  "function": {
+    "register": "Ghi danh",
+    "login": "Đăng nhập",
+    "mail": "Email",
+    "authCode": "Mã xác nhận",
+    "password": "Mật khẩu",
+    "getAuthCode": "lấy mã auth"
+  },
+  "team": {
+    "title": "\"HelloWorld\"  Cuộc thi Blockchain TRUE DApp 2018",
+    "subhead": "Biểu mẫu đăng ký",
+    "item": {
+      "title": "Thông tin của nhóm",
+      "name": "Tên của đội",
+      "leader": "Trưởng nhóm",
+      "referal": "Người giới thiệu",
+      "city": "Khu vực",
+      "phone": "Điện thoại",
+      "wechat": "Wechat",
+      "telegram": "Telegram",
+      "facebook": "Facebook",
+      "twitter": "Twitter"
+    },
+    "state": "Ban tổ chức sẽ liên hệ với trưởng nhóm để xác nhận các thông tin chi tiết sau khi đăng ký",
+    "button": "Gửi đi"
+  },
+  "intro": {
+    "title": "Lời nói đầu",
+    "list": [
+      "\" HelloWorld \" - 2018 Cuộc thi Blockchain TRUE DApp được khởi xướng và hướng dẫn bởi Liên minh chiến lược tiên phong về hệ thống đám mây Trung Quốc và Viện Công nghiệp Internet thuộc Đại học Tsinghua, đồng tổ chức bởi TrueChain, Block 360 và Huopin Online.",
+      "Được thành lập trong ngành công nghiệp blockchain toàn cầu, cuộc thi tập trung vào việc thúc đẩy ứng dụng công nghệ blockchain trong các kịch bản thực tế khác nhau và dành riêng cho việc tìm kiếm tài năng và dự án với khả năng sáng tạo trong lĩnh vực blockchain toàn cầu. Khái niệm về \"cộng đồng mã nguồn mở toàn cầu của công nghệ blockchain\" do đó nổi lên vào đúng thời điểm.",
+      "Kịch bản ứng dụng blockchain bao gồm nhưng không giới hạn trong các lĩnh vực \"phúc lợi công cộng, tuyển dụng nhân tài, giáo dục, truy xuất nguồn gốc của các sản phẩm nông nghiệp, tài chính, điều tra tín dụng và nông nghiệp thông minh\". Đối với các ứng dụng và sản phẩm blockchain, công việc được đệ trình cần một bản demo hay một phần minh họa sản phẩm hoàn chỉnh. Mỗi nhóm có thể xây dựng các nhu cầu thực tế theo các lĩnh vực liên quan và kịch bản được đề xuất bởi đối thủ cạnh tranh. Các chuyên gia sẽ đánh giá code, ý tưởng, thiết kế và các công trình thực tế của dự án, sau đó chọn các ứng dụng thực tế nhất đáp ứng các yêu cầu thông qua hệ thống bỏ phiếu và chấm điểm.",
+      "Về đơn vị tổ chức: TrueGlobal được khởi xướng bởi các cộng đồng nhà phát triển trên toàn thế giới và nhằm xây dựng và trao quyền cho hệ sinh thái toàn cầu của các nhà phát triển và các nhà khởi nghiệp TRUE thông qua việc giảng dạy và quảng bá các công nghệ mới. Để đạt được mục tiêu này, chúng tôi tham gia và tổ chức các buổi thảo luận kỹ thuật trực tuyến và ngoại tuyến, Hackathon và các cuộc thi triển khai ứng dụng blockchain trên toàn thế giới."
+    ]
+  },
+  "irea": {
+    "title": "Khu vực",
+    "content": "Trung Quốc, Hàn Quốc, Thái Lan, Việt Nam, Mỹ và các quốc gia và khu vực khác."
+  },
+  "guest": {
+    "title": "Các ban giám khảo và khách mời",
+    "list": [{
+        "name": "Lin Chuizhou",
+        "imgSrc": "linchuizhou",
+        "introList": [
+          "Viện Hàn lâm Khoa học Hoàng gia Thụy Điển",
+          "Viện Hàn lâm Khoa học Kỹ thuật Hồng Kông",
+          "Nguyên Phó Hiệu trưởng Trường Đại học Khoa học và Công nghệ Hồng Kông"
+
+        ]
+      },
+      {
+        "name": "Shen Yushi",
+        "imgSrc": "shenyushi",
+        "introList": [
+          " Tiến sĩ ngành khoa học máy tính tại Đại học California",
+          "Tham luận viên cho chương trình 'Ngàn Kế Hoạch Tài Năng' của Trung Quốc’",
+          "Tư vấn chiến lược cho Microsoft"
+        ]
+      },
+      {
+        "name": "Yu Jianing",
+        "imgSrc": "yujianing",
+        "introList": [
+          "Tiến Sĩ Kinh Tế",
+          "Giám Đốc Biên Tập của China blockchain industry white paper 2018"
+        ]
+      },
+      {
+        "name": "Ye Yu",
+        "imgSrc": "yeyu",
+        "introList": [
+          "Thạc sĩ Kỹ thuật",
+          "Phó chủ tịch điều hành của ITPUB",
+          "Cựu tổng giám đốc của AI và Big data trong CocoaChina"
+        ]
+      },
+      {
+        "name": "Zheng Xiping",
+        "imgSrc": "zhengxiping",
+        "introList": [
+          "Đồng sáng lập & Phó chủ tịch Block công nghệ",
+          "CEO of Southeast Beecast"
+        ]
+      },
+      {
+        "name": "Qiu Tingnan",
+        "imgSrc": "qiutingnan",
+        "introList": [
+          "Giám đốc điều Element",
+          "Chủ tịch Ủy ban Trung Quốc của Hiệp hội Tài chính Toàn cầu",
+          "Cựu Đội trưởng Châu Á Chiến Lược Đổi Mới Tiền Ngày Nay"
+        ]
+      },
+      {
+        "name": "Hillary Nguyen",
+        "imgSrc": "HillaryNguyen",
+        "introList": [
+          "Đối tác quản lý của Alphawhale Capital",
+          "Một nhà chiến lược, cố vấn, tư vấn, người có ảnh hưởng cộng đồng và người nói trong cộng đồng Blockchain, quản lý tài sản số",
+          "Cung cấp các giải pháp quản lý cho các dự án đang nổi lên trong kỷ nguyên blockchain"
+        ]
+      },
+      {
+        "name": "Zhang Jiannan",
+        "imgSrc": "zhangjiannan",
+        "introList": [
+          "Giám đốc điều hành của TrueChain",
+          "Thạc Sĩ ngành khoa học máy tính tại trường Oxford University",
+          "Người sáng lập DoraHacks",
+          "Cựu nhà nghiên cứu tại phòng thí nghiệm mở CERN"
+        ]
+      },
+      {
+        "name": "Cheng Xiaoyong",
+        "imgSrc": "chengxiaoyong",
+        "introList": [
+          "Nhân viên nghiên cứu bán thời gian của Đại học Tsinghua",
+          "Ban chấp hành hệ thống điện toán đám mây Trung Quốc",
+          "Thành viên của thanh niên dẫn đầu trong Changan Club"
+        ]
+      },
+      {
+        "name": "Liu Yang",
+        "imgSrc": "liuyang",
+        "introList": [
+          "Thành viên ủy ban sáng lập TrueChain",
+          "Kỹ Sư ngành công nghệ chì",
+          " Thạc Sĩ ngành khoa học máy tính tại trường Tsinghua",
+          "Hơn 10 năm kinh nghiệm trong sự phát triển và xây dựng kiến trúc hệ thống",
+          "Chuyên gia mã hóa và thuật toán"
+        ]
+      }
+    ]
+  },
+  "rights": {
+    "title": "Quyền lợi và sở thích",
+    "actual": "Prize pool update",
+    "info": "Giải thưởng dự án cũng là quỹ hổ trợ được dùng cho các ứng dụng được áp dụng trong đời thực. Ban tổ chức cuộc thi sẽ đặt quỹ khởi động cuộc thi vào tổng giải thưởng và số tiền thưởng sẽ tăng theo số lượng các đội tham gia cuộc thi. Các đội chiến thắng sẽ được chia sẻ giải thưởng với nhau. ",
+    "list": [{
+        "icon": "excitation",
+        "title": "Ưu đãi tiền thưởng",
+        "content": "Người chiến thắng có thể nhận được nhiều tiền thưởng và nhiều ưu đãi khác nhau"
+      },
+      {
+        "icon": "incubation",
+        "title": "Dự án thai nghén",
+        "content": "Dự án tuyệt vời sẽ có cơ hội được đầu tư và ấp ủ bằng cách kết nối với vườn ươm những hạt mầm tiềm năng của chính quyền địa phương "
+      },
+      {
+        "icon": "media",
+        "title": "Trải nghiệm phương tiện",
+        "content": "Hàng triệu phương tiện truyền thông đại chúng + phỏng vấn truyền thông"
+      },
+      {
+        "icon": "community",
+        "title": "Tham gia vào cộng đồng",
+        "content": "Cơ hội trở thành một chuyên gia trong công nghệ nguồn mở của blockchain và chia sẻ nguồn lực với các nhà phát triển trên khắp thế giới"
+      }
+    ]
+  },
+  "flow": {
+    "title": "Lịch biểu",
+    "list": [
+      "1. Đăng ký bắt đầu vào ngày 15 tháng 11; Chúng tôi sẽ tổ chức các sự kiện để quảng bá các nút toàn cầu ở Seoul, Thành phố Hồ Chí Minh, Thượng Hải, Thành Đô, Bắc Kinh, Trường Sa và Thung lũng Silicon, v.v ...",
+      "2. Từ ngày 15 tháng 12 năm 2018 đến ngày 5 tháng 1 năm 2019, các đội cần hoàn thành thông tin đăng ký và gửi phần giới thiệu và đính kèm dự án của họ.",
+      "3. Từ ngày 15 tháng 12 năm 2019 đến ngày 10 tháng 1 năm 2019, những đội ngũ kỹ thuật đã tham dự cuộc thi sẽ tiến hành phát triển và gửi bảng code các sản phẩm của họ.",
+      "4. Sau khi bảng code được gửi, những đội ngũ kỹ thuật đã tham dự cuộc thi sẽ có cơ hội cuối cùng để yêu cầu cử tri hỗ trợ, các chuyên gia và thẩm phán sẽ xem xét các tác phẩm.",
+      "5. Trận chung kết và lễ trao giải sẽ diễn ra vào cuối tháng Giêng."
+    ]
+  },
+  "rule": {
+    "title": "Quy tắc đăng ký",
+    "list": [{
+        "title": "Chúng tôi chấp nhận đề xuất của các nút hoặc nhóm người tham gia có thể đăng ký trực tuyến, ban tổ chức sẽ liên hệ với trưởng nhóm để xác nhận chi tiết sau khi đăng ký",
+        "danh sách": [
+          "- Tất cả những người tham gia cần phải nộp các tài liệu đăng ký trực tuyến và biểu mẫu phải tuân theo các yêu cầu.",
+          "- Mỗi đội phải hoàn thành công việc độc lập với KHÔNG gian lận hoặc vi phạm quyền sở hữu trí tuệ của người khác. Nếu có bất kỳ vi phạm nào, đội đó sẽ bị loại và điểm số tương ứng sẽ bị hủy.",
+          "- Mỗi đội cần phải trả phí 100 TRUE để tham gia cuộc thi, được khóa trong giải thưởng và sẽ được sử dụng cho tiền thưởng cạnh tranh. (TrueGlobal đã khóa 10000 TRUE làm tiền thưởng khởi động)"
+        ]
+      },
+      {
+        "title": "Đề xuất Nodes:",
+        "list": [
+          "1. Các nút có thể bao gồm các vùng, tổ chức, cộng đồng và các chế. Các nút có thể tham gia vào cuộc thi hoặc đề xuất các đội, công ty, cá nhân chất lượng cao tham gia."
+        ]
+      },
+      {
+        "title": "Tự ghi danh:",
+        "list": [
+          "1. Cuộc thi mở dành cho mọi người, và số người tham gia không bị giới hạn. Bao gồm: Cá nhân, trường đại học và cao đẳng, đơn vị nghiên cứu khoa học, doanh nghiệp và đội ngũ kinh doanh được hoan nghênh đăng ký tham gia cuộc thi. ",
+          "2. Thí sinh có thể tham gia cá nhân hoặc theo nhóm. Mặc dù không có giới hạn về số lượng thành viên trong nhóm, nhưng chúng tôi đề nghị ít nhất 3 thành viên trong một nhóm xem xét tính toàn vẹn của dự án.",
+          "3. Người tham gia có thể chọn các chuyên gia kỹ thuật trong ngành công nghiệp blockchain hỗ trợ với tư cách là cố vấn, hoặc giám đốc điều hành kỹ thuật của các công ty Internet làm tư vấn viên. Người tham gia sẽ nhận được danh hiệu \"người cố vấn \"sau khi vượt qua cuộc thi sơ bộ."
+        ]
+      }
+    ]
+  },
+  "require": {
+    "title": "Yêu cầu của các mục",
+    "list": [
+      "Hợp đồng thông minh của các tác phẩm dự thi phải dựa trên TrueChain.",
+      "Các bảng Code và hệ thống ứng dụng trong mục tiêu có thể triển khai",
+      "Phiên bản demo của ứng dụng (PPT hoặc Word)",
+      "Chi tiết khác đang được cập nhật"
+    ]
+  },
+  "sponsor": {
+    "title": "người đồng tổ chức"
+  },
+  "alliance": {
+    "title": "Cộng đồng liên minh"
+  },
+  "we": {
+    "title": "Liên hệ với chúng tôi ",
+    "content": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua tài khoản chính thức của cuộc thi hoặc bạn cũng có thể gửi email để liên hệ với chúng tôi. ",
+    "qr1": "TrueGlobal WeChat",
+    "qr2": "Kênh Twitter chính thức"
+  },
+  "state": {
+    "content": "Quyền quyết định giải thích cuối hoàn toàn cùng thuộc về TrueGlobal "
+  }
+}
