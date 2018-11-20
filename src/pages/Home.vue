@@ -152,7 +152,7 @@
               {{ $t('we.content')}}
             </span>
             <a href="mailto:helloworld@trueglobal.pro">helloworld@trueglobal.pro</a>
-            <span>
+            <span v-show="$t('language') !== 'EN'">
               {{ $t('we.title')}}
             </span>
           </div>
