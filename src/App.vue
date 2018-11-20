@@ -41,4 +41,16 @@ export default {
 .ivu-input-search{
     background: rgba(30,100,180,1) !important;
 }
+
+.el-collapse-item__header{
+  border-radius:10px 10px 0 0;
+  background:rgba(242,245,250,1);
+  padding: 10px;
+}
+.el-collapse-item__wrap{
+  border: none;
+  border-radius:0 0 10px 10px;
+  background:rgba(242,245,250,1);
+  padding: 10px;
+}
 </style>

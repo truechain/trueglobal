@@ -1,5 +1,5 @@
 <template>
-  <header :class="[isBg?'_bg':null ,'container']">
+  <header class="container">
     <div>
       <router-link tag='div' to='/' class="logo_t">
         TrueGlobal
@@ -31,8 +31,13 @@
         {{ $t('nav.require')}}
         </MenuItem>
       </a>
-      <a href="#contact">
+      <router-link to='/topic'>
         <MenuItem name="6">
+        {{ $t('nav.topic')}}
+        </MenuItem>
+      </router-link>
+      <a href="#contact">
+        <MenuItem name="7">
         {{ $t('nav.we')}}
         </MenuItem>
       </a>
@@ -99,9 +104,9 @@ export default {
     }
   }
 
-  ._bg {
-    background-color: #203260 !important;
-  }
+  // ._bg {
+  //   background-color: #203260 !important;
+  // }
 
   .ivu-menu {
     position: unset;
@@ -125,7 +130,8 @@ export default {
     position: fixed;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    // background-color: rgba(0, 0, 0, 0.1);
+    background-color: #203260;
 
     .logo_t {
       width: 30%;
