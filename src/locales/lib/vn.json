@@ -179,11 +179,30 @@
   "flow": {
     "title": "Lịch biểu",
     "list": [
-      "1. Đăng ký bắt đầu vào ngày 15 tháng 11; Chúng tôi sẽ tổ chức các sự kiện để quảng bá các nút toàn cầu ở Seoul, Thành phố Hồ Chí Minh, Thượng Hải, Thành Đô, Bắc Kinh, Trường Sa và Thung lũng Silicon, v.v ...",
-      "2. Từ ngày 15 tháng 12 năm 2018 đến ngày 5 tháng 1 năm 2019, các đội cần hoàn thành thông tin đăng ký và gửi phần giới thiệu và đính kèm dự án của họ.",
-      "3. Từ ngày 15 tháng 12 năm 2019 đến ngày 10 tháng 1 năm 2019, những đội ngũ kỹ thuật đã tham dự cuộc thi sẽ tiến hành phát triển và gửi bảng code các sản phẩm của họ.",
-      "4. Sau khi bảng code được gửi, những đội ngũ kỹ thuật đã tham dự cuộc thi sẽ có cơ hội cuối cùng để yêu cầu cử tri hỗ trợ, các chuyên gia và thẩm phán sẽ xem xét các tác phẩm.",
-      "5. Trận chung kết và lễ trao giải sẽ diễn ra vào cuối tháng Giêng."
+      {
+        "time":"2018-11-15",
+        "event":"Bắt đầu chấp nhận đăng ký."
+      },
+      {
+        "time":"2018-12-15",
+        "event":"Thời hạn đăng ký."
+      },
+      {
+        "time":"Trước ngày 2018-12-31",
+        "event":"Cải thiện thông tin thành viên nhóm, gửi tóm tắt dự án và tệp đính kèm."
+      },
+      {
+        "time":"Trước ngày 2019-01-05",
+        "event":"Nhóm tham gia gửi các mục nhập."
+      },
+      {
+        "time": "2019-01-10",
+        "event":"Đánh giá thẩm phán chuyên gia và kỹ thuật."
+      },
+      {
+        "time":"2019-01-20",
+        "event":"Chung kết và lễ trao giải."
+      }
     ]
   },
   "rule": {

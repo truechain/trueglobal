@@ -78,11 +78,17 @@
       <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">{{ $t('flow.title')}}</p>
         <p class="line"></p>
-        <ul class="award_t_a">
+        <!-- <ul class="award_t_a">
           <li v-for="(item,index) in $t('flow.list')" :key='index'>
             {{ item }}
           </li>
-        </ul>
+        </ul> -->
+        <Timeline class="award_t_a">
+          <TimelineItem v-for="(item,index) in $t('flow.list')" :key='index'>
+            <p class="time">{{item.time}}</p>
+            <p class="content">{{item.event}}</p>
+          </TimelineItem>
+        </Timeline>
       </div>
     </section>
 

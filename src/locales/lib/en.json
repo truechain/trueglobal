@@ -182,11 +182,30 @@
   "flow": {
     "title": "Schedule",
     "list": [
-      "1. Registration starts at November 15th; We will hold events to promote the global nodes in Seoul, Ho Chi Minh City, Shanghai, Chengdu, Beijing, Changsha, and Silicon Valley, etc.",
-      "2. From December 15th, 2018 to January 5th, 2019, teams need to complete registration information and submit the introduction and attachment of their project.",
-      "3. From December 15th, 2019 to January 10th, 2019 participants conduct deep development and submit the code of their works.",
-      "4. After the code is submitted, participants will have the final chance to ask voters for support, experts and judges will review the works.",
-      "5. The finals and the award ceremony will hold in the end of January. "
+      {
+        "time":"2018-11-15",
+        "event":"Start accepting registration."
+      },
+      {
+        "time":"2018-12-15",
+        "event":"Registration deadline."
+      },
+      {
+        "time":"Before 2018-12-31",
+        "event":"complete team member information, submit project briefs and attachments."
+      },
+      {
+        "time":"Before 2019-01-05",
+        "event":"The participating team submits the entries."
+      },
+      {
+        "time": "2019-01-10",
+        "event":"Experts and technical judges review projects."
+      },
+      {
+        "time":"2019-01-20",
+        "event":"Finals and awards ceremony."
+      }
     ]
   },
   "rule": {
