@@ -44,7 +44,7 @@ export default {
 
 .el-collapse-item__header{
   border-radius:10px 10px 0 0;
-  background:rgba(242,245,250,1);
+  background:rgba(242,245,250,1) !important;
   padding: 10px;
 }
 .el-collapse-item__wrap{
