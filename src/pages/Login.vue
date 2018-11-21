@@ -168,7 +168,8 @@ export default {
               this.setCookie('token', res.data.token, 0.05)
               setTimeout(() => {
                 this.isSelect = false
-                this.$router.push('/signin')
+                // this.$router.push('/signin')
+                window.location.href = '/signin'
               }, 1000)
             }
           })
