@@ -55,7 +55,7 @@
 </template>
 <script>
 import { Button, Modal } from 'iview'
-import { setStore } from '@/util'
+import { setStore, getStore } from '@/util'
 import { sendEmail, register, login } from '../api/index.js'
 export default {
   props: {
@@ -92,7 +92,7 @@ export default {
   },
   methods: {
     _sign () {
-      if (this.getCookie('login')) {
+      if (getStore('token')) {
         this.$router.push('/signin')
       } else {
         this.isSelect = true
