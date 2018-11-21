@@ -50,7 +50,7 @@ export default {
 .el-collapse-item__wrap{
   border: none;
   border-radius:0 0 10px 10px;
-  background:rgba(242,245,250,1);
+  background:rgba(242,245,250,1) !important;
   padding: 10px;
 }
 </style>
