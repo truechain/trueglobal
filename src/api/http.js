@@ -3,6 +3,7 @@ import {
   serverUrl
 } from '../config'
 import Vue from 'vue'
+import { getStore } from '@/util'
 const service = axios.create({
   baseURL: serverUrl,
   timeout: 5000,
@@ -15,6 +16,10 @@ const that = Vue.prototype
 // 请求拦截器
 service.interceptors.request.use(
   (config) => {
+    const token = getStore('token')
+    if (token) {
+      config.headers['token'] = token
+    }
     return config
   },
   (err) => {
