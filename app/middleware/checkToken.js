@@ -19,9 +19,10 @@ module.exports = (options, app) => {
       try {
         const decode = jwt.decode(ctx.request.header.token, app.config.secret);
         // token 有效期5天
-        const expired = 24 * 5;
-        // debugger;
-        if ((+new Date() - decode.createTime) / 300000 <= expired) {
+        const expiredS = 60 * 60 * 24 * 5;
+        // debugger
+        // const expiredS = 60;
+        if ((+new Date() - decode.createTime) / 1000 <= expiredS) {
           ctx.decode = decode;
         } else {
           ctx.throw(401, 'token已过期');
