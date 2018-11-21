@@ -274,6 +274,9 @@
   "alliance": {
     "title": "Alliance communities"
   },
+  "media":{
+    "title":"Media"
+  },
   "we": {
     "title": "Contact us ",
     "content": "If you have any questions, please contact us through the official wechat account of the competition or you can also send email to ",

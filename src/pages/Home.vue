@@ -148,6 +148,19 @@
       </div>
     </section>
 
+    <!-- Media -->
+    <section class="wrap award mechanism">
+      <div class="pu_dis award_area">
+        <p class="pu_t1"> {{ $t('media.title')}}</p>
+        <p class="line"></p>
+        <ul class="mechanism_area">
+          <li v-for="(item,index) in media" :key='index' class="mechanism_item">
+            <img :src='item' alt="" class="mechanism_i">
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section class="wrap award mechanism contact" id='contact'>
       <div class="pu_dis award_area">
         <p class="pu_t1">{{ $t('we.title')}}</p>
@@ -185,6 +198,7 @@ export default {
     return {
       mechanism: [],
       co_hosting: [],
+      media: [],
       isLogin: false
     }
   },
@@ -196,6 +210,10 @@ export default {
     for (var x = 0; x < 3; x++) {
       var p = x + 1
       this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
+    }
+    for (var m = 0; m < 5; m++) {
+      var d = m + 1
+      this.media.push(require('../assets/media/' + d + '.png'))
     }
   },
   components: {
@@ -549,7 +567,7 @@ export default {
     }
 
     .contact {
-      background: rgba(242, 245, 250, 1);
+      background: #fff;
 
       .contact_a {
         margin-top: 50px;
