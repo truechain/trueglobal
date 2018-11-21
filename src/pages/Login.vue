@@ -55,6 +55,7 @@
 </template>
 <script>
 import { Button, Modal } from 'iview'
+import { setStore } from '@/util'
 import { sendEmail, register, login } from '../api/index.js'
 export default {
   props: {
@@ -162,6 +163,7 @@ export default {
           }).then(res => {
             if (res.code === 0) {
               this.$Message.success('登录成功')
+              setStore('token', res.data.token)
               this.setCookie('login', true, 0.05)
               this.setCookie('token', res.data.token, 0.05)
               setTimeout(() => {

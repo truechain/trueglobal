@@ -1,7 +1,7 @@
 <template>
   <section class="game-title">
     <div class="game-title-w">
-      <h1 class="_title">{{$t('topic.title')}}</h1>
+      <!-- <h1 class="_title">{{$t('topic.title')}}</h1> -->
       <p class="introduction">
         {{$t('topic.description_1')}}
         <br>
@@ -60,9 +60,10 @@ export default {
       font-weight:500;
       color:rgba(32,50,96,1);
     }
-    .introduction{
+    .introduction {
       font-size:12px;
       font-weight:400;
+      padding-top: 30px;
       color:rgba(98,119,146,1);
       line-height:30px;
     }
