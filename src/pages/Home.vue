@@ -541,9 +541,9 @@ export default {
       .mechanism_area {
         margin-top: 48px;
         display: flex;
-        width: 1205px;
+        // width: 1205px;
         flex-wrap: wrap;
-        // justify-content: center;
+        justify-content: center;
 
         .mechanism_item {
           margin: 3px 10px;
