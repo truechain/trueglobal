@@ -5,11 +5,11 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+  router.get('/api', controller.home.index);
   // router.get('/captcha', controller.captcha.index);
-  router.post('/sendMail', controller.captcha.smsCaptcha);
-  router.post('/register', controller.register.index);
-  router.post('/login', controller.login.index);
-  router.post('/team', controller.team.index);
-  router.get('/active', controller.check.index);
+  router.post('/api/sendMail', controller.captcha.smsCaptcha);
+  router.post('/api/register', controller.register.index);
+  router.post('/api/login', controller.login.index);
+  router.post('/api/team', controller.team.index);
+  router.get('/api/ctive', controller.check.index);
 };
