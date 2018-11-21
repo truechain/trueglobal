@@ -6,13 +6,16 @@
       </router-link>
     </div>
     <Menu mode="horizontal" class='menu'>
-      <router-link :to="item.router" v-for="(item,index) in $t('nav')" :key='index' tag='a'>
+      <router-link
+        :to="item.router"
+        v-for="(item,index) in $t('nav')"
+        :key='index'
+        tag='a'>
         <MenuItem :name="index">
         {{item.name}}
         </MenuItem>
       </router-link>
     </Menu>
-
     <div>
       <Dropdown @on-click="changeLanguage">
         <a href="javascript:void(0)">
@@ -26,6 +29,19 @@
         </DropdownMenu>
       </Dropdown>
     </div>
+    <template v-if="getStore('token')">
+      <Menu mode="horizontal" class='menu' @on-select="modal1 = true">
+        <MenuItem name="logout" >
+          退出登录
+        </MenuItem>
+      </Menu>
+    </template>
+    <Modal
+        v-model="modal1"
+        title="退出"
+        @on-ok="ok">
+        <p>确定退出登录吗 ? </p>
+    </Modal>
     <span class="container-app-header-button" @click.stop="toggleMenu">
       <span></span>
       <span></span>
@@ -44,12 +60,17 @@
 </template>
 
 <script>
-import { setStore } from '@/util'
+import {
+  getStore,
+  setStore,
+  removeStore
+} from '@/util'
 export default {
   name: 'Header',
   props: ['isBg'],
   data () {
     return {
+      modal1: false,
       langs: [{
         name: '中文',
         tag: 'zh'
@@ -71,6 +92,17 @@ export default {
     }
   },
   methods: {
+    getStore,
+    ok () {
+      removeStore('token')
+      this.$Message.success({
+        content: '退出成功',
+        duration: 2
+      })
+      setTimeout(() => {
+        window.location.href = '/'
+      }, 2000)
+    },
     changeLanguage (lang) {
       setStore('lang', lang)
       location.reload()
@@ -104,13 +136,14 @@ export default {
       display: none;
     }
 
-    .container-app-header-button{
+    .container-app-header-button {
       display: block !important;
     }
 
-    .container-app-header-nav{
+    .container-app-header-nav {
       color: #456c99;
-      ul{
+
+      ul {
         background-color: #203260;
         overflow: hidden;
         position: absolute;
@@ -119,7 +152,8 @@ export default {
         width: 100%;
         -webkit-transition: height .6s;
         transition: height .6s;
-        li{
+
+        li {
           float: none;
           line-height: 30px;
           margin-left: 0;
@@ -164,12 +198,13 @@ export default {
     // background-color: rgba(0, 0, 0, 0.1);
     background-color: #203260;
 
-    .container-app-header-button{
+    .container-app-header-button {
       display: none;
       float: right;
       margin-left: 5px;
       cursor: pointer;
-      span{
+
+      span {
         background-color: #fff;
         display: block;
         margin: 7px 0;
@@ -178,9 +213,10 @@ export default {
       }
     }
 
-    .container-app-header-nav{
+    .container-app-header-nav {
       color: #456c99;
-      ul{
+
+      ul {
         height: 0;
         overflow: hidden;
         background-color: #203260;
@@ -207,7 +243,7 @@ export default {
       }
     }
 
-    .ivu-dropdown-rel > a {
+    .ivu-dropdown-rel>a {
       font-size: 15px !important;
     }
   }
