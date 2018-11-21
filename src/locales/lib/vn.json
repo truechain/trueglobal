@@ -1,14 +1,35 @@
 {
   "language": "VN",
-  "nav": {
-    "intro": "Giới thiệu",
-    "guest": "Vị khách danh dự và ban giám khảo",
-    "rights": "Quyền lợi và lợi ích",
-    "rule": "Quy tắc đăng ký",
-    "require": "Yêu cầu",
-    "topic":"Tiêu đề trò chơi",
-    "we": "Liên hệ chúng tôi"
-  },
+  "nav": [
+    {
+      "name":"Giới thiệu",
+      "router":"/#inter"
+    },
+    {
+      "name":"Vị khách danh dự và ban giám khảo",
+      "router":"/#pw"
+    },
+    {
+      "name":"Quyền lợi và lợi ích",
+      "router":"/#rni"
+    },
+    {
+      "name":"Quy tắc đăng ký",
+      "router":"/#rule"
+    },
+    {
+      "name":"Yêu cầu",
+      "router":"/#claim"
+    },
+    {
+      "name":"Tiêu đề trò chơi",
+      "router":"/topic"
+    },
+    {
+      "name":"Liên hệ chúng tôi",
+      "router":"/#contact"
+    }
+  ],
   "root": {
     "slogan": "Cuộc thi Blockchain True DApp 2018",
     "subhead": "Hướng dẫn:Liên Minh Chiến Lược Tiên Phong về Hệ Thống Dữ Liệu Đám Mây của Trung Quốc,Viện Công nghiệp Internet thuộc Đại Học Tsinghua  ",

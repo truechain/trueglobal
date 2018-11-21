@@ -6,42 +6,13 @@
       </router-link>
     </div>
     <Menu mode="horizontal" class='menu'>
-      <a href="#inter">
-        <MenuItem name="1">
-        {{ $t('nav.intro')}}
-        </MenuItem>
-      </a>
-      <a href="#pw">
-        <MenuItem name="2">
-        {{ $t('nav.guest')}}
-        </MenuItem>
-      </a>
-      <a href="#rni">
-        <MenuItem name="3">
-        {{ $t('nav.rights')}}
-        </MenuItem>
-      </a>
-      <a href="#rule">
-        <MenuItem name="4">
-        {{ $t('nav.rule')}}
-        </MenuItem>
-      </a>
-      <a href="#claim">
-        <MenuItem name="5">
-        {{ $t('nav.require')}}
-        </MenuItem>
-      </a>
-      <router-link to='/topic'>
-        <MenuItem name="6">
-        {{ $t('nav.topic')}}
+      <router-link :to="item.router" v-for="(item,index) in $t('nav')" :key='index' tag='a'>
+        <MenuItem :name="index">
+        {{item.name}}
         </MenuItem>
       </router-link>
-      <a href="#contact">
-        <MenuItem name="7">
-        {{ $t('nav.we')}}
-        </MenuItem>
-      </a>
     </Menu>
+
     <div>
       <Dropdown @on-click="changeLanguage">
         <a href="javascript:void(0)">
@@ -54,6 +25,20 @@
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
+    </div>
+    <span class="container-app-header-button" @click.stop="toggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="container-app-header-nav">
+      <ul style="height: 240px;" :style="{'height': langsSelectorIsOpen ? `${40 * 8}px` : '0'}">
+        <li v-for="(item,index) in $t('nav')" :key='index' @click="jumpTo($event,item.router)">
+          <a>
+            {{item.name}}
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
 </template>
@@ -81,7 +66,8 @@ export default {
         name: 'Tiếng Việt',
         tag: 'vn'
       }
-      ]
+      ],
+      langsSelectorIsOpen: false
     }
   },
   methods: {
@@ -90,6 +76,21 @@ export default {
       location.reload()
       // debugger
       // console.log(this,'===');
+    },
+    toggleMenu () {
+      this.closeLangsSelector()
+      if (!this.menuIsOpen) {
+        this.menuIsOpen = true
+      } else {
+        this.menuIsOpen = false
+      }
+    },
+    closeLangsSelector () {
+      this.langsSelectorIsOpen = !this.langsSelectorIsOpen
+    },
+    jumpTo (e, router) {
+      e.target.href = router
+      this.closeLangsSelector()
     }
   }
 }
@@ -101,6 +102,36 @@ export default {
   @media screen and (max-width: 900px) {
     .menu {
       display: none;
+    }
+
+    .container-app-header-button{
+      display: block !important;
+    }
+
+    .container-app-header-nav{
+      color: #456c99;
+      ul{
+        background-color: #203260;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        -webkit-transition: height .6s;
+        transition: height .6s;
+        li{
+          float: none;
+          line-height: 30px;
+          margin-left: 0;
+          border: none !important;
+          color: #a9adbb;
+          font-size: 14px;
+          -webkit-transition: color .4s;
+          transition: color .4s;
+          padding: 5px 15px;
+          position: relative;
+        }
+      }
     }
   }
 
@@ -132,6 +163,29 @@ export default {
     justify-content: center;
     // background-color: rgba(0, 0, 0, 0.1);
     background-color: #203260;
+
+    .container-app-header-button{
+      display: none;
+      float: right;
+      margin-left: 5px;
+      cursor: pointer;
+      span{
+        background-color: #fff;
+        display: block;
+        margin: 7px 0;
+        width: 30px;
+        height: 2px;
+      }
+    }
+
+    .container-app-header-nav{
+      color: #456c99;
+      ul{
+        height: 0;
+        overflow: hidden;
+        background-color: #203260;
+      }
+    }
 
     .logo_t {
       width: 30%;

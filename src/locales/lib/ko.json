@@ -1,15 +1,35 @@
 {
   "language": "한국어",
-  "nav": {
-    "intro": "대회 소개",
-    "guest": "심사위원 및 게스트",
-    "rights": "참가 권익",
-    "rule": "지원 규칙",
-    "require": "작품 요구",
-    "topic":"게임 타이틀",
-    "we": "저희팀에게 연락하세요"
-  },
-
+  "nav": [
+    {
+      "name":"대회 소개",
+      "router":"/#inter"
+    },
+    {
+      "name":"심사위원 및 게스트",
+      "router":"/#pw"
+    },
+    {
+      "name":"참가 권익",
+      "router":"/#rni"
+    },
+    {
+      "name":"지원 규칙",
+      "router":"/#rule"
+    },
+    {
+      "name":"작품 요구",
+      "router":"/#claim"
+    },
+    {
+      "name":"게임 타이틀",
+      "router":"/topic"
+    },
+    {
+      "name":"저희팀에게 연락하세요",
+      "router":"/#contact"
+    }
+  ],
   "root": {
     "slogan": "2018년 블록체인 응용  대회",
     "subhead": "멘토: 중국 클라우드 산업 전략혁신연맹, 청화대 인터넷 산업 연구소",

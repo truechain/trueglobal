@@ -1,14 +1,35 @@
 {
   "language": "EN",
-  "nav": {
-    "intro": "Introduction",
-    "guest": "Honored guest and judges",
-    "rights": "Rights and Interest",
-    "rule": "Enrollment rules",
-    "require": "Requirements",
-    "topic":"Topic",
-    "we": "Contact us"
-  },
+  "nav": [
+    {
+      "name":"Introduction",
+      "router":"/#inter"
+    },
+    {
+      "name":"Honored guest and judges",
+      "router":"/#pw"
+    },
+    {
+      "name":"Rights and Interest",
+      "router":"/#rni"
+    },
+    {
+      "name":"Enrollment rules",
+      "router":"/#rule"
+    },
+    {
+      "name":"Requirements",
+      "router":"/#claim"
+    },
+    {
+      "name":"Topic",
+      "router":"/topic"
+    },
+    {
+      "name":"Contact us",
+      "router":"/#contact"
+    }
+  ],
   "root": {
     "slogan": "2018 Blockchain True DApp Competition",
     "subhead": "Guidance: China Cloud System Pioneer Strategic Alliance, The Internet Industry Institute of Tsinghua University  ",

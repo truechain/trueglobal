@@ -1,14 +1,35 @@
 {
   "language": "中文",
-  "nav": {
-    "intro": "大赛简介",
-    "guest": "评委嘉宾",
-    "rights": "参赛权益",
-    "rule": "报名规则",
-    "require": "作品要求",
-    "topic":"赛题",
-    "we": "联系我们"
-  },
+  "nav": [
+    {
+      "name":"大赛简介",
+      "router":"/#inter"
+    },
+    {
+      "name":"评委嘉宾",
+      "router":"/#pw"
+    },
+    {
+      "name":"参赛权益",
+      "router":"/#rni"
+    },
+    {
+      "name":"报名规则",
+      "router":"/#rule"
+    },
+    {
+      "name":"作品要求",
+      "router":"/#claim"
+    },
+    {
+      "name":"赛题",
+      "router":"/topic"
+    },
+    {
+      "name":"联系我们",
+      "router":"/#contact"
+    }
+  ],
   "root": {
     "slogan": "2018区块链 应用落地大赛",
     "subhead": "指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院",

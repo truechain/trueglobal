@@ -10,6 +10,7 @@ import { pagestar } from '@/util'
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
