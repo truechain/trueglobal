@@ -44,7 +44,9 @@
     "mail": "이메일",
     "authCode": "인증번호",
     "password": "비밀번호",
-    "getAuthCode": "인증번호를 받다"
+    "getAuthCode": "인증번호를 받다",
+    "logout": "출구",
+    "logoutC": "로그 아웃 하시겠습니까 ?"
   },
 
   "team": {

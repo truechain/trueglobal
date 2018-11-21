@@ -43,7 +43,9 @@
     "mail": "Email",
     "authCode": "Mã xác nhận",
     "password": "Mật khẩu",
-    "getAuthCode": "lấy mã auth"
+    "getAuthCode": "lấy mã auth",
+    "logout": "Thoát",
+    "logoutC": "Bạn có chắc chắn đăng xuất không ?"
   },
   "team": {
     "title": "\"HelloWorld\"  Cuộc thi Blockchain TRUE DApp 2018",

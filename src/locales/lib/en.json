@@ -43,7 +43,9 @@
     "mail": "Email",
     "authCode": "Verification code",
     "password": "Password",
-    "getAuthCode": "get auth code"
+    "getAuthCode": "get auth code",
+    "logout": "Sign out",
+    "logoutC": "Are you sure to log out ?"
   },
   "team": {
     "title": "\"HelloWorld\"  2018 Blockchain TRUE DApp Competition",

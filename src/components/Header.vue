@@ -32,15 +32,15 @@
     <template v-if="getStore('token')">
       <Menu mode="horizontal" class='menu' @on-select="modal1 = true">
         <MenuItem name="logout" >
-          退出登录
+          {{ $t('function.logout') }}
         </MenuItem>
       </Menu>
     </template>
     <Modal
         v-model="modal1"
-        title="退出"
+        :title="$t('function.logout')"
         @on-ok="ok">
-        <p>确定退出登录吗 ? </p>
+        <p>{{ $t('function.logoutC') }}</p>
     </Modal>
     <span class="container-app-header-button" @click.stop="toggleMenu">
       <span></span>
@@ -197,7 +197,7 @@ export default {
     justify-content: center;
     // background-color: rgba(0, 0, 0, 0.1);
     background-color: #203260;
-
+    display: -webkit-box;
     .container-app-header-button {
       display: none;
       float: right;
