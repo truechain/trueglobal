@@ -151,7 +151,10 @@ export default {
         password: this.password,
         authCode: this.authCode
       })
-      this.$Message.success('激活邮件已发送,请及时查看！')
+      this.$Message.success({
+        content: '激活邮件已发送,请及时查看！',
+        duration: 10
+      })
       this.isSelect = false
     },
     _login () {
