@@ -6,15 +6,15 @@
       "router":"/#inter"
     },
     {
-      "name":"Honored guest and judges",
+      "name":"Guest",
       "router":"/#pw"
     },
     {
-      "name":"Rights and Interest",
+      "name":"Rights",
       "router":"/#rni"
     },
     {
-      "name":"Enrollment rules",
+      "name":"Rules",
       "router":"/#rule"
     },
     {
@@ -30,7 +30,7 @@
       "router":"/vote"
     },
     {
-      "name":"Contact us",
+      "name":"Contact",
       "router":"/#contact"
     }
   ],
