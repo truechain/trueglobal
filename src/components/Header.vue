@@ -5,17 +5,19 @@
         TrueGlobal
       </router-link>
     </div>
-    <Menu mode="horizontal" class='menu'>
-      <router-link
-        :to="item.router"
-        v-for="(item,index) in $t('nav')"
-        :key='index'
-        tag='a'>
-        <MenuItem :name="index">
-        {{item.name}}
-        </MenuItem>
-      </router-link>
-    </Menu>
+    <div class="menu-box">
+      <Menu mode="horizontal" class='menu'>
+        <router-link
+          :to="item.router"
+          v-for="(item,index) in $t('nav')"
+          :key='index'
+          tag='a'>
+          <MenuItem :name="index">
+          {{item.name}}
+          </MenuItem>
+        </router-link>
+      </Menu>
+    </div>
     <div>
       <Dropdown @on-click="changeLanguage">
         <a href="javascript:void(0)">
@@ -29,32 +31,34 @@
         </DropdownMenu>
       </Dropdown>
     </div>
-    <template v-if="getStore('token')">
-      <Menu mode="horizontal" class='menu' @on-select="modal1 = true">
-        <MenuItem name="logout" >
-          {{ $t('function.logout') }}
-        </MenuItem>
-      </Menu>
-    </template>
-    <Modal
-        v-model="modal1"
-        :title="$t('function.logout')"
-        @on-ok="ok">
-        <p>{{ $t('function.logoutC') }}</p>
-    </Modal>
-    <span class="container-app-header-button" @click.stop="toggleMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <div class="container-app-header-nav">
-      <ul style="height: 240px;" :style="{'height': langsSelectorIsOpen ? `${40 * 8}px` : '0'}">
-        <li v-for="(item,index) in $t('nav')" :key='index' @click="jumpTo($event,item.router)">
-          <a>
-            {{item.name}}
-          </a>
-        </li>
-      </ul>
+    <div class="nav-right">
+      <template v-if="getStore('token')">
+        <Menu mode="horizontal" class='menu' @on-select="modal1 = true">
+          <MenuItem name="logout" >
+            {{ $t('function.logout') }}
+          </MenuItem>
+        </Menu>
+      </template>
+      <Modal
+          v-model="modal1"
+          :title="$t('function.logout')"
+          @on-ok="ok">
+          <p>{{ $t('function.logoutC') }}</p>
+      </Modal>
+      <span class="container-app-header-button" @click.stop="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="container-app-header-nav">
+        <ul style="height: 240px;" :style="{'height': langsSelectorIsOpen ? `${40 * 8}px` : '0'}">
+          <li v-for="(item,index) in $t('nav')" :key='index' @click="jumpTo($event,item.router)">
+            <a>
+              {{item.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 </template>
@@ -131,6 +135,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
+.nav-right {
+  float: right;
+}
+.menu-box {
+  width: auto;
+}
   @media screen and (max-width: 900px) {
     .menu {
       display: none;
@@ -197,7 +207,6 @@ export default {
     justify-content: center;
     // background-color: rgba(0, 0, 0, 0.1);
     background-color: #203260;
-    display: -webkit-box;
     .container-app-header-button {
       display: none;
       float: right;
