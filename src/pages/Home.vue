@@ -207,7 +207,7 @@ export default {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
     }
-    for (var x = 0; x < 3; x++) {
+    for (var x = 0; x < 4; x++) {
       var p = x + 1
       this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
     }
