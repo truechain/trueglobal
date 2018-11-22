@@ -67,7 +67,7 @@
           </li>
         </ul>
         <p class="pu_t1">{{ $t('rights.actual')}}</p>
-        <p class="rni_i">{{ $t('rights.info')}}</p>
+        <p class="rni_i" style="font-size:12px">{{ $t('rights.info')}} 0xcFc9EE261DB31591085Ea50D4e07b11d77AEEb3D</p>
         <p class="rni_i" style="font-size:45px">10000 TRUE +</p>
 
       </div>
@@ -207,11 +207,11 @@ export default {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
     }
-    for (var x = 0; x < 4; x++) {
+    for (var x = 0; x < 5; x++) {
       var p = x + 1
       this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
     }
-    for (var m = 0; m < 9; m++) {
+    for (var m = 0; m < 11; m++) {
       var d = m + 1
       this.media.push(require('../assets/media/' + d + '.png'))
     }
@@ -410,6 +410,7 @@ export default {
         }
 
         .rni_i {
+          text-align: center;
           margin-top: 30px;
           font-size: 12px;
           line-height: 50px;
