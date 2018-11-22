@@ -283,78 +283,78 @@
     "content": "Quyền quyết định giải thích cuối hoàn toàn cùng thuộc về TrueGlobal "
   },
   "topic":{
-    "title":"参考应用项目选题",
-    "description_1":"安全、性能、去中心化不可兼顾曾经是公链领域的不可能三角，初链(TrueChain)基于Minerva混合共识机制，结合了PBFT 和 fPoW 优势，解决了这个问题。初链(TrueChain)利用PBFT作为快速链实现交易的快速处理，PoW负责PBFT委员会监管和选举，又将水果链技术融合到传统的PoW协议中，成为fPow，使普通用户有机会参与到挖矿中来，实现更加去中心化和公平化。同时，初链在PBFT之上增加了分片机制，突破了扩容性方面的限制。初链(TrueChain)拥有非常快的交易确认速度，可以为各种商业化应用的落地，提供一个稳定高效的平台，所以基于初链(TrueChain)，可以做一些高效有趣的应用。",
-    "description_2":"以下提到的选题，都需要基于初链(TrueChain)做开发。 ",
-    "description_3":"TrueGlobal挑选出以下选题供参赛者参考，参赛者可自行选择题目，且不局限于参考选题。同时TrueGlobal会根据更多企业和和社会机构的加入，陆续收录更多实际需求作为参考选题。 ",
+    "title":"Chủ đề dự án Dapp tham khảo",
+    "description_1":"Các vấn đề sự bảo mật,hiệu quả và độ phi tập trung của Public Blockchain được giải quyết bởi TrueChain bằng công nghệ đồng thuận lai PBFT-fPOW được gọi là Minerva.Đội ngũ TrueChain sử dụng PBFT làm chuỗi nhanh để xử lý các giao dịch, và sự giám sát và bầu chọn PBFT được thực hiện bởi các nút PoW. Bên cạnh đó, TrueChain tích hợp công nghệ fruitchain vào giao thức PoW truyền thống trở thành fPoW, để mọi người dùng có cơ hội tham gia khai thác. TrueChain cũng thêm sharding ở phần trên cùng của PBFT để nâng giới hạn khả năng mở rộng.TrueChain có tốc độ xác nhận giao dịch rất nhanh, có thể cung cấp một nền tảng ổn định và hiệu quả cho phép xây dựng các ứng dụng thương mại khác nhau. Do đó, một số ứng dụng hiệu quả và thú vị có thể được thực hiện dựa trên TrueChain.",
+    "description_2":"Tất cả các chủ đề được đề cập dưới đây cần phải được phát triển dựa trên TrueChain.",
+    "description_3":"Ban tổ chức cuộc thi TrueGlobal chọn các chủ đề sau để những người tham gia vào tham khảo. Các chủ đề không bắt buộc, người tham gia có thể tự chọn chủ đề, khi nhiều doanh nghiệp và tổ chức xã hội tham gia cuộc thi,ban tổ chức cuộc thi TrueGlobal sẽ bổ sung thêm các nhu cầu thực tế trong các chủ đề tham khảo. ",
     "list":[
       {
-        "title":"DAPP市场",
-        "description":"开发者将开发完成后的DAPP提交到应用市场，就可以供DAPP用户直接下载到移动端等设备中免安装直接使用，不需要管下载安装等过程。"
+        "title":"Thị trường Dapp",
+        "description":"Một thị trường Dapp mà người dùng có thể trực tiếp tải DAPP xuống các thiết bị như thiết bị đầu cuối di động mà không cần cài đặt. Sau khi các Dapp được tải lên thị trường các ứng dụng, người dùng có thể tải trực tiếp mà không cần quá trình cài đặt."
       },
       {
-        "title":"多重签名钱包",
-        "description":"开发一款钱包应用，要求使用多人多重签名技术，才能转账使用钱包中的数字资产。主要解决哪些人参与签名，按照什么顺序签名，使用什么方法签名，怎么验证签名，以及安全性如何得到保证等问题。"
+        "title":"Nhiều ví chữ ký",
+        "description":"Phát triển ứng dụng ví yêu cầu nhiều chữ ký để có thể chuyển tài sản kỹ thuật số trong ví. Nó chủ yếu giải quyết các vấn đề của những người tham gia vào việc ký xác nhận, theo thứ tự nào, bằng phương pháp nào, cách xác minh chữ ký và cách đảm bảo an ninh."
       },
       {
-        "title":"硬件钱包",
-        "description":"软硬件结合产品，硬件中保存私钥，软件中读取交易签名信息，同时不能读取私钥。做到私钥隔离，更安全的保护数字资产。"
+        "title":"Phần cứng của ví",
+        "description":"Phần mềm và phần cứng được kết hợp vào sản phẩm, Private Key được lưu trữ trong phần cứng, thông tin chữ ký giao dịch được đọc trong phần mềm và không thể đọc khóa riêng cùng một lúc. Tách riêng các khóa riêng tư và bảo vệ tài sản kỹ thuật số an toàn hơn."
       },
       {
-        "title":"去中心化的私钥管理体系",
-        "description":"通过使用BIP39协议等，能够使用同一套的助记词加不同的路径管理模式，管理一组树状的用户私钥体系，顶层的私钥可以管理下层的私钥，但下层的私钥不能管理顶层的私钥。"
+        "title":"Hệ thống quản lý khóa riêng tư phi tập trung",
+        "description":"Bằng cách sử dụng giao thức BIP39, cùng một tập hợp các từ phải nhớ và khác với cách quản lý theo lối mòn có thể được sử dụng cách quản lý một tập hợp các privite key của người dùng giống hình cây. Khóa riêng tư ở cấp cao nhất có thể quản lý khóa riêng ở cấp dưới cùng, nhưng khóa riêng ở cấp dưới cùng không thể quản lý khóa cá nhân ở cấp cao nhất."
       },
       {
-        "title":"智能合约形式化验证工具",
-        "description":"智能合约安全性是非常重要的！在编写智能合约时，需要形式化验证（Formal verification）工具来对智能合约的语法和基础逻辑进行检查，避免智能合约出现低级错误。"
+        "title":"Công cụ xác minh hợp thức hóa smart contract",
+        "description":"Bảo mật mart contract là rất quan trọng! Khi viết các smart contract, cần có các công cụ xác minh chính thức để kiểm tra cú pháp và logic cơ bản của các smart contract để tránh các lỗi không đáng có."
       },
       {
-        "title":"一键发token工具",
-        "description":"开发一种工具，能够非常简便的在TrueChain主网上发行规定格式的token。例如ERC20、ERC721、ERC1440等。"
+        "title":"Với một chìa khóa để gửi token",
+        "description":"Đội ngũ phát triển công cụ dễ dàng phân phối mã token theo định dạng được chỉ định trên mạng chính TrueChain, ví dụ: ERC20, ERC721, ERC1440, v.v."
       },
       {
-        "title":"将以太坊其他token同步转换到TrueChain主网上的工具",
-        "description":"开发一种工具或者跨链的平台，能非常简单地把目前以太坊或者其他公链上发行的token同步转移到TrueChain主网，同时实现价值传递等功能。"
+        "title":"Các công cụ để chuyển đổi tokens dưới dạng smart contract của Etherum thành TrueChain phiên bản chính thức",
+        "description":"Phát triển công cụ hoặc nền tảng chuỗi chéo để chuyển đổi token được phân phối trên nền tảng Ethereum hoặc các public chains khác thành token của TrueChain phiên bản chính thức, và thực hiện các chức năng khác như phân phối giá trị."
       },
       {
-        "title":"GPU挖矿客户端",
-        "description":"目前初链官方已经开发了CPU挖矿的标准客户端，公布了挖矿的算法。根据这个算法，开发整合适用于GPU的挖矿客户端，提供windows/linux/mac等版本。"
+        "title":"Đối tượng khách hàng của đào bằng GPU",
+        "description":"Hiện tại, TrueChain đã phát triển được một lượng khách hàng đào bằng CPU và đã công bố thuật toán đào. Theo thuật toán này, khách hàng khai thác thích hợp bằng GPU được phát triển và tích hợp,với các phiên bản Windows / Linux / MAC cũng được cung cấp."
       },
       {
-        "title":"去中心化交易平台",
-        "description":"在去中心化交易所中，用户的资产直接托管在用户自己的钱包里，大大降低了交易所被盗或跑路导致用户资产流失的风险。撮合交易通过智能合约完成，结算清算链上完成，在提升透明度的同时，也大大减少了对中心媒介的依赖。"
+        "title":"Nền tảng giao dịch phi tập trung",
+        "description":"Trong một sàn giao dịch phi tập trung, tài sản của người dùng được lưu trực tiếp trong ví của chính họ, làm giảm đáng kể nguy cơ mất tài sản do hành vi trộm cắp hối lộ hoặc bỏ trốn bởi chính sàn giao dịch họ dùng. Giao dịch khớp được hoàn thành thông qua smart contracts, và nó được hoàn thành trên chuỗi thanh toán và thanh toán bù trừ. Trong khi quảng bá tính minh bạch, nó cũng làm giảm đáng kể sự phụ thuộc vào phương tiện truyền thông trung ương"
       },
       {
-        "title":"区块链游戏中的随机数产生工具",
-        "description":"在非常多的游戏应用场景中，都需要依赖随机数（dice）。需要利用可验证随机函VRF等技术来做到的随机，不可预测，但同时可验证。"
+        "title":"Công cụ tạo số ngẫu nhiên trong các trò chơi blockchain",
+        "description":"Trong nhiều kịch bản ứng dụng, chúng ta cần dựa vào số ngẫu nhiên (súc sắc). Nó là cần thiết để sử dụng các công nghệ như chức năng ngẫu nhiên có thể kiểm chứng VRF để đạt được tính ngẫu nhiên, không thể đoán trước, nhưng có thể kiểm chứng cùng một lúc."
       },
       {
-        "title":"区块链游戏中规则",
-        "description":"区块链增加了游戏的公开透明性，在游戏开发过程中，将游戏的核心规则（bet）公布到区块链的智能合约中，通过调用智能合约，则可以避免游戏参与方的作弊行为。请设计一款游戏，将游戏规则上链。"
+        "title":"Những luật lệ trong các trò chơi blockchain",
+        "description":"Blockchain tăng tính minh bạch trong các trò chơi. Trong quá trình phát triển trò chơi, các quy tắc cốt lõi của trò chơi (đặt cược) được xuất bản thành smart contracts của blockchain. Bằng sự cứu rỗi của smart contracts, có thể tránh được gian lận ở các trò chơi này. Vui lòng thiết kế trò các chơi và thực hiện các quy tắc về Chuỗi."
       },
       {
-        "title":"去中心化的社区平台/博客平台",
-        "description":"去中心化的Social Media平台， 防止信息和粉丝造假， 让用户轻松社交。"
+        "title":"Nền tảng blog / nền tảng cộng đồng phi tập trung",
+        "description":"Nền tảng truyền thông xã hội phi tập trung ngăn thông tin giả và những người hâm mộ tạo thông tin giả mạo, do đó người dùng có thể tận hưởng thật sự một môi trường mạng xã hội thật"
       },
       {
-        "title":"去中心化的媒体",
-        "description":"目前的各种电子媒体，文章都是使用中心化数据库来存储，造成了删帖、改帖等多种弊病的出现，开发一款去中心化的媒体，将文章信息上链，可以保证发布的文章不可篡改的特性。,"
+        "title":"Phương tiện truyền thông phi tập trung",
+        "description":"Hiện nay, tất cả các loại phương tiện truyền thông trực tuyến sử dụng cơ sở dữ liệu tập trung để lưu trữ các bài viết, dẫn đến sự xuất hiện của nhiều loại lỗi như xóa bài đăng và sửa đổi bài đăng. Sự phát triển của một phương tiện truyền thông phi tập trung có thể lưu trữ thông tin của các bài viết trên các chuỗi nên các bài báo được xuất bản không thể bị giả mạo."
       },
       {
-        "title":"公益善款跟踪溯源",
-        "description":"由于公益慈善的资金去向不透明，使用区块链技术来确保捐款人对自己资金的流向清楚明白可查询；不可篡改的特性也能确保上链后的财务信息不会被篡改；可匿名性还能保护捐款者的隐私，让捐赠者放心献爱心。"
+        "title":"Khả năng truy suất nguồn gốc các hoạt động từ thiện",
+        "description":"Vì tài trợ từ thiện không minh bạch, công nghệ blockchain có thể đảm bảo rằng các nhà tài trợ có một sự hiểu biết rõ ràng về nơi tiền của họ đang đi đúng nơi và việc đóng góp có thể được kiểm tra. Tính năng không giả mạo của công nghệ blockchain cũng có thể đảm bảo rằng thông tin tài chính trên chuỗi không thể bị giả mạo; Ẩn danh cũng bảo vệ các nhà tài trợ của các nhà tài trợ do đó họ không cần phải lo lắng về việc rò rỉ thông tin cá nhân trong khi thể hiện tình yêu thương giúp đỡ người khác một cách thiện nguyện của họ."
       },
       {
-        "title":"农产品溯源",
-        "description":"农产品追溯是食品追溯中最复杂和最艰难的部分，通过使用区块链结合大数据、云计算以及物联网技术搭建一个云数据处理中心，把生产者、监管部门以及消费者连接起来。"
+        "title":"Truy xuất nguồn gốc của các sản phẩm nông nghiệp",
+        "description":"Việc truy tìm sản phẩm nông nghiệp là một phần phức tạp và khó khăn nhất trong việc truy tìm về thức ăn. Bằng cách sử dụng blockchain để xây dựng một trung tâm xử lý dữ liệu đám mây kết hợp dữ liệu lớn, điện toán đám mây và Internet của công nghệ mọi thứ, chúng ta có thể kết nối các nhà sản xuất, nhà quản lý và người tiêu dùng."
       },
       {
-        "title":"创业创新项目",
-        "description":"基于区块链的可溯源、不可篡改特性，打通资金端和票据端，可抵押融资并可通过智能合约技术自动进行兑付后的资金转账的创新券项目。"
+        "title":"Doanh nhân và các dự án đổi mới",
+        "description":"Dựa trên tính truy nguyên và các đặc tính không thể giả mạo của blockchain, phía voucher có thể được kết nối với phía bên vốn và bên hóa đơn, tài trợ thế chấp và có thể thực hiện được chương trình voucher tiền lệ để chuyển tiền thông qua smart contract."
       },
       {
-        "title":"扶贫项目",
-        "description":"利用区块链技术的可追溯， 不易篡改的特性， 精准扶贫，清晰追踪政府发放的扶贫款项， 专款专用。"
+        "title":"Dự án giảm nghèo khổ",
+        "description":"Bằng cách sử dụng tính truy nguyên và các đặc tính không giả mạo của công nghệ blockchain, mục tiêu được nhắm đến để sử dụng là thực hiện xóa đói giảm nghèo. Bằng cách này, các quỹ giảm nghèo do chính phủ ban hành có thể được theo dõi rõ ràng."
       }
     ]
   }
