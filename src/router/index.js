@@ -5,6 +5,7 @@ import Login from '@/pages/Login'
 import SignIn from '@/pages/SignIn'
 import Active from '@/pages/Active'
 import Topic from '@/pages/Topic'
+import Vote from '@/pages/Vote'
 import { pagestar } from '@/util'
 
 Vue.use(Router)
@@ -36,6 +37,11 @@ const router = new Router({
       path: '/topic',
       name: 'Topic',
       component: Topic
+    },
+    {
+      path: '/vote',
+      name: 'Vote',
+      component: Vote
     }
   ]
 })

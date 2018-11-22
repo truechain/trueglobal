@@ -26,6 +26,10 @@
       "router":"/topic"
     },
     {
+      "name":"투표",
+      "router":"/vote"
+    },
+    {
       "name":"저희팀에게 연락하세요",
       "router":"/#contact"
     }
@@ -110,6 +114,15 @@
           "미국 캘리포니아 대학교 컴퓨터 박사",
           "중국 천인 계획(The Recruitment Program of Global Experts) 심사위원",
           "마이크로소프트 전략 고문"
+        ]
+      },
+
+      {
+        "name": "Yang Dong",
+        "imgSrc": "yangdong",
+        "introList": [
+          "Director of Big data blockchain and regulatory technology laboratory in Renmin University of China",
+          "First batch of youth changjiang scholars of Ministry of Education"
         ]
       },
 
@@ -199,7 +212,7 @@
     "title": "참가 권익",
     "actual": "상금",
 
-    "info": "참가팀 프로젝트상금 및 응용 인큐베이션 기금: 대회 주최 측은 우선 대회 운영 기금을 상금에 투입하고 우승팀은 상금을 나눠 갖는다. 상금은 대회 출전팀 수에 따라 달라집니다.",
+    "info": "참가팀 프로젝트상금 및 응용 인큐베이션 기금: 대회 주최 측은 우선 대회 운영 기금을 상금에 투입하고 우승팀은 상금을 나눠 갖는다. 상금은 대회 출전팀 수에 따라 달라집니다.상품 풀 주소는 다음과 같습니다:",
 
     "list": [{
         "icon": "excitation",
@@ -390,6 +403,15 @@
         "title":"扶贫项目",
         "description":"利用区块链技术的可追溯， 不易篡改的特性， 精准扶贫，清晰追踪政府发放的扶贫款项， 专款专用。"
       }
+    ]
+  },
+  "vote": {
+    "title": "投票",
+    "description": "本次大赛会以弱中心化的形式，结合多个相关方，分三阶段投票。 投票结果会在大赛官网公示， 决定参赛团队的最终胜出结果。",
+    "condition": [
+      "1、群众投票，权重占40%，拟于2018年12月20日开始。需关注TrueGlobal 大赛官方公众号后投票， 每天每人可以投一票。使用微信投票机制来防刷。",
+      "2、队伍间的互相投票，权重占30%，拟于12月30日后开始，使用网站的投票机制进行投票。参赛队伍的团队负责人登录后，选择投票给其他参赛队伍。每支队伍共有5票，可以选择投给多支队伍或某一支队伍，但是不能投给自己所在团队 。",
+      "3、专家评委投票，决赛环节，权重占30%，每位专家持2票，拟于2019年1月5日后进行。 "
     ]
   }
 }
