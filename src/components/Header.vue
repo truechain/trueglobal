@@ -137,6 +137,7 @@ export default {
 <style scoped lang='less'>
 .nav-right {
   float: right;
+  max-width: 100px;
 }
 .menu-box {
   width: auto;
