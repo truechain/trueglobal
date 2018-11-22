@@ -206,7 +206,7 @@ export default {
     position: fixed;
     align-items: center;
     justify-content: center;
-    // background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     background-color: #203260;
     .container-app-header-button {
       display: none;
