@@ -10,8 +10,6 @@
 
 <script>
 import { active } from '@/api'
-console.log(active)
-
 export default {
   data () {
     return {

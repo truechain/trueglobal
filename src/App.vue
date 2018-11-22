@@ -18,6 +18,9 @@ export default {
       isBg: false
     }
   },
+  mounted () {
+    console.log('AUTO')
+  },
   methods: {
     getIsBg () {
       let scrollTop = 0
