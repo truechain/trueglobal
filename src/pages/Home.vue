@@ -203,7 +203,7 @@ export default {
     }
   },
   mounted () {
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < 14; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
     }
@@ -211,7 +211,7 @@ export default {
       var p = x + 1
       this.co_hosting.push(require('../assets/co_hosting/' + p + '.png'))
     }
-    for (var m = 0; m < 8; m++) {
+    for (var m = 0; m < 9; m++) {
       var d = m + 1
       this.media.push(require('../assets/media/' + d + '.png'))
     }
