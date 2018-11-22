@@ -14,7 +14,7 @@ switch (process.env.NODE_ENV) {
     break
   case 'production':
     // serverUrl = 'http://47.91.233.146:7001/'
-    serverUrl = 'https://www.trueglobal.pro/api'
+    serverUrl = '//www.trueglobal.pro/api'
     break
 }
 
