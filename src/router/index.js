@@ -22,9 +22,6 @@ const router = new Router({
       path: '/signin',
       name: 'SignIn',
       component: SignIn
-      // meta: {
-      //   isHeader: true
-      // },
     },
     {
       path: '/login',
