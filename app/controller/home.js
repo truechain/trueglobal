@@ -5,7 +5,7 @@ class HomeController extends Controller {
   async index() {
     this.ctx.body = {
       code: 0,
-      message: '请求成功.',
+      message: '__请求成功__',
       data: null,
     };
   }
