@@ -154,6 +154,18 @@
           "Cung cấp các giải pháp quản lý cho các dự án đang nổi lên trong kỷ nguyên blockchain"
         ]
       },
+
+      {
+        "name": "Elias Ahonen",
+        "imgSrc": "EliasAhonen",
+        "introList": [
+          "Token Valley CEO",
+          "Author of ‘Encyclopedia of Physical Bitcoins and Crypto-Currencies’ ",
+          "Former Marketing Managment at Blackberry",
+          "An entrepreneur, author, and consultant for several blockchain projects"
+        ]
+      },
+
       {
         "name": "Zhang Jiannan",
         "imgSrc": "zhangjiannan",
@@ -374,8 +386,8 @@
     "title": "投票",
     "description": "本次大赛会以弱中心化的形式，结合多个相关方，分三阶段投票。 投票结果会在大赛官网公示， 决定参赛团队的最终胜出结果。",
     "condition": [
-      "1、群众投票，权重占40%，拟于2018年12月20日开始。需关注TrueGlobal 大赛官方公众号后投票， 每天每人可以投一票。使用微信投票机制来防刷。",
-      "2、队伍间的互相投票，权重占30%，拟于12月30日后开始，使用网站的投票机制进行投票。参赛队伍的团队负责人登录后，选择投票给其他参赛队伍。每支队伍共有5票，可以选择投给多支队伍或某一支队伍，但是不能投给自己所在团队 。",
+      "1、大众投票，权重占40%，拟于2018年12月20日开始。需关注TrueGlobal 大赛官方公众号后投票。",
+      "2、队伍间的互相投票，权重占30%，拟于12月30日后开始，使用网站的投票机制进行投票。参赛队伍的团队负责人登录后，选择投票给其他参赛队伍。每支队伍共有5票，投给多支队伍，但是不能投给自己所在团队 。",
       "3、专家评委投票，决赛环节，权重占30%，每位专家持2票，拟于2019年1月5日后进行。 "
     ]
   }

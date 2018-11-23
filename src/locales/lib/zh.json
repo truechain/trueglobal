@@ -154,10 +154,20 @@
         ]
       },
       {
+        "name": "Elias Ahonen",
+        "imgSrc": "EliasAhonen",
+        "introList": [
+          "Token Valley CEO",
+          "全球畅销书《比特币和加密货币百科全书》作者",
+          "曾负责加拿大黑莓公司市场管理",
+          "创业家，作家曾为很多区块链项目担任顾问"
+        ]
+      },
+      {
         "name": "张剑南",
         "imgSrc": "zhangjiannan",
         "introList": [
-          "truechain ceo",
+          "Truechain CEO",
           "牛津大学计算机硕士",
           "DoraHacks创始人",
           "原欧洲核子研究组织CERN研究人员"

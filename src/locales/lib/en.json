@@ -1,37 +1,36 @@
 {
   "language": "EN",
-  "nav": [
-    {
-      "name":"Introduction",
-      "router":"/#inter"
+  "nav": [{
+      "name": "Introduction",
+      "router": "/#inter"
     },
     {
-      "name":"Guest",
-      "router":"/#pw"
+      "name": "Guest",
+      "router": "/#pw"
     },
     {
-      "name":"Rights",
-      "router":"/#rni"
+      "name": "Rights",
+      "router": "/#rni"
     },
     {
-      "name":"Rules",
-      "router":"/#rule"
+      "name": "Rules",
+      "router": "/#rule"
     },
     {
-      "name":"Requirements",
-      "router":"/#claim"
+      "name": "Requirements",
+      "router": "/#claim"
     },
     {
-      "name":"Topic",
-      "router":"/topic"
+      "name": "Topic",
+      "router": "/topic"
     },
     {
-      "name":"Vote",
-      "router":"/vote"
+      "name": "Vote",
+      "router": "/vote"
     },
     {
-      "name":"Contact",
-      "router":"/#contact"
+      "name": "Contact",
+      "router": "/#contact"
     }
   ],
   "root": {
@@ -82,16 +81,15 @@
     "title": "Area",
     "content": "China, Korea, Thailand, Vietnam, America and other countries and regions."
   },
-"guest": {
+  "guest": {
     "title": "Panels of judges and guests",
-    "list": [
-      {
+    "list": [{
         "name": "Lin Chuizhou",
         "imgSrc": "linchuizhou",
         "introList": [
           "Academician of the Royal Swedish Academy of Sciences",
           "Academician of Hong Kong Academy of Engineering Sciences",
-         	"Former Vice principal of The Hong Kong University of Science and Technology"
+          "Former Vice principal of The Hong Kong University of Science and Technology"
 
         ]
       },
@@ -157,6 +155,16 @@
         ]
       },
       {
+        "name": "Elias Ahonen",
+        "imgSrc": "EliasAhonen",
+        "introList": [
+          "Token Valley CEO",
+          "Author of ‘Encyclopedia of Physical Bitcoins and Crypto-Currencies’ ",
+          "Former Marketing Managment at Blackberry",
+          "An entrepreneur, author, and consultant for several blockchain projects"
+        ]
+      },
+      {
         "name": "Zhang Jiannan",
         "imgSrc": "zhangjiannan",
         "introList": [
@@ -192,62 +200,59 @@
     "title": "Right and Interests",
     "actual": "Prize pool update",
     "info": "The project award is also the incubation fund for the application to be applied in real life. The contest organizer will put the contest start-up fund into the prize pool, and the bonus pool will grow according to the number of teams that participated in the contest. The winning teams will share the prize. The prize pool address is：",
-    "list": [
-        {
-          "icon": "excitation",
-          "title": "Bonus incentives",
-          "content": "The winner can get abundant bonus and various incentives"
-        },
-        {
-          "icon": "incubation",
-          "title": "Project incubation",
-          "content": "Excellent projects will have the opportunity of investment and incubation by connecting with local government incubators "
-        },
-        {
-          "icon": "media",
-          "title": "Media exposure",
-          "content": "Millions of media exposures + media interview"
-        },
-        {
-          "icon": "community",
-          "title": "Join the community",
-          "content": "The opportunity of becoming an expert in the open sourced technology of blockchain and sharing resources with developers around the world"
-        }
+    "list": [{
+        "icon": "excitation",
+        "title": "Bonus incentives",
+        "content": "The winner can get abundant bonus and various incentives"
+      },
+      {
+        "icon": "incubation",
+        "title": "Project incubation",
+        "content": "Excellent projects will have the opportunity of investment and incubation by connecting with local government incubators "
+      },
+      {
+        "icon": "media",
+        "title": "Media exposure",
+        "content": "Millions of media exposures + media interview"
+      },
+      {
+        "icon": "community",
+        "title": "Join the community",
+        "content": "The opportunity of becoming an expert in the open sourced technology of blockchain and sharing resources with developers around the world"
+      }
     ]
   },
   "flow": {
     "title": "Schedule",
-    "list": [
-      {
-        "time":"2018-11-15",
-        "event":"Start accepting registration."
+    "list": [{
+        "time": "2018-11-15",
+        "event": "Start accepting registration."
       },
       {
-        "time":"2018-12-15",
-        "event":"Registration deadline."
+        "time": "2018-12-15",
+        "event": "Registration deadline."
       },
       {
-        "time":"Before 2018-12-31",
-        "event":"complete team member information, submit project briefs and attachments."
+        "time": "Before 2018-12-31",
+        "event": "complete team member information, submit project briefs and attachments."
       },
       {
-        "time":"Before 2019-01-05",
-        "event":"The participating team submits the entries."
+        "time": "Before 2019-01-05",
+        "event": "The participating team submits the entries."
       },
       {
         "time": "2019-01-10",
-        "event":"Experts and technical judges review projects."
+        "event": "Experts and technical judges review projects."
       },
       {
-        "time":"2019-01-20",
-        "event":"Finals and awards ceremony."
+        "time": "2019-01-20",
+        "event": "Finals and awards ceremony."
       }
     ]
   },
   "rule": {
     "title": "Enrollment rules",
-    "list": [
-      {
+    "list": [{
         "title": "We accept recommendation by nodes or the participant team can enroll them online; the organizer will contact the team lead to confirm details after registration. ",
         "list": [
           "- All participants need to hand in the registration materials online and the form  must conform to the requirements.",
@@ -286,8 +291,8 @@
   "alliance": {
     "title": "Alliance communities"
   },
-  "media":{
-    "title":"Media"
+  "media": {
+    "title": "Media"
   },
   "we": {
     "title": "Contact us ",
@@ -296,81 +301,80 @@
     "qr2": "Offical Twitter"
   },
   "state": {
-    "content": "The final explanation right of the competition belongs to TrueGlobal "
+    "content": "TrueGlobal reserves the right of the final interpretation"
   },
-  "topic":{
-    "title":"Suggested Dapp topics for reference",
-    "description_1":"The conflict between security, efficiency and decentralization for public blockchain is solved by TrueChain using the PBFT-fPoW hybrid consensus technology called Minerva.TrueChain uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol i.e. fPoW, so that common users could have the opportunity to participate in mining. TrueChain also added sharding on top of PBFT to lift the limit of scalability.TrueChain has a very fast transaction confirmation speed, which can provide a stable and efficient platform for the landing of various commercial applications. Therefore, some efficient and interesting applications can be made based on TrueChain.",
-    "description_2":"All of the topics mentioned below need to be developed based on TrueChain.",
-    "description_3":"TrueGlobal selects the following topics for participants to consider. The topics are not mandatory, Participants can choose the topics by themselves, meanwhile, as more enterprises and organization joining the competition, TrueGlobal will add more actual demand under this topic. ",
-    "list":[
-      {
-        "title":"DAPP market",
-        "description":"A Dapp market that users can directly downloaded DAPPs to devices such as mobile terminals without installation. After the Dapps are uploaded to the application market, users can download directly without the installation process."
+  "topic": {
+    "title": "Suggested Dapp topics for reference",
+    "description_1": "The conflict between security, efficiency and decentralization for public blockchain is solved by TrueChain using the PBFT-fPoW hybrid consensus technology called Minerva.TrueChain uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol i.e. fPoW, so that common users could have the opportunity to participate in mining. TrueChain also added sharding on top of PBFT to lift the limit of scalability.TrueChain has a very fast transaction confirmation speed, which can provide a stable and efficient platform for the landing of various commercial applications. Therefore, some efficient and interesting applications can be made based on TrueChain.",
+    "description_2": "All of the topics mentioned below need to be developed based on TrueChain.",
+    "description_3": "TrueGlobal selects the following topics for participants to consider. The topics are not mandatory, Participants can choose the topics by themselves, meanwhile, as more enterprises and organization joining the competition, TrueGlobal will add more actual demand under this topic. ",
+    "list": [{
+        "title": "DAPP market",
+        "description": "A Dapp market that users can directly downloaded DAPPs to devices such as mobile terminals without installation. After the Dapps are uploaded to the application market, users can download directly without the installation process."
       },
       {
-        "title":"Multiple signature wallet",
-        "description":"Develop a wallet app that requires a multiple signatures to transfer digital assets in the wallet. It mainly solves the problems of who participates in the signature, in what order, by what method, how to verify the signature, and how to guarantee the security."
+        "title": "Multiple signature wallet",
+        "description": "Develop a wallet app that requires a multiple signatures to transfer digital assets in the wallet. It mainly solves the problems of who participates in the signature, in what order, by what method, how to verify the signature, and how to guarantee the security."
       },
       {
-        "title":"Hardware wallet",
-        "description":"Product need to make up of software and hardware, The private key is stored in the hardware and the transaction signature information is read in the software. At the same time, the private key cannot be read. Achieve private key isolation for a more secure protection of digital assets."
+        "title": "Hardware wallet",
+        "description": "Product need to make up of software and hardware, The private key is stored in the hardware and the transaction signature information is read in the software. At the same time, the private key cannot be read. Achieve private key isolation for a more secure protection of digital assets."
       },
       {
-        "title":"Decentralized private key management system",
-        "description":"By using the BIP39 protocol, the same set of mnemonic words and different path management modes can be used to manage a set of tree-like user private key system. The private key at the top level can manage the private key at the bottom level, but the private key at the bottom level cannot manage the private key at the top level"
+        "title": "Decentralized private key management system",
+        "description": "By using the BIP39 protocol, the same set of mnemonic words and different path management modes can be used to manage a set of tree-like user private key system. The private key at the top level can manage the private key at the bottom level, but the private key at the bottom level cannot manage the private key at the top level"
       },
       {
-        "title":"smart contract formalization verification tool",
-        "description":"Security is very important a smart contract! When writing smart contracts, formal verification tools are needed to check the syntax and basic logic of smart contracts to avoid low-level mistakes."
+        "title": "smart contract formalization verification tool",
+        "description": "Security is very important a smart contract! When writing smart contracts, formal verification tools are needed to check the syntax and basic logic of smart contracts to avoid low-level mistakes."
       },
       {
-        "title":"One click to send token",
-        "description":"Develop a tool that are easy to distribute tokens in a specified format on TrueChain mainnet, for example, ERC20, ERC721, ERC1440, etc."
+        "title": "One click to send token",
+        "description": "Develop a tool that are easy to distribute tokens in a specified format on TrueChain mainnet, for example, ERC20, ERC721, ERC1440, etc."
       },
       {
-        "title":"Tools to migrate tokens of ethereum to TrueChain mainnet",
-        "description":"Develop a tool or cross-chain platform to transfer the token distributed on Ethereum or other public chains to TrueChain mainnet simultaneously, and realize other functions such as value delivery."
+        "title": "Tools to migrate tokens of ethereum to TrueChain mainnet",
+        "description": "Develop a tool or cross-chain platform to transfer the token distributed on Ethereum or other public chains to TrueChain mainnet simultaneously, and realize other functions such as value delivery."
       },
       {
-        "title":"Client of GPU mining",
-        "description":"Currently, TrueChain has developed a standard client of CPU mining and published the mining algorithm. According to this algorithm, mining clients suitable for GPU are developed and integrated, and Windows/Linux/MAC versions are provided too."
+        "title": "Client of GPU mining",
+        "description": "Currently, TrueChain has developed a standard client of CPU mining and published the mining algorithm. According to this algorithm, mining clients suitable for GPU are developed and integrated, and Windows/Linux/MAC versions are provided too."
       },
       {
-        "title":"Decentralized trading platform",
-        "description":"In a decentralized exchanges, the user's assets are directly saved in the user's own wallet, greatly reducing the risk of assets lost by stolen or caused by others reasons. The matching transaction is completed through smart contracts, and the clearing and settlement are processed on the public chain. While promoting the transparency, it also greatly reduces the dependence on central agency."
+        "title": "Decentralized trading platform",
+        "description": "In a decentralized exchanges, the user's assets are directly saved in the user's own wallet, greatly reducing the risk of assets lost by stolen or caused by others reasons. The matching transaction is completed through smart contracts, and the clearing and settlement are processed on the public chain. While promoting the transparency, it also greatly reduces the dependence on central agency."
       },
       {
-        "title":"The random number generation tool in the blockchain games",
-        "description":"In many application scenarios, we need to rely on the random number (dice). It is necessary to use technologies such as verifiable random function VRF to achieve randomness, unpredictability, but verifiable at the same time."
+        "title": "The random number generation tool in the blockchain games",
+        "description": "In many application scenarios, we need to rely on the random number (dice). It is necessary to use technologies such as verifiable random function VRF to achieve randomness, unpredictability, but verifiable at the same time."
       },
       {
-        "title":"Rules in the blockchain games",
-        "description":"Blockchain increases the transparency in the games. During the game development process, the game's core rules (bet) are published into the smart contracts of the blockchain. By invoking smart contracts, cheating can be avoid. Please design a game and make the rules on Chain."
+        "title": "Rules in the blockchain games",
+        "description": "Blockchain increases the transparency in the games. During the game development process, the game's core rules (bet) are published into the smart contracts of the blockchain. By invoking smart contracts, cheating can be avoid. Please design a game and make the rules on Chain."
       },
       {
-        "title":"Decentralized community platform/blog platform",
-        "description":"A decentralized Social Media platform prevents fake information and or fake fans, so that users could enjoy sound social atmosphere."
+        "title": "Decentralized community platform/blog platform",
+        "description": "A decentralized Social Media platform prevents fake information and or fake fans, so that users could enjoy sound social atmosphere."
       },
       {
-        "title":"Decentralized media",
-        "description":"At present, all kinds of online media use centralized database to store articles, resulting in the occurrence of many kinds of defects such as deleting posts and modifying posts. The development of a decentralized media can store the information of articles on chain so the published articles can not be tampered.,"
+        "title": "Decentralized media",
+        "description": "At present, all kinds of online media use centralized database to store articles, resulting in the occurrence of many kinds of defects such as deleting posts and modifying posts. The development of a decentralized media can store the information of articles on chain so the published articles can not be tampered.,"
       },
       {
-        "title":"Traceability of charity donation",
-        "description":"Since philanthropic funding is not transparent, blockchain technology can ensure that donors have a clear understanding of where their money is going and the donation can be checked. The tamper resist feature of blockchain technology can also ensure that the financial information on the chain cannot be tampered; Anonymity also protects the privacies of donors therefore they don’t  need to worry about the leak of personal information while showing their cares."
+        "title": "Traceability of charity donation",
+        "description": "Since philanthropic funding is not transparent, blockchain technology can ensure that donors have a clear understanding of where their money is going and the donation can be checked. The tamper resist feature of blockchain technology can also ensure that the financial information on the chain cannot be tampered; Anonymity also protects the privacies of donors therefore they don’t  need to worry about the leak of personal information while showing their cares."
       },
       {
-        "title":"Traceability of agricultural products",
-        "description":"Tracing of the gricultural product is the most complex and difficult part in food tracing. By using blockchain to build a cloud data processing center combining big data, cloud computing and Internet of things technology, we can connect the producers, regulators and consumers."
+        "title": "Traceability of agricultural products",
+        "description": "Tracing of the gricultural product is the most complex and difficult part in food tracing. By using blockchain to build a cloud data processing center combining big data, cloud computing and Internet of things technology, we can connect the producers, regulators and consumers."
       },
       {
-        "title":"Entrepreneurship and innovation projects",
-        "description":"Based on the traceability and non-tampering characteristics of blockchain, the voucher side can be connected with the capital side and the bill side. The holder of the voucher can use it as a guarantee, and transfer/payment can be achieved through smart contract."
+        "title": "Entrepreneurship and innovation projects",
+        "description": "Based on the traceability and non-tampering characteristics of blockchain, the voucher side can be connected with the capital side and the bill side. The holder of the voucher can use it as a guarantee, and transfer/payment can be achieved through smart contract."
       },
       {
-        "title":"Poverty alleviation projects",
-        "description":"By using the traceability and non-tampering characteristics of blockchain technology to realize targeted poverty alleviation. In this way,the poverty-relief funds issued by the government can be clearly tracked."
+        "title": "Poverty alleviation projects",
+        "description": "By using the traceability and non-tampering characteristics of blockchain technology to realize targeted poverty alleviation. In this way,the poverty-relief funds issued by the government can be clearly tracked."
       }
     ]
   },
@@ -378,8 +382,8 @@
     "title": "投票",
     "description": "本次大赛会以弱中心化的形式，结合多个相关方，分三阶段投票。 投票结果会在大赛官网公示， 决定参赛团队的最终胜出结果。",
     "condition": [
-      "1、群众投票，权重占40%，拟于2018年12月20日开始。需关注TrueGlobal 大赛官方公众号后投票， 每天每人可以投一票。使用微信投票机制来防刷。",
-      "2、队伍间的互相投票，权重占30%，拟于12月30日后开始，使用网站的投票机制进行投票。参赛队伍的团队负责人登录后，选择投票给其他参赛队伍。每支队伍共有5票，可以选择投给多支队伍或某一支队伍，但是不能投给自己所在团队 。",
+      "1、大众投票，权重占40%，拟于2018年12月20日开始。需关注TrueGlobal 大赛官方公众号后投票。",
+      "2、队伍间的互相投票，权重占30%，拟于12月30日后开始，使用网站的投票机制进行投票。参赛队伍的团队负责人登录后，选择投票给其他参赛队伍。每支队伍共有5票，投给多支队伍，但是不能投给自己所在团队 。",
       "3、专家评委投票，决赛环节，权重占30%，每位专家持2票，拟于2019年1月5日后进行。 "
     ]
   }
