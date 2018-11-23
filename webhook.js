@@ -39,9 +39,13 @@ handler.on('push', function(event) {
     });
   } else if (event.payload.ref === 'refs/heads/server') {
     console.log('Start run command on => SERVER');
-    runCommand('sh', [ '/root/service/trueglobal/auto_deploy.sh' ], txt => {
-      console.log(txt);
-    });
+    axios.get('http://47.91.233.146:7776/')
+      .then(response => {
+        console.log(response.data, 'server');
+      })
+      .catch(error => {
+        console.log(error);
+      });
   } else {
     console.log('Not the master branch, will not trigger');
   }
