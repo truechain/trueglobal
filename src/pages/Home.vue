@@ -203,7 +203,7 @@ export default {
     }
   },
   mounted () {
-    for (var i = 0; i < 14; i++) {
+    for (var i = 0; i < 15; i++) {
       var j = i + 1
       this.mechanism.push(require('../assets/cooperativeInstitution/' + j + '.png'))
     }
