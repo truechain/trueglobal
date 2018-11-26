@@ -15,12 +15,12 @@ class TeamController extends Controller {
     };
     // debugger
     ctx.validate(teamRule, ctx.request.body);
-    const result = await service.team.create(ctx.request.body);
-
+    await service.team.create(ctx.request.body);
+    const status = await this.service.mail.sendMail(null, ctx.decode.mail, null, '2');
     ctx.body = {
       code: 0,
       message: '添加成功',
-      data: result,
+      data: status,
     }
   }
 }
