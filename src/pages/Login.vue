@@ -18,6 +18,9 @@
               </div>
               <Input clearable v-model="login_password" type="password" :maxlength="16" />
             </li>
+            <li :style='form_item_forgetPwd'>
+              <a @click="forgetPwd">忘记密码?</a>
+            </li>
           </ul>
           <Button :style="reg_btn" @click="_login">{{$t('function.login')}}</Button>
         </TabPane>
@@ -51,12 +54,28 @@
         </TabPane>
       </Tabs>
     </Modal>
+    <Modal
+        v-model="isForgetPwd"
+        :closable="false"
+        class-name="vertical-center-modal"
+        footer-hide>
+        <h2 class='forgetPwd-text'>找回密码</h2>
+        <ul :style="form_area">
+            <li :style='form_item'>
+              <div :style="l_t">
+                <p :style="l_t_b">{{$t('function.mail')}}</p>
+              </div>
+              <Input clearable v-model="forgetMail" />
+            </li>
+        </ul>
+        <Button :style="reg_btn" @click="_forget">确认</Button>
+    </Modal>
   </div>
 </template>
 <script>
 import { Button, Modal } from 'iview'
 import { setStore, getStore } from '@/util'
-import { sendEmail, register, login } from '../api/index.js'
+import { sendEmail, register, login, forgetPwd } from '../api/index.js'
 export default {
   props: {
     isLogin: Boolean
@@ -69,6 +88,7 @@ export default {
   data () {
     return {
       isSelect: false,
+      isForgetPwd: false,
       currentName: 'name1',
       mail: '',
       password: '',
@@ -77,13 +97,15 @@ export default {
       timer: '',
       login_email: '',
       login_password: '',
+      forgetMail: '',
       countdown: 60,
       btnBool: false,
       get_code_t: '获取验证码',
       ver_mail: /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/,
-      form_area: 'width:80%',
+      form_area: 'width:80%;',
       reg_area: 'display: flex;flex-direction: column;align-items: center;',
       form_item: 'display: flex;height: 50px;align-items: center;justify-content: space-around;',
+      form_item_forgetPwd: 'float:right;',
       l_t: 'display: flex;flex-direction: column;line-height: 20px;min-width:30%;float: left;',
       l_t_b: 'font-weight:400;color:rgba(32,50,96,1);',
       reg_btn: 'width: 100px;height: 30px;background: rgba(30,100,180,1);border-radius: 30px;color: #fff;margin-top: 30px;',
@@ -182,6 +204,21 @@ export default {
       } else {
         this.$Message.error('请输入有效的邮箱地址')
       }
+    },
+    forgetPwd () {
+      this.isSelect = false
+      this.isForgetPwd = true
+    },
+    _forget () {
+      if (this.ver_mail.test(this.forgetMail)) {
+        console.log(forgetPwd)
+
+        // forgetPwd({}).then(res => {
+        //   console.log(res, '重置密码返回')
+        // })
+      } else {
+        this.$Message.error('请输入有效的邮箱地址')
+      }
     }
   },
   components: {
@@ -203,5 +240,18 @@ export default {
       color:rgba(32,50,96,1);
       background:rgba(255,255,255,1);
     }
+}
+
+.ivu-modal-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .forgetPwd-text{
+    margin: 10px 0;
+    font-size:24px;
+    font-weight:400;
+    color:rgba(30,100,180,1);
+  }
 }
 </style>

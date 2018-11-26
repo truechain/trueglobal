@@ -1,4 +1,5 @@
 <template>
+<!-- @mousewheel="mousewheel" -->
   <div class="container">
     <section class='h_area'>
       <div class="_w">
@@ -69,7 +70,16 @@
         <p class="pu_t1">{{ $t('rights.actual')}}</p>
         <p class="rni_i" style="font-size:12px">{{ $t('rights.info')}} 0xcFc9EE261DB31591085Ea50D4e07b11d77AEEb3D</p>
         <p class="rni_i" style="font-size:45px">10000 TRUE +</p>
-
+        <!-- <div class='iCountUp'>
+          <ICountUp
+            :startVal="startVal"
+            :endVal="endVal"
+            :decimals="decimals"
+            :duration="duration"
+            :options="options"
+            @ready="onReady"
+          />
+        </div> -->
       </div>
     </section>
 
@@ -78,11 +88,6 @@
       <div class="pu_dis award_area schedule_area">
         <p class="pu_t1">{{ $t('flow.title')}}</p>
         <p class="line"></p>
-        <!-- <ul class="award_t_a">
-          <li v-for="(item,index) in $t('flow.list')" :key='index'>
-            {{ item }}
-          </li>
-        </ul> -->
         <Timeline class="award_t_a">
           <TimelineItem v-for="(item,index) in $t('flow.list')" :key='index'>
             <p class="time">{{item.time}}</p>
@@ -193,13 +198,26 @@
 
 <script>
 import Login from '@/pages/Login'
+// import ICountUp from 'vue-countup-v2'
 export default {
   data () {
     return {
       mechanism: [],
       co_hosting: [],
       media: [],
-      isLogin: false
+      isLogin: false,
+      startVal: 0,
+      endVal: 0,
+      decimals: 0,
+      duration: 2.5,
+      options: {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        prefix: '',
+        suffix: ''
+      }
     }
   },
   mounted () {
@@ -216,14 +234,30 @@ export default {
       this.media.push(require('../assets/media/' + d + '.png'))
     }
   },
+  methods: {
+    // onReady: function (instance, CountUp) {
+    //   const that = this
+    //   instance.update(that.endVal)
+    // },
+    // mousewheel: () => {
+    //   if (document.documentElement.scrollTop >= document.querySelector('.iCountUp').offsetTop - document.documentElement.clientHeight + 100) {
+    //     console.log('数字开始滚动')
+    //   }
+    // }
+  },
   components: {
     Login
+    // ICountUp
   }
 }
 
 </script>
 
 <style scoped lang='less'>
+  .iCountUp {
+      font-size: 8em;
+      color: #4d63bc;
+    }
   .link_color{
     cursor: pointer;
     color:#57a3f3 !important;

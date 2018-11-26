@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "countup.js": "^1.9.3",
     "element-ui": "^2.4.10",
     "github-webhook-handler": "^0.7.1",
     "iview": "^3.1.5",
     "reset-css": "^4.0.1",
     "vue": "^2.5.17",
+    "vue-countup-v2": "^1.0.3",
     "vue-i18n": "^8.3.1",
     "vue-router": "^3.0.1"
   },
