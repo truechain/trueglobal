@@ -279,10 +279,30 @@
   "require": {
     "title": "Requirements of the entries",
     "list": [
-      "The smart contract of the works must be based on TrueChain.",
-      "The code and deployable target application system",
-      "Application demonstration materials (PPT or Word)",
-      "More details are being updated"
+      {
+        "text":"The smart contract of the works must be based on TrueChain.",
+        "link":null
+      },
+      {
+        "text":"The code and deployable target application system",
+        "link":null
+      },
+      {
+        "text":"Application demonstration materials (PPT or Word)",
+        "link":null
+      },
+      {
+        "text":"Topic",
+        "link":"/topic"
+      },
+      {
+        "text":"Voting rules",
+        "link":"/vote"
+      },
+      {
+        "text":"More details are being updated",
+        "link":null
+      }
     ]
   },
   "sponsor": {

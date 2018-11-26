@@ -116,9 +116,9 @@
         <p class="pu_t1">{{ $t('require.title')}}</p>
         <p class="line"></p>
         <ul class="award_t_a">
-         <li v-for="(item,index) in $t('require.list')" :key='index'>
-            {{ item }}
-          </li>
+          <router-link v-for="(item,index) in $t('require.list')" :to='item.link||"/"' :key='index' tag='li' :class="item.link ? 'link_color' : null">
+              {{item.text}}
+          </router-link>
         </ul>
       </div>
     </section>
@@ -224,6 +224,10 @@ export default {
 </script>
 
 <style scoped lang='less'>
+  .link_color{
+    cursor: pointer;
+    color:#57a3f3 !important;
+  }
   @media screen and (max-width: 860px) {
     .block-br {
       display: block;

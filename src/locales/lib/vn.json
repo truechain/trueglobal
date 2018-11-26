@@ -282,10 +282,30 @@
   "require": {
     "title": "Yêu cầu của các mục",
     "list": [
-      "Hợp đồng thông minh của các tác phẩm dự thi phải dựa trên TrueChain.",
-      "Các bảng Code và hệ thống ứng dụng trong mục tiêu có thể triển khai",
-      "Phiên bản demo của ứng dụng (PPT hoặc Word)",
-      "Chi tiết khác đang được cập nhật"
+      {
+        "text":"Hợp đồng thông minh của các tác phẩm dự thi phải dựa trên TrueChain.",
+        "link":null
+      },
+      {
+        "text":"Các bảng Code và hệ thống ứng dụng trong mục tiêu có thể triển khai",
+        "link":null
+      },
+      {
+        "text":"Phiên bản demo của ứng dụng (PPT hoặc Word)",
+        "link":null
+      },
+      {
+        "text":"Tham khảo trò chơi",
+        "link":"/topic"
+      },
+      {
+        "text":"Quy tắc bỏ phiếu",
+        "link":"/vote"
+      },
+      {
+        "text":"Chi tiết khác đang được cập nhật",
+        "link":null
+      }
     ]
   },
   "sponsor": {
