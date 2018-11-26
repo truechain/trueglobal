@@ -5,7 +5,6 @@ class CaptchaController extends Controller {
   async index() {
     const { ctx, service } = this;
     const { body } = ctx.request;
-    debugger
     const regRule = {
       mail: 'string',
       password: 'string',
