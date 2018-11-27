@@ -17,8 +17,10 @@ export default {
     }
   },
   async mounted () {
+    // this.$route.query.isRest
     const res = await active({
-      hash: this.$route.query.hash
+      hash: this.$route.query.hash,
+      isReset: this.$route.query.isReset
     })
     if (res) {
       this.status = '账户已激活, 请前往登录'

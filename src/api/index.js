@@ -50,10 +50,21 @@ const signIn = async (params) => {
   return http.post('/team', params, headers)
 }
 
+// 找回密码
+const forgetPwd = (params) => {
+  return http.post('/register', params)
+}
+
+const resetPwd = (params) => {
+  return http.post('/reset', params)
+}
+
 export {
   sendEmail,
   register,
   login,
   signIn,
-  active
+  active,
+  forgetPwd,
+  resetPwd
 }
