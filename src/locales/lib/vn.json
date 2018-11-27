@@ -403,12 +403,12 @@
     ]
   },
   "vote": {
-    "title": "About the voting system",
-    "description": "The voting of the contest will be divided into 3 phases with multiple parties involved, and it will be conducted in a more decentralized method.",
+    "title": "Giới thiệu về hệ thống bầu cử",
+    "description": "Việc bỏ phiếu của cuộc thi sẽ được chia thành 3 giai đoạn với nhiều bên liên quan, và nó sẽ được tiến hành theo một phương pháp phi tập trung hơn.",
     "condition": [
-      "1、Crowd Voting. This part counts as 40% of the total votes and will start from December 20th, 2018. We use wechat voting mechanism to prevent ballot rigging. People need to follow the official wechat account - TrueGlobal to vote and each person can only vote once per day. ",
-      "2、Voting between teams. This part count as for 30% of the votes starting from December 30th, and will be conducted via the website’s voting system. The representative of each team need to log in the website and vote for other teams, each team has 5 votes. They can vote for one team or multiple teams, but they cannot vote for their own teams.",
-      "3、Votes from the judges. This is the final phase, and it counts for 30% of the votes. It starts from January 5th, 2019, and each judge has 2 votes."
+      "1、Bỏ phiếu bầu cử. Bắt đầu vào ngày 20 tháng 12 năm 2018, phần bỏ phiếu bầu cử sẽ chiếm 40% số phiếu bầu cho lần biểu quyết. Chúng tôi sử dụng cơ chế bỏ phiếu của Wechat để chống gian lận và cơ cấu trong việc bỏ phiếu. Mọi người nên sử dụng tài khoảng Wechat chính thức của mình để bỏ phiếu - và mọi người chỉ có thể bỏ phiếu 1 lần mỗi ngày",
+      "2、Biểu quyết giữa các đội. Bắt đầu vào ngày 30 tháng 12 năm 2018, phần biểu quyết giữa các đội được tính 30% số phiếu bầu cho lần biểu quyết. Đại diện của mỗi đội cần đăng nhập vào trang web và bỏ phiếu cho các đội khác, mỗi đội có 5 phiếu. Họ có thể bầu cho một đội hoặc nhiều đội, nhưng họ không thể bỏ phiếu cho đội của họ.",
+      "3、Phiếu bầu từ ban giám khảo. Đây là giai đoạn cuối cùng, và nó chiếm 30% số phiếu bầu. Bắt đầu từ ngày 5 tháng 1 năm 2019, và mỗi ban giám khảo có 2 phiếu bầu."
     ]
   }
 }
