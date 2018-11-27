@@ -30,19 +30,19 @@ export default {
 
 <style scoped lang='less'>
 .game-title{
-  background: rgba(242,245,250,1);;
+  background: rgba(242,245,250,1);
   display: flex;
   justify-content: center;
   height: 90vh;
   .game-title-w{
     margin: 150px 0 60px 0;
-    padding: 0 30px;
+    padding: 30px;
     width: 80%;
     background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
     ._title{
       margin: 60px 0;
       font-weight:500;
@@ -58,5 +58,4 @@ export default {
     }
   }
 }
-
 </style>
