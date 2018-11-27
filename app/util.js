@@ -26,7 +26,7 @@ const activeTemplate = (activeLink, type = '1') => {
         <p class="size-18" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;text-align: left;"
           lang="x-size-18">您已成功报名 "HelloWorld"----2018区块链应用落地大赛</p>
         <p class="size-18" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;text-align: left;"
-          lang="x-size-18">我们会及时更新大赛动态和资讯，详情请关注大赛官网TrueGlobal.pro和官方微信公众号TrueGlobal，如您有任何疑问，欢迎通过大赛官方进行交流，或者您还可以发送邮件联系我们。</p>
+          lang="x-size-18">我们会及时更新大赛动态和资讯，详情请关注大赛官网TrueGlobal.pro和官方微信公众号TrueGlobal，如您有任何疑问，欢迎通过大赛官方公众号进行交流，或者您还可以发送邮件联系我们。</p>
         <p class="size-18" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;text-align: left;"
           lang="x-size-18">感谢您的参与！</p>
       </div>
