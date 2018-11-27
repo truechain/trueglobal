@@ -28,7 +28,6 @@ class CaptchaController extends Controller {
     };
     ctx.validate(smsRule, ctx.request.body);
 
-    const smsCode = ctx.helper.getRandomNum();
     const nowDate = +new Date();
     const expired = 60;
 
@@ -37,11 +36,10 @@ class CaptchaController extends Controller {
     }
     this.ctx.session.lastTime = +new Date();
 
-    const status = await this.service.mail.sendMail(smsCode, body.mail);
-    const { insertId } = await service.captcha.insert({
+    const status = await this.service.mail.sendMail(null, body.mail);
+    const { insertId } = await service.log.add({
       mail: body.mail,
       status,
-      code: smsCode,
     });
 
     ctx.body = {

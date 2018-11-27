@@ -15,7 +15,7 @@ class TeamController extends Controller {
     };
     // debugger
     ctx.validate(teamRule, ctx.request.body);
-    await service.team.create(ctx.request.body);
+    await service.team.add(ctx.request.body);
     const status = await this.service.mail.sendMail(null, ctx.decode.mail, null, '2');
     ctx.body = {
       code: 0,

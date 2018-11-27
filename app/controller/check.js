@@ -8,13 +8,13 @@ class CaptchaController extends Controller {
       hash: 'string',
     }
     ctx.validate(checkRule, ctx.query)
-    const res = await service.captcha.findHash(ctx.query.hash);
+    const res = await service.log.getHash(ctx.query.hash);
     if(res) {
       let isSuccess ;
       if(ctx.query.isReset) {
-         isSuccess = await service.captcha.updatePwd(res);
+         isSuccess = await service.user.updatePwd(res);
       } else {
-         isSuccess = await service.captcha.update1(res);
+         isSuccess = await service.user.updateStatus(res);
       }
       if(isSuccess.affectedRows === 1) {
         this.ctx.body = {

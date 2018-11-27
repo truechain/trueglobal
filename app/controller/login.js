@@ -14,7 +14,7 @@ class HomeController extends Controller {
     // debugger
     ctx.validate(loginRule, ctx.request.body);
 
-    const token = await service.login.check(ctx.request.body);
+    const token = await service.login.getToken(ctx.request.body);
 
     ctx.body = {
       code: 0,

@@ -12,7 +12,7 @@ module.exports = (options, app) => {
       '/api/reset',
       '/api/active',
     ];
-    ctx.logger.info(ctx.URL.pathname , '====');
+    // ctx.logger.info(ctx.URL.pathname , '====');
     if (!whitePaths.includes(ctx.URL.pathname)) {
       if (!ctx.request.header.token) {
         ctx.throw(401, '请传入token');

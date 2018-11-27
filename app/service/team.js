@@ -2,7 +2,7 @@
 
 const Service = require('egg').Service;
 class TeamService extends Service {
-  async create(item) {
+  async add(item) {
     const { mail, uid } = this.ctx.decode;
     try {
       return await this.app.mysql.insert('team', {

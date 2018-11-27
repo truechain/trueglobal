@@ -8,18 +8,13 @@ class CaptchaController extends Controller {
     const regRule = {
       mail: 'string',
       password: 'string',
-      // authCode: 'string'
     }
     ctx.validate(regRule, body)
-    // const { code } = await service.captcha.find(body.mail);
-    const hash = this.ctx.helper.cryptPwd(body.mail, +new Date());
 
-    const result = await service.register.insert(body)
+    const hash = this.ctx.helper.cryptPwd(body.mail, +new Date());
+    const result = await service.user.add(body)
     const status = await this.service.mail.sendMail(null, body.mail, hash);
-    // if(code !== body.authCode) {
-    //   ctx.throw(402, '验证码错误')
-    // }
-    await service.captcha.insert({
+    await service.log.add({
       mail: body.mail,
       status,
       hash,

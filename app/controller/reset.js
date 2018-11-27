@@ -12,11 +12,10 @@ class ResetController extends Controller {
     ctx.validate(regRule, body)
     const hash = this.ctx.helper.cryptPwd(body.mail, +new Date());
 
-    // const result = await service.reset.update(body)
-    await this.service.login.find(body.mail);
-    await this.service.reset.update(body);
+    await this.service.user.get(body.mail);
+    await this.service.user.updateResetPwd(body);
     const status = await this.service.mail.sendMail(null, body.mail, hash, '3');
-    await service.captcha.update({
+    await service.log.updateHash({
       mail: body.mail,
       status,
       hash,
