@@ -863,7 +863,7 @@ const activeTemplate = (activeLink, type = '1') => {
                   <div class="logo emb-logo-margin-box" style="font-size: 26px;line-height: 32px;Margin-top: 7px;Margin-bottom: 28px;color: #c3ced9;font-family: Roboto,Tahoma,sans-serif;Margin-left: 20px;Margin-right: 20px;"
                     align="center">
                     <div class="logo-center" align="center" id="emb-email-header"><img style="display: block;height: auto;width: 100%;border: 0;max-width: 98px;"
-                        src="https://i1.createsend1.com/ei/j/2B/992/7BA/203308/csfinal/logo.png" alt="" width="98"></div>
+                        src="https://qiniu.baixiaojian.com/logo.png" alt="" width="98"></div>
                   </div>
                   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
@@ -891,7 +891,7 @@ const activeTemplate = (activeLink, type = '1') => {
 
                       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
                         <img style="border: 0;display: block;height: auto;width: 100%;max-width: 121px;" alt="" width="121"
-                          src="https://i1.createsend1.com/ei/j/2B/992/7BA/203308/csfinal/weixin1-990145028a01453c.png">
+                          src="https://qiniu.baixiaojian.com/weixin.png">
                       </div>
 
                       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;Margin-bottom: 24px;">
