@@ -20,6 +20,27 @@ const activeTemplate = (activeLink, type = '1') => {
       </div>
     </div>
   `;
+  const resetT = `
+    <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+        <p class="size-18" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;text-align: left;"
+          lang="x-size-18">请点击下方按钮进行账号的重置：</p>
+      </div>
+    </div>
+
+    <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+    </div>
+
+    <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div class="btn btn--flat btn--large" style="Margin-bottom: 20px;text-align: center;">
+        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #ffffff !important;background-color: #80bf2e;font-family: Ubuntu, sans-serif;"
+          href="http://www.trueglobal.pro/active?hash=${activeLink}&isReset=true">点击重置</a>
+        <![endif]>
+        <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://gelun.createsend1.com/t/j-l-piuxdk-l-r/" style="width:104px" arcsize="9%" fillcolor="#80BF2E" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,11px,0px,11px"><center style="font-size:14px;line-height:24px;color:#FFFFFF;font-family:Ubuntu,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">&#28857;&#20987;&#28608;&#27963;</center></v:textbox></v:roundrect><![endif]-->
+      </div>
+    </div>
+  `;
   const applyT = `
     <div style="Margin-left: 20px;Margin-right: 20px;">
       <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
@@ -34,7 +55,8 @@ const activeTemplate = (activeLink, type = '1') => {
   `;
   const templateObj = {
     '1': activeT,
-    '2': applyT
+    '2': applyT,
+    '3': resetT,
   }
 
   return `

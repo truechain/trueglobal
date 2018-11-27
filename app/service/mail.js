@@ -13,6 +13,7 @@ class MailService extends Service {
     const titles = {
       '1': '账户激活',
       '2': '报名成功',
+      '3': '密码重置',
     }
     const transporter = nodemailer.createTransport({
       host,

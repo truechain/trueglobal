@@ -11,7 +11,7 @@ class RegIsterService extends Service {
   }
   async update(item) {
     return await this.app.mysql.update('log', {
-      code: item.code
+      hash: item.hash
     }, {
       where: {
         mail: item.mail
@@ -27,6 +27,15 @@ class RegIsterService extends Service {
       }
     })
   }
+  async updatePwd(item) {
+    return await this.app.mysql.query(`
+      UPDATE user SET
+        password = r_password,
+        salt = r_salt
+      WHERE
+        mail = ?
+    `, [ item.mail ])
+  }
   async find(mail) {
     const result = await this.app.mysql.get('log', {
       mail
@@ -34,9 +43,12 @@ class RegIsterService extends Service {
     return result ? result : this.ctx.throw(402, '无此用户信息')
   }
   async findHash(hash) {
+    debugger
     const result = await this.app.mysql.get('log', {
       hash
     })
+    console.log(result, 'result');
+
     return result ? result : this.ctx.throw(402, '该地址已失效')
   }
 }

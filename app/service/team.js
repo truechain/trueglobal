@@ -13,7 +13,6 @@ class TeamService extends Service {
     } catch (error) {
       this.ctx.throw(402, '不可重复提交')
     }
-
   }
 }
 

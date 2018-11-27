@@ -10,8 +10,13 @@ class CaptchaController extends Controller {
     ctx.validate(checkRule, ctx.query)
     const res = await service.captcha.findHash(ctx.query.hash);
     if(res) {
-      const { affectedRows } = await service.captcha.update1(res);
-      if(affectedRows === 1) {
+      let isSuccess ;
+      if(ctx.query.isReset) {
+         isSuccess = await service.captcha.updatePwd(res);
+      } else {
+         isSuccess = await service.captcha.update1(res);
+      }
+      if(isSuccess.affectedRows === 1) {
         this.ctx.body = {
           code: 0,
           message: '激活成功',

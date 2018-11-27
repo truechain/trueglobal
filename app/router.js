@@ -11,5 +11,6 @@ module.exports = app => {
   router.post('/api/register', controller.register.index);
   router.post('/api/login', controller.login.index);
   router.post('/api/team', controller.team.index);
+  router.post('/api/reset', controller.reset.index);
   router.get('/api/active', controller.check.index);
 };
