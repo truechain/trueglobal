@@ -55,11 +55,16 @@ const forgetPwd = (params) => {
   return http.post('/register', params)
 }
 
+const resetPwd = (params) => {
+  return http.post('/reset', params)
+}
+
 export {
   sendEmail,
   register,
   login,
   signIn,
   active,
-  forgetPwd
+  forgetPwd,
+  resetPwd
 }
