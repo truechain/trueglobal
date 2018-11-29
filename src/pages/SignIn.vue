@@ -34,7 +34,10 @@
           <Input v-model="formValidate.city" placeholder="中国北京/Beijing, China"  />
         </FormItem>
          <FormItem :label="$t('team.item.referal')" prop="referal">
-          <Input v-model="formValidate.referal" />
+          <!-- <Input v-model="formValidate.referal" /> -->
+          <Select v-model="formValidate.referal">
+            <Option v-for="(item,index) in formValidate.referalList" :value="item" :key="index">{{ item }}</Option>
+          </Select>
         </FormItem>
         <div class="prompt">
           <p class="_t">{{ $t('team.state')}}</p>
@@ -61,7 +64,14 @@ export default {
         wechat: '',
         telegram: '',
         facebook: '',
-        twitter: ''
+        twitter: '',
+        referalList: [
+          '王友强',
+          '唐斌奇',
+          '陈子琳',
+          'Paulus Pham',
+          '추선우(추정남) 秋宣宇(秋婷南)'
+        ]
       },
       ruleValidate: {
         name: [{
@@ -85,6 +95,8 @@ export default {
   methods: {
     handleSubmit (name) {
       this.$refs[name].validate((valid) => {
+        console.log(this.formValidate)
+
         if (valid) {
           signIn(this.formValidate).then(res => {
             if (res.code === 0) {
