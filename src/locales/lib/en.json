@@ -402,6 +402,14 @@
       {
         "title": "Poverty alleviation projects",
         "description": "By using the traceability and non-tampering characteristics of blockchain technology to realize targeted poverty alleviation. In this way,the poverty-relief funds issued by the government can be clearly tracked."
+      },
+      {
+        "title":"Talents information on chain",
+        "description":"Please build a decentralized community platform to effectively manage the returned overseas graduates, optimize resource integration and facilitate these talents to contribute back to the society. Thanks to the human resource center in Beijing proposed the demand of building a centralized community and storing the talent’s information on blockchain."
+      },
+      {
+        "title":"Blockchain public welfare cloud platform",
+        "description":"From the perspective of “blockchain + public welfare” , considering the advantages of blockchain technology - decentralization, openness and transparency, traceability and the use of smart contract, please provide some innovative and creative solutions including but not limit to a design of economic model, a community management tool, or DApps for “donation in digital assets”, “donation tracking”, “certificate of volunteers”, “programmable public welfare”, etc."
       }
     ]
   },
