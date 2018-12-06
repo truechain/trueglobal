@@ -21,6 +21,10 @@
       "router": "/#claim"
     },
     {
+      "name": "资讯",
+      "router": "/news"
+    },
+    {
       "name": "赛题",
       "router": "/topic"
     },
@@ -33,6 +37,9 @@
       "router": "/#contact"
     }
   ],
+  "news": {
+    "title": "新闻资讯"
+  },
   "root": {
     "slogan": "2018区块链 应用落地大赛",
     "subhead": "指导单位：中国云体系产业战略创新联盟、清华大学互联网产业研究院",

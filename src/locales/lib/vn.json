@@ -34,6 +34,9 @@
       "router":"/#contact"
     }
   ],
+  "news": {
+    "title": "Tin tức"
+  },
   "root": {
     "slogan": "Cuộc thi Blockchain True DApp 2018",
     "subhead": "Hướng dẫn:Liên Minh Chiến Lược Tiên Phong về Hệ Thống Dữ Liệu Đám Mây của Trung Quốc,Viện Công nghiệp Internet thuộc Đại Học Tsinghua  ",

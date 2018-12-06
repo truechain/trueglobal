@@ -34,6 +34,9 @@
       "router":"/#contact"
     }
   ],
+  "news": {
+    "title": "뉴스"
+  },
   "root": {
     "slogan": "2018년 블록체인 응용  대회",
     "subhead": "멘토: 중국 클라우드 산업 전략혁신연맹, 청화대 인터넷 산업 연구소",
@@ -41,7 +44,6 @@
     "run": "시합 지원",
     "runTable": "지원서"
   },
-
   "function": {
     "register": "로그인",
     "login": "등록",

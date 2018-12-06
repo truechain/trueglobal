@@ -21,6 +21,10 @@
       "router": "/#claim"
     },
     {
+      "name": "News",
+      "router": "/news"
+    },
+    {
       "name": "Topic",
       "router": "/topic"
     },
@@ -33,6 +37,9 @@
       "router": "/#contact"
     }
   ],
+  "news": {
+    "title": "NEWS"
+  },
   "root": {
     "slogan": "2018 Blockchain True DApp Competition",
     "subhead": "Guidance: China Cloud System Pioneer Strategic Alliance, The Internet Industry Institute of Tsinghua University  ",
