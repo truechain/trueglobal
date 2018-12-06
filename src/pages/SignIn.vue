@@ -33,6 +33,9 @@
          <FormItem :label="$t('team.item.city')" prop="city">
           <Input v-model="formValidate.city" placeholder="中国北京/Beijing, China"  />
         </FormItem>
+         <FormItem :label="$t('team.item.remark')" prop="remark">
+          <Input v-model="formValidate.remark"  />
+        </FormItem>
          <FormItem :label="$t('team.item.referal')" prop="referal">
           <!-- <Input v-model="formValidate.referal" /> -->
           <Select v-model="formValidate.referal">
@@ -64,7 +67,8 @@ export default {
         wechat: '',
         telegram: '',
         facebook: '',
-        twitter: ''
+        twitter: '',
+        remark: ''
       },
       referalList: [
         '王友强',
@@ -85,6 +89,11 @@ export default {
           trigger: 'change'
         }],
         leader: [{
+          required: true,
+          message: '联系人不能为空',
+          trigger: 'change'
+        }],
+        wechat: [{
           required: true,
           message: '联系人不能为空',
           trigger: 'change'
