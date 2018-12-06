@@ -67,7 +67,8 @@
       "wechat": "Wechat",
       "telegram": "Telegram",
       "facebook": "Facebook",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "remark": "Nhận xét"
     },
     "state": "Ban tổ chức sẽ liên hệ với trưởng nhóm để xác nhận các thông tin chi tiết sau khi đăng ký",
     "button": "Gửi đi"

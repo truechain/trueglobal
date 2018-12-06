@@ -70,7 +70,8 @@
       "wechat": "微信",
       "telegram": "Telegram",
       "facebook": "Facebook",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "remark": "备注"
     },
     "state": "报名成功后，主办方会以邮件形式和您取得联系",
     "button": "提交"

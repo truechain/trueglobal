@@ -70,7 +70,8 @@
       "wechat": "Wechat",
       "telegram": "Telegram",
       "facebook": "Facebook",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "remark": "Remark"
     },
     "state": "The organizer will contact the team lead to confirm details after registration",
     "button": "Submit"

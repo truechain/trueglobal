@@ -69,7 +69,8 @@
       "wechat": "위쳇",
       "telegram": "Telegram",
       "facebook": "Facebook",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "remark": "비고"
     },
 
     "state": "지원이 완료되면, 주최 측에서 이메일 형식으로 연락을 드립니다",
