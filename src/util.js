@@ -36,3 +36,22 @@ export const pagestar = context => {
   scriptEl.src = '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188'
   document.body.appendChild(scriptEl)
 }
+
+function addZero (i) {
+  return i < 10 ? `0${i}` : i
+}
+
+export const getTime = (time, form) => {
+  const date = new Date(time)
+  const Y = date.getFullYear() + '-'
+  const M = addZero(date.getMonth() + 1) + '-'
+  const D = addZero(date.getDate()) + ' '
+  const h = addZero(date.getHours()) + ':'
+  const m = addZero(date.getMinutes()) + ':'
+  const s = addZero(date.getSeconds())
+  if (form) {
+    return Y + M + D
+  } else {
+    return Y + M + D + h + m + s
+  }
+}

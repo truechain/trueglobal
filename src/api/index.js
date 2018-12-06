@@ -1,5 +1,5 @@
 import http from './http'
-
+import axios from 'axios'
 // const getToken = () => {
 //   return storage.load({
 //     key: 'token'
@@ -59,6 +59,29 @@ const resetPwd = (params) => {
   return http.post('/reset', params)
 }
 
+const apiArticleList = (params = {}) => {
+  return axios({
+    method: 'get',
+    url: 'http://39.105.125.189:8001/api2/articleList',
+    params,
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZGRyZXNzIjoiMHgzNDQ5ZWQzMDFlOGUyNzJmMmQzNzc0YzRiNjZhYTIzMDBmYmE5NmM4IiwibW9iaWxlIjoiMTc2MTEyMjM2NjUifQ.wfLydygUL2HcOctfRCTOfIwuJHZc5QEC0HHSm9WR-NE'
+    }
+  })
+}
+const apiArticleDetail = (params = {}) => {
+  return axios({
+    method: 'get',
+    url: 'http://39.105.125.189:8001/api2/articleDetail',
+    params,
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZGRyZXNzIjoiMHgzNDQ5ZWQzMDFlOGUyNzJmMmQzNzc0YzRiNjZhYTIzMDBmYmE5NmM4IiwibW9iaWxlIjoiMTc2MTEyMjM2NjUifQ.wfLydygUL2HcOctfRCTOfIwuJHZc5QEC0HHSm9WR-NE'
+    }
+  })
+}
+
 export {
   sendEmail,
   register,
@@ -66,5 +89,7 @@ export {
   signIn,
   active,
   forgetPwd,
-  resetPwd
+  resetPwd,
+  apiArticleList,
+  apiArticleDetail
 }
