@@ -9,7 +9,8 @@ let serverUrl
 
 switch (process.env.NODE_ENV) {
   case 'development':
-    serverUrl = 'http://127.0.0.1:7001/api'
+    serverUrl = 'http://127.0.0.1:7002/api'
+    // serverUrl = 'http://127.0.0.1:7001/api'
     // serverUrl = 'http://47.91.233.146:7001/'
     break
   case 'production':

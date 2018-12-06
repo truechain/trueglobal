@@ -36,7 +36,7 @@
          <FormItem :label="$t('team.item.referal')" prop="referal">
           <!-- <Input v-model="formValidate.referal" /> -->
           <Select v-model="formValidate.referal">
-            <Option v-for="(item,index) in formValidate.referalList" :value="item" :key="index">{{ item }}</Option>
+            <Option v-for="(item,index) in referalList" :value="item" :key="index">{{ item }}</Option>
           </Select>
         </FormItem>
         <div class="prompt">
@@ -64,15 +64,15 @@ export default {
         wechat: '',
         telegram: '',
         facebook: '',
-        twitter: '',
-        referalList: [
-          '王友强',
-          '唐斌奇',
-          '陈子琳',
-          'Paulus Pham',
-          '추선우(추정남) 秋宣宇(秋婷南)'
-        ]
+        twitter: ''
       },
+      referalList: [
+        '王友强',
+        '唐斌奇',
+        '陈子琳',
+        'Paulus Pham',
+        '추선우(추정남) 秋宣宇(秋婷南)'
+      ],
       ruleValidate: {
         name: [{
           required: true,

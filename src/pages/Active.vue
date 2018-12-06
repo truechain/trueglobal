@@ -70,7 +70,6 @@ export default {
 
   .container {
     position: relative;
-
     .sign_area {
       min-height: 390px;
       background: url('../assets/bg.png') no-repeat center;
