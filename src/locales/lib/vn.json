@@ -314,6 +314,11 @@
         "link":"/vote"
       },
       {
+        "text": "Xem lại quy tắc",
+        "link": "../../static/review.pdf",
+        "jump": "true"
+      },
+      {
         "text":"Chi tiết khác đang được cập nhật",
         "link":null
       }

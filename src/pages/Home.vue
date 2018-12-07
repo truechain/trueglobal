@@ -121,9 +121,17 @@
         <p class="pu_t1">{{ $t('require.title')}}</p>
         <p class="line"></p>
         <ul class="award_t_a">
-          <router-link v-for="(item,index) in $t('require.list')" :to='item.link||"/"' :key='index' tag='li' :class="item.link ? 'link_color' : null">
+          <template v-for="(item,index) in $t('require.list')">
+            <template v-if="item.jump">
+              <li :key='index'><a :href="item.link">{{item.text}}</a></li>
+            </template>
+            <template v-else>
+              <router-link :to='item.link||"/"' :key='index' tag='li' :class="item.link ? 'link_color' : null">
               {{item.text}}
-          </router-link>
+            </router-link>
+            </template>
+          </template>
+
         </ul>
       </div>
     </section>

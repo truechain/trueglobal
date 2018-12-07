@@ -315,6 +315,11 @@
         "link":"/vote"
       },
       {
+        "text": "Review rules",
+        "link": "../../static/review.pdf",
+        "jump": "true"
+      },
+      {
         "text":"More details are being updated",
         "link":null
       }

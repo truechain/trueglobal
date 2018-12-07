@@ -313,6 +313,11 @@
         "link": "/vote"
       },
       {
+        "text": "评审细则",
+        "link": "../../static/review.pdf",
+        "jump": "true"
+      },
+      {
         "text": "更多细节陆续更新中",
         "link": null
       }

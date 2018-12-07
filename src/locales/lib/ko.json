@@ -345,6 +345,11 @@
         "link":"/vote"
       },
       {
+        "text": "규칙 검토",
+        "link": "../../static/review.pdf",
+        "jump": "true"
+      },
+      {
         "text":"더욱 디테일한 상황은 지속적으로 업데이트 되고 있습니다.",
         "link":null
       }
