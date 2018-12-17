@@ -1,5 +1,6 @@
 {
   "language": "EN",
+  "developer": "Developer",
   "nav": [{
       "name": "Introduction",
       "router": "/#inter"
@@ -23,10 +24,6 @@
     {
       "name": "News",
       "router": "/news"
-    },
-    {
-      "name": "Topic",
-      "router": "/topic"
     },
     {
       "name": "Vote",

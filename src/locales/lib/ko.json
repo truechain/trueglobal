@@ -1,5 +1,6 @@
 {
   "language": "한국어",
+  "developer": "Developer",
   "nav": [
     {
       "name":"대회 소개",
@@ -20,10 +21,6 @@
     {
       "name":"작품 요구",
       "router":"/#claim"
-    },
-    {
-      "name":"게임 타이틀",
-      "router":"/topic"
     },
     {
       "name":"투표",

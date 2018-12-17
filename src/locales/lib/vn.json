@@ -1,5 +1,6 @@
 {
   "language": "VN",
+  "developer": "Developer",
   "nav": [
     {
       "name":"Giới thiệu",
@@ -20,10 +21,6 @@
     {
       "name":"Yêu cầu",
       "router":"/#claim"
-    },
-    {
-      "name":"Tiêu đề trò chơi",
-      "router":"/topic"
     },
     {
       "name":"Bỏ phiếu",

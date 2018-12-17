@@ -16,6 +16,7 @@
           {{item.name}}
           </MenuItem>
         </router-link>
+        <a href="http://ddp.truescan.net" _blank>{{ $t('developer') }}&nbsp;&nbsp;</a>
       </Menu>
     </div>
     <div>

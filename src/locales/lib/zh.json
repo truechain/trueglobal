@@ -1,5 +1,6 @@
 {
   "language": "中文",
+  "developer": "开发者平台",
   "nav": [{
       "name": "大赛简介",
       "router": "/#inter"
@@ -23,10 +24,6 @@
     {
       "name": "资讯",
       "router": "/news"
-    },
-    {
-      "name": "赛题",
-      "router": "/topic"
     },
     {
       "name": "投票",
