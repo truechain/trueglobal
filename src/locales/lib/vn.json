@@ -23,10 +23,6 @@
       "router":"/#claim"
     },
     {
-      "name":"Bỏ phiếu",
-      "router":"/vote"
-    },
-    {
       "name":"Liên hệ chúng tôi",
       "router":"/#contact"
     }

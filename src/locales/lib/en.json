@@ -26,10 +26,6 @@
       "router": "/news"
     },
     {
-      "name": "Vote",
-      "router": "/vote"
-    },
-    {
       "name": "Contact",
       "router": "/#contact"
     }

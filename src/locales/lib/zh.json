@@ -26,10 +26,6 @@
       "router": "/news"
     },
     {
-      "name": "投票",
-      "router": "/vote"
-    },
-    {
       "name": "联系我们",
       "router": "/#contact"
     }
